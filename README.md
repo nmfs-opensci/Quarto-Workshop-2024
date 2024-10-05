@@ -1,24 +1,25 @@
 
-## EDMW 2024 - Workshop 3B: Introduction to using earth data in the cloud for scientific workflows
+## Quarto Workshop 2024 - Introduction to Quarto for NMFS Reports
 
-**Instructors**: Eli Holmes (NWFSC), Sunny Hospital (CoastWatch), Matt Grossi (SEFSC), Emily Markowitz (AFSC), Songzhi Liu (CoastWatch), Dan Pendleton (NEFSC) / NOAA Fisheries Open Science.
+**Instructors**: Jon Peake & Eli Holmes (NMFS Open Science), with quest speakers
 
 ### Overview
 
-Earth science data is increasingly available from the cloud and due to the size of many of these dataset (Tb and Pb in some cases), data workflows are transitioning to workflows that involve programmatic access with either cloud-native analysis or server-side processing . In this workshop, participants will take part in hands-on tutorials on working with earth data in the cloud with Python and/or R using a JupyterHub (cloud computing platform) provisioned for geospatial analysis. Participants will learn the basics of searching cloud resources via SpatioTemporal Asset Catalogs (STAC) and NASA Earth Data via Common Metadata Repository (CMR). Participants will go through tutorials to learn how to incorporate earth data into their science projects via cloud-native and server-side workflows. Participants will also be exposed to the Python and R suite of geospatial packages for gridded and other spatial data.
+Quarto (and similarly RMarkdown) have been used by many NOAA Fisheries teams and projects to help make report writing more efficient and reproducible. These tools allow you to create scripts for tables and figures and scripts for data wrangling and cleaning tasks. You can combine these with files with the text. When the data are updated, the entire report can be recreated with a few commands. Although the time to translate a report into a template format can be significant, the time-saved in the long-run is significant and this greatly increases the ability to 'hand off' reports to new staff as it is clear exactly what analysis goes into each piece.
 
-### Aims and Objectives
+### Aims and Objectives of the fall Quarto workshops
 
-* Learn how to discover and use oceanographic remote-sensing data in NASA Earth Data
-* Familiarize participants with using remote-sensing data in R and Python with code. 
-* Obtain hands-on experience in using remote-sensing data for two science applications.
-* Learn by doing and running through examples yourself. 
+The fall 2024 Quarto workshops are a 'working' workshop. We will offer four 1-hour intro to Quarto virtual classes, but also work directly with teams to help them with their report goals. For some this will be clarifying goals and deciding on next steps while for others this will be getting into coding and creating repositories and packages.
 
-### What to expect
+* Provide introductory training in Quarto
+* Provide 1:1 help and coaching for teams looking to transform to Quarto reports
+* Themed co-work sessions with said teams to help them make progress
 
-* We will have short introductions and then will work through tutorials together. You are encouraged to adapt the code to create output and examples for your own data and areas of interest.
+### What are 'templated' reports?
 
-* All tutorials and examples are developed openly and will be publicly available during and following the event. Participants will strengthen their practice of open science, using open source code and collaborating on their projects with course peers.
+Sam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating 'templates' for stock assessment reports. Even if you don't do stock assessments, the talk is very informative about different ways one could approach the problem of standardizing and scripting aspects of the elements of fisheries reports. At the end, she talks about the Stock Assessment Workflow project which uses Quarto and R packages.  Talk is about 35 minutes long. 
+
+{{< video https://www.youtube.com/embed/Q8XJTTkjcts >}}
 
 <hr>
 
