@@ -3,6 +3,8 @@
 
 **Instructors**: Jon Peake & Eli Holmes (NMFS Open Science), with quest speakers
 
+**Dates**: Nov-Dec 2024
+
 ### Overview
 
 Quarto (and similarly RMarkdown) have been used by many NOAA Fisheries teams and projects to help make report writing more efficient and reproducible. These tools allow you to create scripts for tables and figures and scripts for data wrangling and cleaning tasks. You can combine these with files with the text. When the data are updated, the entire report can be recreated with a few commands. Although the time to translate a report into a template format can be significant, the time-saved in the long-run is significant and this greatly increases the ability to 'hand off' reports to new staff as it is clear exactly what analysis goes into each piece.
@@ -14,12 +16,6 @@ The fall 2024 Quarto workshops are a 'working' workshop. We will offer four 1-ho
 * Provide introductory training in Quarto
 * Provide 1:1 help and coaching for teams looking to transform to Quarto reports
 * Themed co-work sessions with said teams to help them make progress
-
-### What are 'templated' reports?
-
-Sam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating 'templates' for stock assessment reports. Even if you don't do stock assessments, the talk is very informative about different ways one could approach the problem of standardizing and scripting aspects of the elements of fisheries reports. At the end, she talks about the Stock Assessment Workflow project which uses Quarto and R packages.  Talk is about 35 minutes long. 
-
-{{< video https://www.youtube.com/embed/Q8XJTTkjcts >}}
 
 <hr>
 
