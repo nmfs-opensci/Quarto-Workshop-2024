@@ -12,10 +12,10 @@ execute:
   
 website:
   page-navigation: true  
-  title: "2024 EDMW Workshop 3B"
+  title: "2024 Quarto Workshop"
   favicon: "images/favicon-16x16.png"
-  site-url: https://nmfs-opensci.github.io/EDMW-EarthData-Workshop-2024
-  repo-url: https://github.com/nmfs-opensci/EDMW-EarthData-Workshop-2024
+  site-url: https://nmfs-opensci.github.io/Quarto-Workshop-2024
+  repo-url: https://github.com/nmfs-opensci/Quarto-Workshop-2024
   repo-actions: [edit, issue, source]
   
   page-footer: <img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br />NMFS Open Science (2023)
@@ -30,7 +30,7 @@ website:
     toc-expand: false
     contents:
       - section: "Welcome"
-        href: index.md
+        href: index.qmd
         contents:
           - team.md
           - schedule.md
@@ -88,13 +88,13 @@ website:
     search: true
     right: 
       - icon: server
-        href: https://dhub.opensci.live/
+        href: https://nmfs-openscapes.2i2c.cloud/
         text: "JupyterHub"
       - icon: wechat
-        href: https://github.com/nmfs-opensci/EDMW-EarthData-Workshop-2024/discussions
+        href: https://github.com/nmfs-opensci/Quarto-Workshop-2024/discussions
         text: "Discussions"
       - icon: github
-        href: https://github.com/nmfs-opensci/EDMW-EarthData-Workshop-2024
+        href: https://github.com/nmfs-opensci/Quarto-Workshop-2024
         text: "Repo"
       - icon: globe
         href: https://github.com/nmfs-opensci
