@@ -1,0 +1,16 @@
+---
+title: "Quarto Workshop and Coaching 2024"
+subtitle: "Creating reproducible and more efficient report workflows"
+---
+
+### What are 'templated' reports?
+
+Sam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating 'templates' for stock assessment reports. Even if you don't do stock assessments, the talk is very informative about different ways one could approach the problem of standardizing and scripting aspects of the elements of fisheries reports. At the end, she talks about the Stock Assessment Workflow project which uses Quarto and R packages.  Talk is about 35 minutes long. 
+
+{{< video https://www.youtube.com/embed/Q8XJTTkjcts >}}
+
+
+<br/><br/>
+
+
+
