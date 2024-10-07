@@ -680,19 +680,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "All times Eastern. May 15, 2024",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome",
-      "Schedule"
-    ]
-  },
-  {
-    "objectID": "schedule.html#topics",
-    "href": "schedule.html#topics",
-    "title": "Schedule",
-    "section": "Topics",
-    "text": "Topics\n\nTutorial 1: Searching for resources in NASA Earthdata\nTutorial 2: Plotting and subsetting earth data\nTutorial 3: Masking and aggregating your earth data within a region (shapefiles)",
+    "text": "All times Pacific.\n\n\n\n\n\n\n\n\n\nDate\nDescription\nTopic\nLead\n\n\n\n\nTues 10/29\nNMFS R User Group Quarto Reports @ NMFS\n\n5 presenters from across NMFS\n\n\nWed & Fri 10/30 & 11/1\nMeetings with teams to understand goals\nInfo and Sign-up\nEli (lead) & Jon\n\n\nMon & Fri 11/4 & 11/8\nQuarto Workshop 1\nGetting Started with RStudio and Quarto. Quarto files versus Quarto projects.\nJon\n\n\nMon & Fri 11/11 & 11/15\nQuarto Workshop 2\nWorking with Quarto files and the Markdown language.\nJon\n\n\nWeek of 11/11 to 11/15\nSeaside chats with groups to review their progress and discuss goals (90 min)\nHelp team identify some next steps.\nEli & Jon\n\n\nMon & Fri 11/18 & 11/22\nQuarto Workshop 3\nDynamic output in Quarto files: code, tables, and figures.\nJon\n\n\nMon & Fri 12/2 & 12/6\nQuarto Workshop 4\nCross-references, bibliography and citations in Quarto files.\nJon\n\n\nWeek of 12/2 to 12/5\nSeaside chats with groups to review their progress and discuss goals (90 min).\n\nEli & Jon\n\n\nMon & Fri 12/9 & 12/13\nQuarto Workshop 5\nIntro to Quarto projects.\nJon\n\n\nMon 12/16\nHACKDAY (3 hours)\nPut your skills to work: create a Quarto Book and put online in 3 hours\nEli",
     "crumbs": [
       "JupyterHub",
       "Welcome",
