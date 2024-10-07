@@ -39,12 +39,8 @@ website:
             contents:
             - text: RStudio
               href: content/02-rstudio.qmd
-            - text: Earthdata login
-              href: content/02-earthdata.md
             - text: Local set-up - R
               href: content/02-local-setup-r.qmd
-            - text: Local set-up - Python
-              href: content/02-local-setup-python.qmd
             - text: Git-Authentication
               href: content/02-git.md
             - text: Git-JupyterLab
@@ -58,28 +54,20 @@ website:
             contents:
               - text: Welcome
                 href: content/01-welcome.md
-              - text: Geoscience cloud tools
-                href: content/01-intro-to-cloud.qmd
+              - text: Reproducible Reports
+                href: content/01-repro-reports.qmd
               - text: Jupyter hubs
                 href: content/01-intro-to-jupyterhub.qmd
-          - section: "Tutorials in R"
+          - section: "Tutorials"
             contents:
-              - text: Search
-                href: tutorials/r/1-earthdatalogin.qmd
-              - text: Subset and Crop
-                href: tutorials/r/2-subset-and-plot.qmd
-              - text: Mask to a shapefile
-                href: tutorials/r/3-extract-satellite-data-within-boundary.qmd
-          - section: "Tutorials in Python"
-            contents:
-              - text: Search
-                href: tutorials/python/1-earthaccess.ipynb
-              - text: Subset and Crop
-                href: tutorials/python/2-subset-and-plot.ipynb
-              - text: Mask to a shapefile
-                href: tutorials/python/3-extract-satellite-data-within-boundary.ipynb
-              - text: Monthly and seasonal means
-                href: tutorials/python/4-data-cubes.ipynb
+              - text: Week 1
+                href: tutorials/tutorial-1.qmd
+              - text: Week 2
+                href: tutorials/tutorial-2.qmd
+              - text: Week 3
+                href: tutorials/tutorial-3.qmd
+              - text: Week 4
+                href: tutorials/tutorial-4.qmd
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
         href: https://fisheries.noaa.gov

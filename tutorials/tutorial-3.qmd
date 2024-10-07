@@ -1,0 +1,22 @@
+---
+title: Intro to Quarto
+---
+
+::: {.callout-note title="Learning Objectives"}
+
+1. objective 1
+2. objective 2
+3. objective 3
+:::
+
+## Summary
+
+
+## Terminology
+
+
+## Prerequisites
+
+
+## Load Required Packages
+
