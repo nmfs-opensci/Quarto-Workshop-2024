@@ -46,74 +46,15 @@ title: Our Team
 
 
 <div>
-### Sunny Hospital
+### Jon Peake
     
-<img src="images/Sunny.jpg" alt="Sunny Hospital" style="width:75%; ; border-radius: 50%;">
+<img src="images/jon.jpg" alt="Jon Peake" style="width:75%; ; border-radius: 50%;">
 
 
-[NOAA CoastWatch PolarWatch](https://polarwatch.noaa.gov/)
+[Website](https://peakeecology.science/)
 
-[GitHub](https://github.com/shospital) 
-
-</div>
-
-<div>
-### Matt Grossi
-
-<img src="images/matt-head.jpg" alt="Matt Grossi" style="width:75%; ; border-radius: 50%;">
-
-[NOAA Fisheries](https://www.fisheries.noaa.gov/)
-
-[webpage](https://mattgrossi-noaa.github.io/) &#x2022;  [GitHub](https://github.com/mattgrossi-noaa)  &#x2022; [ORCID](https://orcid.org/0000-0002-8550-3189)
+[GitHub]() 
 
 </div>
 
-<div>
-
-### Emily Markowitz
-
-<img src="images/em.png" alt="Emily Markowitz" style="width:75%; ; border-radius: 50%;">
-
-[NOAA Fisheries](https://www.fisheries.noaa.gov/)
-
-[webpage](https://emilyhmarkowitz.github.io/emilyhmarkowitz) &#x2022;  [GitHub](https://github.com/EmilyMarkowitz-NOAA) &#x2022; [NOAA](https://www.fisheries.noaa.gov/contact/emily-markowitz) &#x2022; [ORCID](https://orcid.org/0000-0001-5757-4230)
-
-</div>
-</div>
-
-<div class="columns-4">
-
-<div>
-### Songzhi Liu
-    
-<img src="images/songzhi.jpg" alt="Songzhi Liu" style="width:75%; ; border-radius: 50%;">
-    
-[NOAA CoastWatch Great Lakes Node](https://coastwatch.glerl.noaa.gov/)
-
-[webpage](https://sssliuum.github.io/)  &#x2022;
-[GitHub](https://github.com/sssliuum) 
-
-</div>
-
-<div>
-
-### Dan Pendleton
-
-<img src="images/dan.jpeg" alt="Dan Pendelton" style="width:75%; ; border-radius: 50%;">
-
-[NOAA Fisheries](https://www.fisheries.noaa.gov/)
-
-[webpage](https://www.researchgate.net/profile/Daniel-Pendleton) &#x2022;  [GitHub](https://github.com/dep22) &#x2022; [ORCID](https://orcid.org/0000-0001-9341-8841)
-
-</div>
-
-<div>
-### More
-
-</div>
-
-<div>
-### More
-
-</div>
 </div>

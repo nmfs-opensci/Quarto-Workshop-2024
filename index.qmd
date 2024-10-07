@@ -1,13 +1,15 @@
 ---
-title: "Quarto Workshop and Coaching 2024"
+title: "Quarto Workshop and Hacking 2024"
 subtitle: "Creating reproducible and more efficient report workflows"
 ---
 
 ### What are 'templated' reports?
 
+Join the NMFS R User Group on October 29th 12pm PT/3pm ET to hear 5 examples of how NMFS groups have used Quarto (and RMarkdown) to create more efficient and reproducible fisheries reports. [Add to calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=cGRyaThvbTgwdHBxOHZxZ2Y4bXJ1cGptdTFfMjAyNDEwMjJUMTkwMDAwWiBub2FhLmdvdl82MHJmbjdtbDlycGNobDYzdnM0YWY5bjAxOEBn&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com).
+
 Sam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating 'templates' for stock assessment reports. Even if you don't do stock assessments, the talk is very informative about different ways one could approach the problem of standardizing and scripting aspects of the elements of fisheries reports. At the end, she talks about the Stock Assessment Workflow project which uses Quarto and R packages.  Talk is about 35 minutes long. 
 
-{{< video https://www.youtube.com/embed/Q8XJTTkjcts >}}
+{{< video https://www.youtube.com/embed/Q8XJTTkjcts width="400" >}}
 
 
 <br/><br/>
