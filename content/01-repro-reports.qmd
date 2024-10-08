@@ -1,16 +1,15 @@
 ---
-title: Intro the Cloud
+title: Reproducible Reports
 ---
 
-![](../images/cloud-overview.png)
-Today we are working with a JupyterHub in Azure, while the data we are accessing is on AWS us-west-2. This means we cannot really do the lower right option of 'cloud native' computing. If our JupyterHub were on AWS us-west-2, then we could direct connect to the S3 buckets and it would be as if we had downloaded the data. We can effectively "attach" a cloud drive with petabytes of data to our virtual machine.
+Reproducible reports are documents that combine analysis code, outputs (like plots or tables), and narratives to ensure that results can be easily replicated and verified by others. They are commonly used in scientific research, data science, and analytics to maintain transparency and reliability. By incorporating both the code and results into one document (or a collection of documents), anyone can run the same analysis on the same data (or updated data) and obtain the same results.
 
-Today we will be showing how to "stream cloud data without downloads". Because we are on Azure and the data are in S3 us-west-2 buckets, we have to use "https" access. Be aware that *https access without downloads is painfully slow on cloud-ignorant netCDF files*. Of course, downloads of large datasets is also painfully slow. This is one of the reasons why providing cloud-optimized data formats is so important.
+### Examples of NMFS reproducible reports
 
-JupyterHubs (and virtual machines) can be easily spun up on any cloud provider and computing is cheap (storage is expensive). You do not need to install the compute environments. The common workflow is to run a provided docker image with `docker run`.
+Join the NMFS R User Group on October 29th 12pm PT/3pm ET to hear 5 examples of how NMFS groups have used Quarto (and RMarkdown) to create more efficient and reproducible fisheries reports. [Add to calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=cGRyaThvbTgwdHBxOHZxZ2Y4bXJ1cGptdTFfMjAyNDEwMjJUMTkwMDAwWiBub2FhLmdvdl82MHJmbjdtbDlycGNobDYzdnM0YWY5bjAxOEBn&tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com).
 
----
+Sam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating 'templates' for stock assessment reports. Even if you don't do stock assessments, the talk is very informative about different ways one could approach the problem of standardizing and scripting aspects of the elements of fisheries reports. At the end, she talks about the Stock Assessment Workflow project which uses Quarto and R packages.  Talk is about 35 minutes long. 
 
-Lecture on NASA earth data in the cloud by Michele Thornton (NASA Openscapes) [Video](https://www.youtube.com/watch?v=E5Dpeap16hU)
-
-{{< video https://www.youtube.com/watch?v=E5Dpeap16hU width="400" >}}
+<center>
+{{< video https://www.youtube.com/embed/Q8XJTTkjcts width="400" height="300">}}
+</center>

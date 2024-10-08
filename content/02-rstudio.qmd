@@ -4,7 +4,7 @@ title: RStudio - R
 
 ::: {.callout-note icon=false}
 
-In this tutorial, we will provide a brief introduction to:
+In this tutorial, we will provide a brief introduction to RStudio using the JupyterHub.
 
 1.  Open RStudio in the JupyterHub
 2.  Basic navigation around  **RStudio**: the 4 main panels and menus

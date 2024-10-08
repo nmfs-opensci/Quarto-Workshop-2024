@@ -34,13 +34,13 @@ website:
         contents:
           - team.md
           - schedule.md
-          - setup.qmd
-          - section: Orientation
+          - section: Set-up
             contents:
-            - text: RStudio
-              href: content/02-rstudio.qmd
-            - text: Local set-up - R
+            - set-up.qmd
+            - text: R and RStudio on your computer
               href: content/02-local-setup-r.qmd
+            - text: R and RStudion on the JupyterHub
+              href: content/02-jupyterhub-setup-r.qmd
             - text: Git-Authentication
               href: content/02-git.md
             - text: Git-JupyterLab
@@ -48,26 +48,17 @@ website:
             - text: Git-RStudio
               href: content/02-git-rstudio.md
           - coc.md
+      - section: "Orientation"
+        contents:
+        - text: Reproducible Reports
+          href: content/01-repro-reports.qmd
+        - text: Intro to RStudio
+          href: content/02-rstudio.qmd
+        - text: JupyterHubs
+          href: content/01-intro-to-jupyterhub.qmd
       - section: "Tutorials"
         contents:
-          - section: "Welcome"
-            contents:
-              - text: Welcome
-                href: content/01-welcome.md
-              - text: Reproducible Reports
-                href: content/01-repro-reports.qmd
-              - text: Jupyter hubs
-                href: content/01-intro-to-jupyterhub.qmd
-          - section: "Tutorials"
-            contents:
-              - text: Week 1
-                href: tutorials/tutorial-1.qmd
-              - text: Week 2
-                href: tutorials/tutorial-2.qmd
-              - text: Week 3
-                href: tutorials/tutorial-3.qmd
-              - text: Week 4
-                href: tutorials/tutorial-4.qmd
+        - text: Coming!
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
         href: https://fisheries.noaa.gov
