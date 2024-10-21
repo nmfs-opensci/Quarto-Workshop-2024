@@ -8,10 +8,10 @@ This is a series of workshops on Quarto lead by NMFS Open Science plus support f
 ### Goals
 
 * Provide training in Quarto and using Quarto for report writing
-* Provide targeted support for teams (or individuals) looking to transform a report to a more reproducible or 'templated' approach
+* Provide targeted support for teams (or individuals) looking to transform a report to a more reproducible or 'templated' approach with Quarto or RMarkdown
     - bi-weekly check-ins
-    - technical support to help them get unstuck when facing problems
-    - Google Space to ask questions and share work with other teams
+    - technical support
+    - [Google Space](https://chat.google.com/room/AAAAuuftzDk?cls=1) to ask questions and discuss with other teams
 
 ### Schedule
 
