@@ -156,7 +156,18 @@
     "href": "index.html",
     "title": "Quarto Workshop 2024",
     "section": "",
-    "text": "This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up but also open to all (sign-up spreadsheet). Note: this is being held in conjunction with the NMFS Openscapes Fall Champions Cohorts but is open to anyone and any team at NMFS.\n\nGoals\n\nWorkshops: Provide training in Quarto and using Quarto for report writing for first time users\nTeam support: Provide targeted support for teams (or individuals) looking to transform a specific report to a more reproducible or ‘templated’ approach with Quarto or RMarkdown\n\n1:1 meetings with Jon and/or Eli to discuss your project\ntechnical support from Jon and/or Eli\nGoogle Space to ask questions and discuss with other teams\nTeam sign-up for 1:1 help\n\n\n\n\nSchedule\nSee the schedule page.\n\nThe 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. Add to your calendar or view in the NMFS Open Science calendar.\nFor teams (or individuals) who want 1:1 support for a specific project (sign-up on spreadsheet).\n\n\n\nWhat are ‘templated’ or reproducible reports?\nSee examples from NOAA Fisheries.",
+    "text": "This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Quarto Workshop 2024",
+    "section": "Goals",
+    "text": "Goals\n\nWorkshops: Provide training in Quarto and using Quarto for report writing for first time users. Open to all.\nGoogle Space to ask questions and discuss Quarto and ask questions. Open to all in NOAA. Team support: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or ‘templated’ approach with Quarto or RMarkdown\n\nThis fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but didn’t get a spot).\nTeam sign-up for 1:1 help\n\n\n\nSchedule\nSee the schedule page.\n\nThe 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. Add to your calendar or view in the NMFS Open Science calendar.\nFor teams (or individuals) who want 1:1 support for a specific project (sign-up on spreadsheet).\n\n\n\nWhat are ‘templated’ or reproducible reports?\nSee examples from NOAA Fisheries.",
     "crumbs": [
       "JupyterHub",
       "Welcome"
