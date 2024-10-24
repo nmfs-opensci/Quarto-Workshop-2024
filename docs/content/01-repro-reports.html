@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Intro the Cloud – 2024 Quarto Workshop</title>
+<title>Reproducible Reports – 2024 Quarto Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/01-intro-to-jupyterhub.html" rel="next">
-<link href="../content/01-welcome.html" rel="prev">
+<link href="../content/02-rstudio.html" rel="next">
+<link href="../coc.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">JupyterHub</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/discussions"> <i class="bi bi-wechat" role="img">
+    <a class="nav-link" href="https://mail.google.com/mail/u/0/#chat/space/AAAAuuftzDk"> <i class="bi bi-wechat" role="img">
 </i> 
 <span class="menu-text">Discussions</span></a>
   </li>  
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorials</li><li class="breadcrumb-item"><a href="../content/01-welcome.html">Welcome</a></li><li class="breadcrumb-item"><a href="../content/01-repro-reports.html">Reproducible Reports</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/01-repro-reports.html">Orientation</a></li><li class="breadcrumb-item"><a href="../content/01-repro-reports.html">Reproducible Reports</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -162,31 +162,28 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Set-up</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Orientation</span></a>
+ <span class="menu-text">Set-up</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
+ <span class="menu-text">set-up.qmd</span>
+  </li>
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/02-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">RStudio</span></a>
+  <a href="../content/02-local-setup-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R and RStudio on your computer</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/02-local-setup-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Local set-up - R</span></a>
+  <a href="../content/02-jupyterhub-setup-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R and RStudion on the JupyterHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -220,27 +217,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Tutorials</span></a>
+ <span class="menu-text">Orientation</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Welcome</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/01-welcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
-  </div>
-</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/01-repro-reports.html" class="sidebar-item-text sidebar-link active">
@@ -249,46 +231,29 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/02-rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/01-intro-to-jupyterhub.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jupyter hubs</span></a>
+ <span class="menu-text">JupyterHubs</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Tutorials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4</span></a>
-  </div>
-</li>
-      </ul>
+ <span class="menu-text">Coming!</span>
   </li>
       </ul>
   </li>
@@ -321,9 +286,9 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Tutorials</li><li class="breadcrumb-item"><a href="../content/01-welcome.html">Welcome</a></li><li class="breadcrumb-item"><a href="../content/01-repro-reports.html">Reproducible Reports</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../content/01-repro-reports.html">Orientation</a></li><li class="breadcrumb-item"><a href="../content/01-repro-reports.html">Reproducible Reports</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Intro the Cloud</h1>
+<h1 class="title">Reproducible Reports</h1>
 </div>
 
 
@@ -340,14 +305,23 @@ function googleTranslateElementInit() {
 </header>
 
 
-<p><img src="../images/cloud-overview.png" class="img-fluid"> Today we are working with a JupyterHub in Azure, while the data we are accessing is on AWS us-west-2. This means we cannot really do the lower right option of ‘cloud native’ computing. If our JupyterHub were on AWS us-west-2, then we could direct connect to the S3 buckets and it would be as if we had downloaded the data. We can effectively “attach” a cloud drive with petabytes of data to our virtual machine.</p>
-<p>Today we will be showing how to “stream cloud data without downloads”. Because we are on Azure and the data are in S3 us-west-2 buckets, we have to use “https” access. Be aware that <em>https access without downloads is painfully slow on cloud-ignorant netCDF files</em>. Of course, downloads of large datasets is also painfully slow. This is one of the reasons why providing cloud-optimized data formats is so important.</p>
-<p>JupyterHubs (and virtual machines) can be easily spun up on any cloud provider and computing is cheap (storage is expensive). You do not need to install the compute environments. The common workflow is to run a provided docker image with <code>docker run</code>.</p>
+<p>Reproducible reports are documents that combine analysis code, outputs (like plots or tables), and narratives to ensure that results can be easily replicated and verified by others. They are commonly used in scientific research, data science, and analytics to maintain transparency and reliability. By incorporating both the code and results into one document (or a collection of documents), anyone can run the same analysis on the same data (or updated data) and obtain the same results.</p>
+<section id="examples-of-nmfs-reproducible-reports" class="level3">
+<h3 class="anchored" data-anchor-id="examples-of-nmfs-reproducible-reports">Examples of NMFS reproducible reports</h3>
+<p>Join the NMFS R User Group on October 29th 12pm PT/3pm ET to hear 5 examples of how NMFS groups have used Quarto (and RMarkdown) to create more efficient and reproducible fisheries reports. <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=cGRyaThvbTgwdHBxOHZxZ2Y4bXJ1cGptdTFfMjAyNDEwMjJUMTkwMDAwWiBub2FhLmdvdl82MHJmbjdtbDlycGNobDYzdnM0YWY5bjAxOEBn&amp;tmsrc=noaa.gov_60rfn7ml9rpchl63vs4af9n018%40group.calendar.google.com">Add to calendar</a>.</p>
 <hr>
-<p>Lecture on NASA earth data in the cloud by Michele Thornton (NASA Openscapes) <a href="https://www.youtube.com/watch?v=E5Dpeap16hU">Video</a></p>
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/E5Dpeap16hU" width="400" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Sam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating ‘templates’ for stock assessment reports.</p>
+<center>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/Q8XJTTkjcts" width="400" height="300" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</center>
+<hr>
+<p>The Alaska Fisheries Science Center MML program gave a talk about how they transformed MML SARs to a reproducible and more efficient workflow.</p>
+<center>
+<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/wqbwcCXbFL8" width="400" height="300" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</center>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -916,13 +890,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/01-welcome.html" class="pagination-link" aria-label="Welcome">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Welcome</span>
+      <a href="../coc.html" class="pagination-link" aria-label="Code of Conduct">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Code of Conduct</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/01-intro-to-jupyterhub.html" class="pagination-link" aria-label="Jupyter hubs">
-        <span class="nav-page-text">Jupyter hubs</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/02-rstudio.html" class="pagination-link" aria-label="Intro to RStudio">
+        <span class="nav-page-text">Intro to RStudio</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

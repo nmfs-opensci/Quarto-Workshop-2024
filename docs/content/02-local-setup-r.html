@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -63,8 +29,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/02-git.html" rel="next">
-<link href="../content/02-rstudio.html" rel="prev">
+<link href="../content/02-jupyterhub-setup-r.html" rel="next">
+<link href="../schedule.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -132,7 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">JupyterHub</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/discussions"> <i class="bi bi-wechat" role="img">
+    <a class="nav-link" href="https://mail.google.com/mail/u/0/#chat/space/AAAAuuftzDk"> <i class="bi bi-wechat" role="img">
 </i> 
 <span class="menu-text">Discussions</span></a>
   </li>  
@@ -158,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../content/02-rstudio.html">Orientation</a></li><li class="breadcrumb-item"><a href="../content/02-local-setup-r.html">Local set-up - R</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item">Set-up</li><li class="breadcrumb-item"><a href="../content/02-local-setup-r.html">R and RStudio on your computer</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -196,31 +162,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Set-up</span></a>
-  </div>
-</li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Orientation</span></a>
+ <span class="menu-text">Set-up</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
+ <span class="menu-text">set-up.qmd</span>
+  </li>
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/02-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">RStudio</span></a>
+  <a href="../content/02-local-setup-r.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">R and RStudio on your computer</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/02-local-setup-r.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Local set-up - R</span></a>
+  <a href="../content/02-jupyterhub-setup-r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R and RStudion on the JupyterHub</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -254,27 +217,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">Tutorials</span></a>
+ <span class="menu-text">Orientation</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">Welcome</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/01-welcome.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome</span></a>
-  </div>
-</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/01-repro-reports.html" class="sidebar-item-text sidebar-link">
@@ -283,46 +231,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../content/02-rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../content/01-intro-to-jupyterhub.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Jupyter hubs</span></a>
+ <span class="menu-text">JupyterHubs</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
+        <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
  <span class="menu-text">Tutorials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 1</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 2</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4</span></a>
-  </div>
-</li>
-      </ul>
+ <span class="menu-text">Coming!</span>
   </li>
       </ul>
   </li>
@@ -345,14 +276,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#running-locally" id="toc-running-locally" class="nav-link active" data-scroll-target="#running-locally">Running locally</a></li>
-  <li><a href="#running-from-posit-cloud" id="toc-running-from-posit-cloud" class="nav-link" data-scroll-target="#running-from-posit-cloud">Running from Posit Cloud</a></li>
-  <li><a href="#running-from-a-docker-file" id="toc-running-from-a-docker-file" class="nav-link" data-scroll-target="#running-from-a-docker-file">Running from a Docker file</a>
-  <ul class="collapse">
-  <li><a href="#start-the-docker-image" id="toc-start-the-docker-image" class="nav-link" data-scroll-target="#start-the-docker-image">Start the docker image</a></li>
-  <li><a href="#clone-the-tutorials" id="toc-clone-the-tutorials" class="nav-link" data-scroll-target="#clone-the-tutorials">Clone the tutorials</a></li>
-  <li><a href="#connect-your-local-files-to-image" id="toc-connect-your-local-files-to-image" class="nav-link" data-scroll-target="#connect-your-local-files-to-image">Connect your local files to image</a></li>
-  </ul></li>
+  <li><a href="#install-r-4" id="toc-install-r-4" class="nav-link active" data-scroll-target="#install-r-4">Install R 4+</a></li>
+  <li><a href="#install-rstudio-desktop" id="toc-install-rstudio-desktop" class="nav-link" data-scroll-target="#install-rstudio-desktop">Install RStudio Desktop</a></li>
+  <li><a href="#install-the-needed-packages" id="toc-install-the-needed-packages" class="nav-link" data-scroll-target="#install-the-needed-packages">Install the needed packages</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/content/02-local-setup-r.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/content/02-local-setup-r.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -368,7 +294,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../content/02-rstudio.html">Orientation</a></li><li class="breadcrumb-item"><a href="../content/02-local-setup-r.html">Local set-up - R</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item">Set-up</li><li class="breadcrumb-item"><a href="../content/02-local-setup-r.html">R and RStudio on your computer</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Setting up on your computer - R users</h1>
 </div>
@@ -387,61 +313,21 @@ function googleTranslateElementInit() {
 </header>
 
 
-<section id="running-locally" class="level1">
-<h1>Running locally</h1>
-<p>If you are set up locally to run R and have tidyverse installed, then for most of the tutorials, you only need to install <code>earthdatalogin</code> and <code>terra</code> with</p>
-<pre><code>devtools::install_github("boettiger-lab/earthdatalogin")
-install.packages("terra")</code></pre>
-<p>RStudio should alert you if there are other packages that you need to install.</p>
+<p>You can also use R and RStudio that you have installed locally.</p>
+<section id="install-r-4" class="level2">
+<h2 class="anchored" data-anchor-id="install-r-4">Install R 4+</h2>
+<p>Any version of R 4+ will be fine.</p>
+<p>https://cran.r-project.org/</p>
 </section>
-<section id="running-from-posit-cloud" class="level1">
-<h1>Running from Posit Cloud</h1>
-<p>The standard <a href="https://posit.cloud/">Posit Cloud</a> has most of the packages you will need. For most of the tutorials, you only need to install <code>earthdatalogin</code> and <code>terra</code> with</p>
-<pre><code>devtools::install_github("boettiger-lab/earthdatalogin")
-install.packages("terra")</code></pre>
+<section id="install-rstudio-desktop" class="level2">
+<h2 class="anchored" data-anchor-id="install-rstudio-desktop">Install RStudio Desktop</h2>
+<p>Please update to the latest version of RStudio Desktop: https://posit.co/download/rstudio-desktop/. Quarto comes bundled with RStudio so you do not need to install it separately.</p>
 </section>
-<section id="running-from-a-docker-file" class="level1">
-<h1>Running from a Docker file</h1>
-<p>If you don’t have RStudio or R installed, the easiest way to run the R tutorials locally is to use the Docker container <code>py-rocket-geospatial</code>; this is the environment that is being used in the JupyterHub. You’ll need containerization software such as <a href="https://www.docker.com/products/docker-desktop/">Docker Desktop</a> or <a href="https://podman.io/">Podman</a> installed.</p>
-<section id="start-the-docker-image" class="level2">
-<h2 class="anchored" data-anchor-id="start-the-docker-image">Start the docker image</h2>
-<p>Make sure Docker or Podman is running (open the Desktop application), then run the container:</p>
-<p>Windows, Linux or Intel-chip Mac:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-p</span> 8888:8888  <span class="at">--cap-add</span> SYS_PTRACE <span class="at">--security-opt</span> seccomp=unconfined  ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Apple-chip Mac (probably will not work):</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-p</span> 8888:8888 <span class="at">--platform</span> linux/amd64  <span class="at">--cap-add</span> SYS_PTRACE <span class="at">--security-opt</span> seccomp=unconfined  ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you’re using Podman, simply replace <code>docker</code> with <code>podman</code> in this command and any that follow.</p>
-</div>
-</div>
-<p>After <code>docker run</code> there will be a long printout in the terminal window, you will see instructions for how to access the server (<code>To access the server...</code>). Copy and paste either of the URLs into a web browser. You should be greeted with a JupyterLab dashboard as in the live demo.</p>
-</section>
-<section id="clone-the-tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="clone-the-tutorials">Clone the tutorials</h2>
-<p>Clone and then cd into the repo. Open a terminal and run</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/nmfs-opensci/EDMW-3B-tutorials</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The Python tutorials are in the <code>tutorials/python</code> directory.</p>
-</section>
-<section id="connect-your-local-files-to-image" class="level2">
-<h2 class="anchored" data-anchor-id="connect-your-local-files-to-image">Connect your local files to image</h2>
-<p>Clone and then cd into the repo. Open a terminal and run</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/nmfs-opensci/EDMW-3B-tutorials</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> EDMW-3B-tutorials</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Windows, Linux or Intel-chip Mac:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">docker</span> run <span class="at">-p</span> 8888:8888  <span class="at">--cap-add</span> SYS_PTRACE <span class="at">--security-opt</span> seccomp=unconfined <span class="at">-v</span> /<span class="va">$(</span><span class="bu">pwd</span><span class="va">)</span>:/home/jovyan/ ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="install-the-needed-packages" class="level2">
+<h2 class="anchored" data-anchor-id="install-the-needed-packages">Install the needed packages</h2>
+<p>We will update this section closer to the workshops.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1011,13 +897,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../content/02-rstudio.html" class="pagination-link" aria-label="RStudio">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">RStudio</span>
+      <a href="../schedule.html" class="pagination-link" aria-label="Schedule">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Schedule</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/02-git.html" class="pagination-link" aria-label="Git-Authentication">
-        <span class="nav-page-text">Git-Authentication</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../content/02-jupyterhub-setup-r.html" class="pagination-link" aria-label="R and RStudion on the JupyterHub">
+        <span class="nav-page-text">R and RStudion on the JupyterHub</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

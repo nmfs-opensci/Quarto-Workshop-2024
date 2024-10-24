@@ -2,41 +2,10 @@
 title: Set-up
 ---
 
-We will be using a JupyterHub for the workshop.
+We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project. 
 
-* <https://dhub.opensci.live/>
-* Click Start Server
-* Open terminal, type to get the tutorials
+## Options
 
-```
-cd ~
-git clone https://github.com/nmfs-opensci/EDMW-3B-tutorials
-```
+[R/RStudio on the NMFS JupyterHub](content/02-jupyterhub-setp-r.html) Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.
 
-You can also see [setup - R](content/02-local-setup-r.html) and [setup - Python](content/02-local-setup-python.html) to aset up on your computer but be aware that GDAL installation is problemmatic.
-
-## Access to the JupyterHub
-
-### GitHub username
-
-* Create a GitHub account (if you don’t already have one) at <https://github.com>. Advice for choosing a GitHub username: this is a professional username that you will use in work settings. GitHub accounts are not anonymous; this is for sharing work. Using your real name is common.
-* Write down your username and password; you will need to log in during the course!
-* Here is [a video](https://www.youtube.com/watch?v=nHXw4mGoqiE) showing the whole process
-
-### Get on JupyterHub
-
-Once you have submitted your GitHub username and have been accepted as a member of the DaskHub team on the nmfs-opensci organization, you can log-into the JupyterHub.
-
-<https://dhub.opensci.live/>
-
-* **Choose the default Py-R base geospatial image**. [Watch a video](https://youtu.be/o99jZWHqKi8) of the login process and basic JupyterHub orientation.
-
-* home directory is yours and no one else can see it. To share files, you can connect to a GitHub repository or use the `shared` directory. Everyone can read and write to this directory. Please don't delete content that is not your own.
-
-## Earthdata Login account (optional)
-
-We will be using a public user account, but if you do a lot of work with NASA Earthdata, you should get a login account. 
-
-* Create an Earthdata Login account (if you don't already have one) at <https://urs.earthdata.nasa.gov>
-* Write down your username and password; you will need it.
-
+[R/RStudio installed on your computer](content/02-local-setp-r.html) Install R and RStudio on your computer.

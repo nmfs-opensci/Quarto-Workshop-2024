@@ -2,70 +2,18 @@
 title: Setting up on your computer - R users
 ---
 
-# Running locally
+You can also use R and RStudio that you have installed locally.
 
-If you are set up locally to run R and have tidyverse installed, then for most of the tutorials, you only need to install `earthdatalogin` and `terra` with 
+## Install R 4+
 
-```
-devtools::install_github("boettiger-lab/earthdatalogin")
-install.packages("terra")
-```
+Any version of R 4+ will be fine. 
 
-RStudio should alert you if there are other packages that you need to install.
+https://cran.r-project.org/
 
-# Running from Posit Cloud
+## Install RStudio Desktop
 
-The standard [Posit Cloud](https://posit.cloud/) has most of the packages you will need. For most of the tutorials, you only need to install `earthdatalogin` and `terra` with 
+Please update to the latest version of RStudio Desktop: https://posit.co/download/rstudio-desktop/. Quarto comes bundled with RStudio so you do not need to install it separately.
 
-```
-devtools::install_github("boettiger-lab/earthdatalogin")
-install.packages("terra")
-```
+## Install the needed packages
 
-# Running from a Docker file
-
-If you don't have RStudio or R installed, the easiest way to run the R tutorials locally is to use the Docker container `py-rocket-geospatial`; this is the environment that is being used in the JupyterHub. You'll need containerization software such as [Docker Desktop](https://www.docker.com/products/docker-desktop/) or [Podman](https://podman.io/) installed.
-
-## Start the docker image
-
-Make sure Docker or Podman is running (open the Desktop application), then run the container:
-
-Windows, Linux or Intel-chip Mac:
-```bash
-docker run -p 8888:8888  --cap-add SYS_PTRACE --security-opt seccomp=unconfined  ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest
-```
-
-Apple-chip Mac (probably will not work):
-```bash
-docker run -p 8888:8888 --platform linux/amd64  --cap-add SYS_PTRACE --security-opt seccomp=unconfined  ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest
-```
-
-::: {.callout-tip}
-If you're using Podman, simply replace `docker` with `podman` in this command and any that follow.
-:::
-
-After `docker run` there will be a long printout in the terminal window, you will see instructions for how to access the server (`To access the server...`). Copy and paste either of the URLs into a web browser. You should be greeted with a JupyterLab dashboard as in the live demo. 
-
-## Clone the tutorials
-
-Clone and then cd into the repo. Open a terminal and run
-```bash
-cd ~
-git clone https://github.com/nmfs-opensci/EDMW-3B-tutorials
-```
-
-The Python tutorials are in the `tutorials/python` directory.
-
-
-## Connect your local files to image
-
-Clone and then cd into the repo. Open a terminal and run
-```bash
-git clone https://github.com/nmfs-opensci/EDMW-3B-tutorials
-cd EDMW-3B-tutorials
-```
-
-Windows, Linux or Intel-chip Mac:
-```bash
-docker run -p 8888:8888  --cap-add SYS_PTRACE --security-opt seccomp=unconfined -v /$(pwd):/home/jovyan/ ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest
-```
+We will update this section closer to the workshops.
