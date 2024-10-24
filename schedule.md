@@ -18,5 +18,5 @@ All times Pacific.
 | Mon & Fri 12/2 & 12/6 | Quarto Workshop 4  | Cross-references, bibliography and citations in Quarto files. | Jon | 
 | Week of 12/2 to 12/6  | Seaside chats with teams (60-90 min)  | Review progress and identify next steps. | Eli & Jon |
 | Mon & Fri 12/9 & 12/13 | Quarto Workshop 5  | Intro to Quarto projects. | Jon |
-| Mon 12/16   | HACKDAY (3 hours) | Put your skills to work: create a Quarto Book and put online in 3 hours | Eli |
+| Mon 12/16   | Hack Day (3 hours) | Put your skills to work: create a Quarto Book and put online in 3 hours | Eli |
 | Week of 12/16 to 12/19  | Seaside chats with teams (60-90 min)  | Review progress, get help and identify next steps. | Eli & Jon |
