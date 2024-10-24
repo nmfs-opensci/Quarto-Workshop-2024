@@ -12,7 +12,7 @@ This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 suppo
 **Team support**: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or 'templated' approach with Quarto or RMarkdown
     - This fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but  didn't get a spot).
     - [Team sign-up for 1:1 help](https://docs.google.com/spreadsheets/d/1Tb0ruwU-CvMcmb7ADdfNTR3SL52QvB01bdMIzVR3eKg/edit?usp=sharing)
-
+    
 ### Schedule
 
 See the [schedule page](schedule.html).
