@@ -36,7 +36,8 @@ website:
           - schedule.md
           - section: Set-up
             contents:
-            - set-up.qmd
+            - text: Set up info
+              href: setup.qmd
             - text: R and RStudio on your computer
               href: content/02-local-setup-r.qmd
             - text: R and RStudion on the JupyterHub

@@ -622,7 +622,7 @@
     "href": "content/02-jupyterhub-setup-r.html#access-to-the-jupyterhub",
     "title": "R/RStudio on JupyterHub",
     "section": "Access to the JupyterHub",
-    "text": "Access to the JupyterHub\n\nGitHub username\n\nCreate a GitHub account (if you don’t already have one) at https://github.com. Advice for choosing a GitHub username: this is a professional username that you will use in work settings. GitHub accounts are not anonymous; this is for sharing work. Using your real name is common.\nWrite down your username and password; you will need to log in during the course!\nHere is a video showing the whole process\n\n\n\nGet on JupyterHub\nOnce you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub.\nhttps://nmfs-openscapes.2i2c.cloud\n\nChoose the default Py-R base geospatial image. Watch a video of the login process and basic JupyterHub orientation.\nhome directory is yours and no one else can see it.\nTo share files, you can connect to a GitHub repository or use the shared directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.",
+    "text": "Access to the JupyterHub\n\nGitHub username\n\nLog into GitHub.com. Authentication to the JupyterHub uses your username and being a member of the NMFS Openscapes GitHub org.\n\n\n\nGet on JupyterHub\nOnce you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub. For those who did the GitHub clinic, you should be good to go.\nhttps://nmfs-openscapes.2i2c.cloud\n\nChoose the default Py-R base geospatial image. Watch a video of the login process and basic JupyterHub orientation.\nhome directory is yours and no one else can see it.\nTo share files, you can connect to a GitHub repository or use the shared directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.\n\nThis is a platform for training. Please do not put confidential info on here.",
     "crumbs": [
       "JupyterHub",
       "Welcome",
@@ -687,14 +687,26 @@
     "href": "setup.html",
     "title": "Set-up",
     "section": "",
-    "text": "We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project."
+    "text": "We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project. Quarto works equally well for Python and .ipynb files (Jupyter notebook) or .md files instead of .qmd (Quarto).",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Set up info"
+    ]
   },
   {
     "objectID": "setup.html#options",
     "href": "setup.html#options",
     "title": "Set-up",
     "section": "Options",
-    "text": "Options\nR/RStudio on the NMFS JupyterHub Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.\nR/RStudio installed on your computer Install R and RStudio on your computer."
+    "text": "Options\nR/RStudio on the NMFS JupyterHub Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.\nR/RStudio installed on your computer Install R and RStudio on your computer.\nI am a Python user. The JupyterHub has a fully provisioned Python environment with Jupyter Lab and Jupyter Notebook.\nI like VS Code instead. Once we start the workshop, we will have VS Code with Quarto extensions installed on for VS Code.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Set up info"
+    ]
   },
   {
     "objectID": "tutorials/tutorial-2.html#summary",
