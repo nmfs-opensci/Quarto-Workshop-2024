@@ -59,7 +59,8 @@ website:
           href: content/01-intro-to-jupyterhub.qmd
       - section: "Tutorials"
         contents:
-        - text: Coming!
+        - text: Introduction to RStudio and Quarto
+          href: tutorials/tutorial-1.qmd
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
         href: https://fisheries.noaa.gov
