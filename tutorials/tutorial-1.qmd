@@ -11,7 +11,7 @@ title: Introduction to RStudio and Quarto
 
 ## Logging onto JupyterHub
 
-For this workshop, we'll be using the [NOAA NMFS JupyterHub](https://nmfs-openscapes.2i2c.cloud). You're welcome to use your own version of RStudio on your desktop, just make sure R and RStudio are updated to the latest versions.
+For this workshop, we'll be using the [NOAA NMFS JupyterHub](https://dhub.opensci.live/). You're welcome to use your own version of RStudio on your desktop, just make sure R and RStudio are updated to the latest versions. Follow the instructions to set up your JupyterHub access here: [Intro to JupyterHubs](https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/01-intro-to-jupyterhub.html)
 
 ## Using the Carpentries Tutorials
 
