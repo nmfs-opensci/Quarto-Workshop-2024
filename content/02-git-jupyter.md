@@ -97,7 +97,7 @@ In the far left, you will see a line of icons. The top one is a folder and allow
 
 Version control is managing and tracking changes to your documents (program source code, images, websites, data files, etc.). `git` is a popular tool used for version control of software code. [github.com](https://github.com/) is popular platform that provides remote server hosting for git repositories. A repository is a collection of various files that you are tracking for changes and versions. Currently GitHub is the most popular platform for file sharing code and code packages.
 
-This section is a step-by-step guide to set up `git` on our [JupyterHub](https://dhub.opensci.live/). We will also configure `git` to use your [github.com](https://github.com/) account for managing your repositories hosted on [github.com](https://github.com/). There are 5 main steps.
+This section is a step-by-step guide to set up `git` on our [JupyterHub](https://nmfs-openscapes.2i2c.cloud/). We will also configure `git` to use your [github.com](https://github.com/) account for managing your repositories hosted on [github.com](https://github.com/). There are 5 main steps.
 
 ### Step 1: Create a GitHub account
 
@@ -109,7 +109,7 @@ We have created a demo repository for you to clone:
 
 https://github.com/nmfs-opensci/Git-Lesson
 
-1.  Start your [JupyterHub](https://dhub.opensci.live/)
+1.  Start your [JupyterHub](https://nmfs-openscapes.2i2c.cloud/)
 
 2.  Click on the Git icon
 

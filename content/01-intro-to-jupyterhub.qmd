@@ -22,7 +22,7 @@ In this lab, you will get an overview of our JupyterHub
 
 ## Log into the JupyterHub
 
-Go to <https://dhub.opensci.live/>. Click "Login to continue". You will be asked to log in with your GitHub Account, if you are not logged in already.
+Go to <https://nmfs-openscapes.2i2c.cloud/>. Click "Login to continue". You will be asked to log in with your GitHub Account, if you are not logged in already.
 
 
 ### Image type: Python or R
@@ -70,7 +70,7 @@ You log out from the Jupyter Lab tab not the RStudio tab.
 
 ::: {.callout-tip}
 
-Can't find the Jupyter Lab tab? Go to https://dhub.opensci.live/hub/home
+Can't find the Jupyter Lab tab? Go to https://nmfs-openscapes.2i2c.cloud/hub/home
 :::
 
 ## Restart your server
