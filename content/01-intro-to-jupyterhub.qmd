@@ -2,7 +2,7 @@
 title: Intro to JupyterHubs
 ---
 
-![](./img/jhub-logo.png){width=200px}
+![](./img/jhub-logo.png){width=400px}
 
 
 ::: {.callout-note icon=false}
@@ -31,13 +31,13 @@ Next you select your image type. We will use the default Py-R - base geospatial 
 
 ### Virtual Machine size
 
-You'll see something similar to this that allows you to choose a large virtual machine if your project needs it. For the tutorials, you will only need the Small Virtual Machine. Please only choose the large machines if you run out of RAM as the larger machines cost us more.
+You'll see something similar to this that allows you to choose a large virtual machine if your project needs it. For the tutorials, you will only need the default small virtual machine. Please only choose the large machines if you run out of RAM as the larger machines cost us more.
 
 ![Machine Profiles](./img/servers.png)
 
 ### Start up
 
-After we select our server type and click on start, JupyterHub will allocate our instance in the cloud (on Azure). This may take several minutes. 
+After we select our server type and click on start, JupyterHub will allocate our machine. This may take several minutes. 
 
 ![Jupyterhub Spawning](./img/spawning.png)
 
