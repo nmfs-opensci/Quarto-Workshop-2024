@@ -1,0 +1,693 @@
+[
+  {
+    "objectID": "content/02-rstudio.html#open-rstudio-in-the-jupyterhub",
+    "href": "content/02-rstudio.html#open-rstudio-in-the-jupyterhub",
+    "title": "RStudio - R",
+    "section": "Open RStudio in the JupyterHub",
+    "text": "Open RStudio in the JupyterHub\n\nLogin the JupyterHub\nClick on the RStudio button when the Launcher appears \nLook for the browser tab with the RStudio icon",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#basic-navigation",
+    "href": "content/02-rstudio.html#basic-navigation",
+    "title": "RStudio - R",
+    "section": "Basic Navigation",
+    "text": "Basic Navigation\n\n\n\nRStudio Panels",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#create-an-rstudio-project",
+    "href": "content/02-rstudio.html#create-an-rstudio-project",
+    "title": "RStudio - R",
+    "section": "Create an RStudio project",
+    "text": "Create an RStudio project\n\nOpen RStudio\nIn the file panel, click on the Home icon to make sure you are in your home directory\nFrom the file panel, click “New Project” to create a new project\nIn the pop up, select New Directory and then New Project\nName it sandbox\nClick on the dropdown in the upper right corner to select your sandbox project\nClick on Tools &gt; Project Options &gt; General and change the first 2 options about saving and restoring the workspace to “No”",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#installing-packages",
+    "href": "content/02-rstudio.html#installing-packages",
+    "title": "RStudio - R",
+    "section": "Installing packages",
+    "text": "Installing packages\nIn the bottom right panel, select the Packages tab, click install and then start typing the name of the package. Then click Install.\nThe JupyterHub comes with many packages already installed so you shouldn’t have to install many packages.\nWhen you want to use a package, you first need to load it with\nlibrary(hello)\nYou will see this in the tutorials. You might also see something like\nhello::thefunction()\nThis is using thefunction() from the hello package.\n\n\n\n\n\n\nNote\n\n\n\nPython users. In R, you will always call a function like funtion(object) and never like object.function(). The exception is something called ‘piping’ in R, which I have never seen in Python. In this case you pass objects left to right. Like object %&gt;% function(). Piping is very common in modern R but you won’t see it much in R from 10 years ago.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#uploading-and-downloading-files",
+    "href": "content/02-rstudio.html#uploading-and-downloading-files",
+    "title": "RStudio - R",
+    "section": "Uploading and downloading files",
+    "text": "Uploading and downloading files\nNote, Upload and download is only for the JupyterHub not on RStudio on your computer.\n\nUploading is easy.\nLook for the Upload button in the Files tab of the bottom right panel.\n\n\nDownload is less intuitive.\n\nClick the checkbox next to the file you want to download. One only.\nClick the “cog” icon in the Files tab of the bottom right panel. Then click Export.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#creating-files",
+    "href": "content/02-rstudio.html#creating-files",
+    "title": "RStudio - R",
+    "section": "Creating files",
+    "text": "Creating files\nWhen you start your server, you will have access to your own virtual drive space. No other users will be able to see or access your files. You can upload files to your virtual drive space and save files here. You can create folders to organize your files. You personal directory is home/rstudio. Everyone has the same home directory but your files are separate and cannot be seen by others.\nPython users: If you open a Python image instead of the R image, your home is home/jovyan.\nThere are a number of different ways to create new files. Let’s practice making new files in RStudio.\n\nR Script\n\nOpen RStudio\nIn the upper right, make sure you are in your sandbox project.\nFrom the file panel, click on “New Blank File” and create a new R script.\nPaste\n\nprint(\"Hello World\")\n1+1\nin the script. 7. Click the Source button (upper left of your new script file) to run this code. 8. Try putting your cursor on one line and running that line of code by clicking “Run” 9. Try selecting lines of code and running that by clicking “Run”\n\n\ncsv file\n\nFrom the file panel, click on “New Blank File” and create a Text File.\nThe file will open in the top left corner. Paste in the following:\n\nname, place, value\nA, 1, 2\nB, 10, 20\nC, 100, 200\n\nClick the save icon (above your new file) to save your csv file\n\n\n\nA Rmarkdown document\nNow let’s create some more complicated files using the RStudio template feature.\n\nFrom the upper left, click File -&gt; New File -&gt; RMarkdown\nClick “Ok” at the bottom.\nWhen the file opens, click Knit (icon at top of file).\nIt will ask for a name. Give it one and save.\nYou file will render into html.\n\nReference sheet for writing in RMarkdown or go to Help &gt; Markdown Quick Reference\n\n\nA Rmarkdown presentation\n\nFrom the upper left, click File -&gt; New File -&gt; RMarkdown\nClick “Presentation” on left of the popup and click “Ok” at the bottom.\nWhen the file opens, click Knit (icon at top of file).\nIt will ask for a name. Give it one and save.\nYou file will render into html.\n\n\n\n(advanced) An interactive application\n\nFrom the upper left, click File -&gt; New File -&gt; Shiny Web App\nIn the popup, give the app a name and make sure the app is saved to my-files\nWhen the file opens, Run App (icon at top of file).\n\n\n\nAnd many more\nPlay around with creating other types of documents using templates. Especially if you already use RStudio.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#more-tips",
+    "href": "content/02-rstudio.html#more-tips",
+    "title": "RStudio - R",
+    "section": "More tips",
+    "text": "More tips\nLearn some tips and tricks from these\n\nhttps://colorado.posit.co/rsc/the-unknown/into-the-unknown.html\nhttps://www.dataquest.io/blog/rstudio-tips-tricks-shortcuts/",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-rstudio.html#plotting-a-netcdf-file",
+    "href": "content/02-rstudio.html#plotting-a-netcdf-file",
+    "title": "RStudio - R",
+    "section": "Plotting a netCDF file",
+    "text": "Plotting a netCDF file\n\nhttps://pjbartlein.github.io/REarthSysSci/netCDF.html\nhttps://r-spatial.github.io/sf/articles/sf1.html\n\nwebpage:\nhttps://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.graph?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.8):(44.8)%5D%5B(39.7):(92.3)%5D&.draw=surface&.vars=longitude%7Clatitude%7Csst&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff\nurl from the dropdown on that page\nurl &lt;- https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.nc?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.875):(44.875)%5D%5B(39.625):(92.375)%5D&.draw=surface&.vars=longitude%7Clatitude%7Csst&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff\n\nOpen an R script\n\nAdd this code.\n\nlibrary(ggplot2) # package for plotting\nlibrary(sf)\nlibrary(stars)\nlibrary(dplyr)\n\nurl &lt;- \"https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.nc?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.875):(44.875)%5D%5B(39.625):(92.375)%5D&.draw=surface&.vars=longitude%7Clatitude%7Csst&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff\"\n\nfil &lt;- \"sst.nc\"\nif(!exists(fil)){\n  download.file(url=url, destfile=fil)\n}\n\nstars_object &lt;- raster::raster(fil) %&gt;% st_as_stars()\nggplot() + geom_stars(data = stars_object)",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Intro to RStudio"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-4.html",
+    "href": "tutorials/tutorial-4.html",
+    "title": "Cross-references, bibliography and citations in Quarto files",
+    "section": "",
+    "text": "Learning Objectives\n\n\n\n\nComing Soon!"
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Set-up",
+    "section": "",
+    "text": "We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project. Quarto works equally well for Python and .ipynb files (Jupyter notebook) or .md files instead of .qmd (Quarto).",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Set up info"
+    ]
+  },
+  {
+    "objectID": "setup.html#options",
+    "href": "setup.html#options",
+    "title": "Set-up",
+    "section": "Options",
+    "text": "Options\nR/RStudio on the NMFS JupyterHub Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.\nR/RStudio installed on your computer Install R and RStudio on your computer.\nI am a Python user. The JupyterHub has a fully provisioned Python environment with Jupyter Lab and Jupyter Notebook.\nI like VS Code instead. Once we start the workshop, we will have VS Code with Quarto extensions installed on for VS Code.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Set up info"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-r.html",
+    "href": "content/02-local-setup-r.html",
+    "title": "Setting up on your computer - R users",
+    "section": "",
+    "text": "You can also use R and RStudio that you have installed locally.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudio on your computer"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-r.html#install-r-4",
+    "href": "content/02-local-setup-r.html#install-r-4",
+    "title": "Setting up on your computer - R users",
+    "section": "Install R 4+",
+    "text": "Install R 4+\nAny version of R 4+ will be fine.\nhttps://cran.r-project.org/",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudio on your computer"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-r.html#install-rstudio-desktop",
+    "href": "content/02-local-setup-r.html#install-rstudio-desktop",
+    "title": "Setting up on your computer - R users",
+    "section": "Install RStudio Desktop",
+    "text": "Install RStudio Desktop\nPlease update to the latest version of RStudio Desktop: https://posit.co/download/rstudio-desktop/. Quarto comes bundled with RStudio so you do not need to install it separately.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudio on your computer"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-r.html#install-the-needed-packages",
+    "href": "content/02-local-setup-r.html#install-the-needed-packages",
+    "title": "Setting up on your computer - R users",
+    "section": "Install the needed packages",
+    "text": "Install the needed packages\nWe will update this section closer to the workshops.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudio on your computer"
+    ]
+  },
+  {
+    "objectID": "content/02-jupyterhub-setup-r.html",
+    "href": "content/02-jupyterhub-setup-r.html",
+    "title": "R/RStudio on JupyterHub",
+    "section": "",
+    "text": "Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudion on the JupyterHub"
+    ]
+  },
+  {
+    "objectID": "content/02-jupyterhub-setup-r.html#access-to-the-jupyterhub",
+    "href": "content/02-jupyterhub-setup-r.html#access-to-the-jupyterhub",
+    "title": "R/RStudio on JupyterHub",
+    "section": "Access to the JupyterHub",
+    "text": "Access to the JupyterHub\n\nGitHub username\n\nLog into GitHub.com. Authentication to the JupyterHub uses your username and being a member of the NMFS Openscapes GitHub org.\n\n\n\nGet on JupyterHub\nOnce you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub. For those who did the GitHub clinic, you should be good to go.\nhttps://nmfs-openscapes.2i2c.cloud\n\nChoose the default Py-R base geospatial image. Watch a video of the login process and basic JupyterHub orientation.\nhome directory is yours and no one else can see it.\nTo share files, you can connect to a GitHub repository or use the shared directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.\n\nThis is a platform for training. Please do not put confidential info on here.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudion on the JupyterHub"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#log-into-the-jupyterhub",
+    "href": "content/01-intro-to-jupyterhub.html#log-into-the-jupyterhub",
+    "title": "Intro to JupyterHubs",
+    "section": "Log into the JupyterHub",
+    "text": "Log into the JupyterHub\nGo to https://nmfs-openscapes.2i2c.cloud/. Click “Login to continue”. You will be asked to log in with your GitHub Account, if you are not logged in already.\n\nImage type: Python or R\nNext you select your image type. We will use the default Py-R - base geospatial image.\n\n\nVirtual Machine size\nYou’ll see something similar to this that allows you to choose a large virtual machine if your project needs it. For the tutorials, you will only need the default small virtual machine. Please only choose the large machines if you run out of RAM as the larger machines cost us more.\n\n\n\nMachine Profiles\n\n\n\n\nStart up\nAfter we select our server type and click on start, JupyterHub will allocate our machine. This may take several minutes.\n\n\n\nJupyterhub Spawning",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#open-rstudio",
+    "href": "content/01-intro-to-jupyterhub.html#open-rstudio",
+    "title": "Intro to JupyterHubs",
+    "section": "Open RStudio",
+    "text": "Open RStudio\nWhen you are in the Jupyter Lab tab (note the Jupyter Logo), you will see a Launcher page. If you don’t see this, go to File &gt; New Launcher.\n\n\n\nJupyterhub Launcher\n\n\nIf you will be using Python today, you can stay in Jupyter Lab. If you are using R today then read the next steps.\n\nOpen RStudio by clicking on the “RStudio” box in the Launcher tab:\n\n\n\n\nRStudio",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#end-your-session",
+    "href": "content/01-intro-to-jupyterhub.html#end-your-session",
+    "title": "Intro to JupyterHubs",
+    "section": "End your session",
+    "text": "End your session\nWhen you are finished working for the day it is important to log out of the Jupyter Hub. When you keep a session active it uses up cloud resources (costs money) and keeps a series of virtual machines deployed.\n\n\n\n\n\n\nCaution\n\n\n\nYou log out from the Jupyter Lab tab not the RStudio tab.\n\n\nFrom the Jupyter Lab tab, do one of two things to stop the server:\n\nLog out File -&gt; Log Out and click “Log Out”!\nor File -&gt; Hub Control Panel -&gt; Stop My Server\n\n\n\n\n\n\n\nTip\n\n\n\nCan’t find the Jupyter Lab tab? Go to https://nmfs-openscapes.2i2c.cloud/hub/home",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#restart-your-server",
+    "href": "content/01-intro-to-jupyterhub.html#restart-your-server",
+    "title": "Intro to JupyterHubs",
+    "section": "Restart your server",
+    "text": "Restart your server\nSometimes the server will crash/stop. This can happen if too many people use a lot of memory all at once. If that happens, go to the Jupyter Lab tab and then File -&gt; Hub Control Panel -&gt; Stop My Server and then Start My Server. You shouldn’t lose your work unless you were uploading a file.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#your-files",
+    "href": "content/01-intro-to-jupyterhub.html#your-files",
+    "title": "Intro to JupyterHubs",
+    "section": "Your files",
+    "text": "Your files\nWhen you start your server, you will have access to your own virtual drive space. No other users will be able to see or access your files. You can upload files to your virtual drive space and save files here. You can create folders to organize your files. You personal directory is home/jovyan. Everyone has the same home directory but your files are separate and cannot be seen by others.\nThere are a number of different ways to create new files. We will practice this in the RStudio lecture.\n\nWill I lose all of my work?\nLogging out will NOT cause any of your work to be lost or deleted. It simply shuts down some resources. It would be equivalent to turning off your desktop computer at the end of the day.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#shared-files",
+    "href": "content/01-intro-to-jupyterhub.html#shared-files",
+    "title": "Intro to JupyterHubs",
+    "section": "Shared files",
+    "text": "Shared files\n\n\n\nShared folder\n\n\nIn the file panel, you will see a folder called shared. These are read-only shared files.\nYou will also see shared-public. This is a read-write folder for you to put files for everyone to see and use. You can create a team folder here for shared data and files. Note, everyone can see and change these so be careful to communicate with your team so multiple people don’t work on the same file at the same time. You can also create folders for each team member and agree not to change other team members files.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#python-users",
+    "href": "content/01-intro-to-jupyterhub.html#python-users",
+    "title": "Intro to JupyterHubs",
+    "section": "**Python users",
+    "text": "**Python users\nYou can open a Jupyter Notebook by clicking on the “Python 3” box. In the Launcher tab:\n\n\n\nJupyterhub Launcher\n\n\nJupyter notebooks are a very common way to share Python code and tutorials. Get an overview of Jupyter Lab: Intro to Jupyter Lab Learn about the geosciences tools in Python",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "content/01-intro-to-jupyterhub.html#faq",
+    "href": "content/01-intro-to-jupyterhub.html#faq",
+    "title": "Intro to JupyterHubs",
+    "section": "FAQ",
+    "text": "FAQ\nWhy do we have the same home directory as /home/jovyan? /home/jovyan is the default home directory for ‘jupyter’ based images/dockers. It is the historic home directory for Jupyter deployments.\nCan other users see the files in my /home/jovyan folder? No, other users can not see your credentials.\n\nAcknowledgements\nSome sections of this document have been taken from hackweeks organized by the University of Washington eScience Institute and Openscapes.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "JupyterHubs"
+    ]
+  },
+  {
+    "objectID": "support.html#thank-you-for-inspiration-and-content",
+    "href": "support.html#thank-you-for-inspiration-and-content",
+    "title": "Acknowledgements",
+    "section": "Thank you for inspiration and content!",
+    "text": "Thank you for inspiration and content!\nThank you to the open science community that has created software, teaching resources, and workflows that we have been able to build off of and be inspired by. These include: NASA Openscapes • OceanHackWeek • SnowEx Hackweek • eScience Institute, University of Washington • ICESat-2 Hackweek • Project Jupyter • Pangeo Project • CryoCloud"
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Week 1 Tutorials",
+    "section": "",
+    "text": "During week 1, participants will gain experience with the platforms used in collaborative science: GitHub and RMarkdown."
+  },
+  {
+    "objectID": "content/index.html#prerequisites",
+    "href": "content/index.html#prerequisites",
+    "title": "Week 1 Tutorials",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nPlease follow the set up prerequisites"
+  },
+  {
+    "objectID": "content/index.html#content",
+    "href": "content/index.html#content",
+    "title": "Week 1 Tutorials",
+    "section": "Content",
+    "text": "Content\n\nThe R language and RStudio\nIntro to RStudio\nIntroduction to Git and GitHub"
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#what-is-git-and-github",
+    "href": "content/02-git-rstudio.html#what-is-git-and-github",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "What is Git and GitHub?",
+    "text": "What is Git and GitHub?\nGit A program to track your file changes and create a history of those changes. Creates a ‘container’ for a set of files called a repository.\nGitHub A website to host these repositories and allow you to sync local copies (on your computer) to the website. Lots of functionality built on top of this.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#some-basic-git-jargon",
+    "href": "content/02-git-rstudio.html#some-basic-git-jargon",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Some basic Git jargon",
+    "text": "Some basic Git jargon\n\nRepo Repository. It is your code and the record of your changes. This record and also the status of your repo is a hidden folder called .git . You have a local repo and a remote repo. The remote repo is on GitHub (for in our case) is called origin. The local repo is on the JupyterHub.\nStage Tell Git which changes you want to commit (write to the repo history).\nCommit Write a note about what change the staged files and “commit” that note to the repository record. You are also tagging this state of the repo and you could go back to this state if you wanted.\nPush Push local changes (commits) up to the remote repository on GitHub (origin).\nPull Pull changes on GitHub into the local repository on the JupyterHub.\nGit GUIs A graphical interface for Git (which is command line). Today I will use jupyterlab-git which we have installed on JupyterHub.\nShell A terminal window where we can issue git commands.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#overview",
+    "href": "content/02-git-rstudio.html#overview",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Overview",
+    "text": "Overview\nToday I will cover the four basic Git/GitHub skills. The goal for today is to first get you comfortable with the basic skills and terminology. We will use what is called a “trunk-based workflow”.\n\nSimple Trunk-based Workflow:\n\nMake local (on your computer) changes to code.\nRecord what those changes were about and commit to the code change record (history).\nPush those changes to your remote repository (aka origin)\n\nWe’ll do this",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#setting-up-git",
+    "href": "content/02-git-rstudio.html#setting-up-git",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Setting up Git",
+    "text": "Setting up Git\nYou should have gotten this done on Tuesday but if not here are the instructions\nBefore we can work with Git in the JupyterHub, we need to do some set up.\n\nTell Git who you are and to store your credentials (GitHub login info)\n\nShow me\nPaste this into a terminal window:\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\ngit config --global credential.helper store\n\nGet a Personal Access Token from GitHub\n\nCopy the token! You will need it in the next step.\nShow me Note, one change to this video is that you need to specify that you want a classic token.\n\nTrigger Git to ask for your password (that personal access token)\n\nYou can do this by cloning a private repo. In the Terminal, issue this command\ngit clone https://github.com/nmfs-opensci/github_setup_check\nIt will ask for your GitHub username and password. At the password part, paste in the Personal Access Token.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#git-tab",
+    "href": "content/02-git-rstudio.html#git-tab",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Git tab",
+    "text": "Git tab\nWhen the instructions say to use or open or click the Git tab,",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#the-key-skills",
+    "href": "content/02-git-rstudio.html#the-key-skills",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "The Key Skills",
+    "text": "The Key Skills\n\nSkill 1: Create a blank repo on GitHub\nSkill 2: Clone your GitHub repo to RStudio\nSkill 3: Make some changes and commit those local changes\nSkill 4: Push the changes to GitHub\nSkill 1b: Copy someone else’s GitHub repository",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#lets-see-it-done",
+    "href": "content/02-git-rstudio.html#lets-see-it-done",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Let’s see it done!",
+    "text": "Let’s see it done!\n\nSkill 1: Create a blank repo on GitHub\n\nClick the + in the upper left from YOUR GitHub page.\nGive your repo the name Test and make sure it is public.\nClick new and check checkbox to add the Readme file and .gitignore\nCopy the URL of your new repo. It’s in the browser where you normally see a URL.\n\nShow me\n\n\nSkill 2: Clone your repo to the RStudio\nIn RStudio we do this by making a new project.\n\nCopy the URL of your repo. https://www.github.com/yourname/Test\nFile &gt; New Project &gt; Version Control &gt; Git\nPast in the URL of your repo from Step 1\nCheck that it is being created in your Home directory which will be denoted ~ in the JupyterHub.\nClick Create.\n\nShow me\n\n\nSkill 3: Make some changes and commit your changes\nThis writes a note about what changes you have made. It also marks a ‘point’ in time that you can go back to if you need to.\n\nMake some changes to the README.md file in the Test repo.\nClick the Git tab, and stage the change(s) by checking the checkboxes next to the files listed.\nClick the Commit button.\nAdd a commit comment, click commit.\n\nShow me\n\n\nSkill 4: Push changes to GitHub / Pull changes from GitHub\nTo push changes you committed in Skill #3\n\nFrom Git tab, click on the Green up arrow that says Push.\nTo pull changes on GitHub that are not on your local computer:\nMake some changes directly on GitHub (not in RStudio)\nFrom Git tab, click on the down arrow that says Pull.\n\nShow me\n\n\nPair-activity 1\nIn RStudio,\n\nMake a copy of README.md\nRename it to .md\nAdd some text.\nStage and commit the added file.\nPush to GitHub.\n\nTry before watching.\nShow me in RStudio – Show me in the shell – Show me in jupyter-git\n\n\nPair-activity 2\nAll of this activity is in RStudio.\n\nClone this repo https://github.com/nmfs-opensci/git-basics to RStudio and create a new project\nNavigate to the files in your new project, create a filed called to &lt;yourname&gt;.md. Use your actual name so the filename is different from everyone elses.\nStage and then commit that new file.\nPush to GitHub.\nMake some more changes and push to GitHub.\nPull in your partner’s (and everyone elses) changes\n\nShow me in RStudio – Show me in JupyterLab\n\n\nPair-activity 3\nYou can copy your own or other people’s repos1.\n\nIn a browser, go to the GitHub repository https://github.com/RWorkflow-Workshops/Week5\nCopy its URL.\nNavigate to your GitHub page: click your icon in the upper right and then ‘your repositories’\nClick the + in top right and click import repository. Paste in the URL and give your repo a name.\nUse Skill #1 to clone your new repo to RStudio and create a new project",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#footnotes",
+    "href": "content/02-git-rstudio.html#footnotes",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is different from forking. There is no connection to the original repository.↩︎",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-RStudio"
+    ]
+  },
+  {
+    "objectID": "coc.html",
+    "href": "coc.html",
+    "title": "Code of Conduct",
+    "section": "",
+    "text": "We are dedicated to providing a harassment-free learning experience for everyone regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age or religion. We do not tolerate harassment of participants in any form. Sexual language and imagery is not appropriate either in-person or virtual form, including the Discussion boards and Slack workspace. Participants (including event volunteers and organizers) violating these rules may be sanctioned or expelled from the event at the discretion of the organizers.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Code of Conduct"
+    ]
+  },
+  {
+    "objectID": "coc.html#definition-of-harassment",
+    "href": "coc.html#definition-of-harassment",
+    "title": "Code of Conduct",
+    "section": "Definition of Harassment",
+    "text": "Definition of Harassment\nHarassment includes, but is not limited to:\n\nVerbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion.\nSexual images in public spaces\nDeliberate intimidation, stalking, or following\nHarassing photography or recording\nSustained disruption of talks or other events\nInappropriate physical contact\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Code of Conduct"
+    ]
+  },
+  {
+    "objectID": "coc.html#expectations",
+    "href": "coc.html#expectations",
+    "title": "Code of Conduct",
+    "section": "Expectations",
+    "text": "Expectations\nParticipants asked to stop any harassing behavior are expected to comply immediately. If a participant engages in harassing behavior, the organizers retain the right to take any actions to keep the event a welcoming environment for all participants. This includes warning the offender or expulsion from the event.\nThe organizers may take action to redress anything designed to, or with the clear impact of, disrupting the event or making the environment hostile for any participants. We expect participants to follow these rules at all the event venues and event-related social activities.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Code of Conduct"
+    ]
+  },
+  {
+    "objectID": "coc.html#reporting-a-violation",
+    "href": "coc.html#reporting-a-violation",
+    "title": "Code of Conduct",
+    "section": "Reporting a violation",
+    "text": "Reporting a violation\nHarassment and other code of conduct violations reduce the value of the event for everyone. If someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible.\nIf you feel comfortable contacting someone associated with our event, you may speak with one of the event organizers in person or contact an organizer on a private Slack channel.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Code of Conduct"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#summary",
+    "href": "content/02-git-jupyter.html#summary",
+    "title": "Git - Jupyter Lab",
+    "section": "Summary",
+    "text": "Summary\nIn this tutorial, we will provide a brief introduction to:\n\nCommand line (terminal/shell)\nNavigating around folders in Jupyter Lab\nVersion Control (code management using git)\nSetting up Git in Jupyter Lab\nThe Git GUI in Jupyter Lab\nBasic Git commands",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-JupyterLab"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-jupyter-lab",
+    "href": "content/02-git-jupyter.html#introduction-jupyter-lab",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: Jupyter Lab",
+    "text": "Introduction :: Jupyter Lab\nWhen you start the JupyterHub, you will be in Jupyter Lab. From there you can click on the RStudio box and open RStudio. However for this tutorial, we will stay in Juptyer Lab.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-JupyterLab"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-terminalshell",
+    "href": "content/02-git-jupyter.html#introduction-terminalshell",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: Terminal/Shell",
+    "text": "Introduction :: Terminal/Shell\nLog into the JupyterHub. If you do not see this\n\nThen go to File &gt; New Launcher\nClick on the “Terminal” box to open a new terminal window.\n\nShell or Terminal Basics\n\nWhat is Terminal or Shell?\nNavigating Files and Directories\nWorking with Files and Directories\nOptional: Detailed self-paced lesson on running scripts from the shell: Shell Lesson from Software Carpentry\n\nYou will need only basic navigation skills for this course: cd, ls and cat\n\npwd where am I\ncd nameofdir move into a directory\ncd .. move up a directory\nls list the files in the current directory\nls -a list the files including hidden files\nls -l list the files with more info\ncat filename print out the contents of a file\n\n\n\nLet’s try\nls\nls -a\ncd shared\nls\ncd shell-tutorial\ncat lesson1.sh\ncd ..\ncd ..\n\n\nClose the terminal\nJust click on the X in the terminal tab",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-JupyterLab"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-file-navigation",
+    "href": "content/02-git-jupyter.html#introduction-file-navigation",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: File Navigation",
+    "text": "Introduction :: File Navigation\nIn the far left, you will see a line of icons. The top one is a folder and allows us to move around our file system.\n\nClick on shared. Now you can see the files in the shared directory.\nClick on shell-tutorial. Then click on lesson1.sh. The file opens. You won’t be able to save changes here because you don’t have write permission on this drive.\nClick on the folder icon that looks like this. Click on the actual folder image. \nNow it should look like this folder /\nThis shows me doing this\n\nCreate a new folder.\n\nNext to the blue rectange with a +, is a grey folder with a +. Click that to create a new folder, called lesson-scripts.\nThen click on lesson-scripts to enter the folder\n\n\nCreate a new file\n\nCreate with File &gt; New &gt; Text file\nThe file will open and you can edit it.\nSave with File &gt; Save Text\nDelete the file by right-clicking on it and clicking “Delete”",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-JupyterLab"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-version-control-git",
+    "href": "content/02-git-jupyter.html#introduction-version-control-git",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: Version Control (Git)",
+    "text": "Introduction :: Version Control (Git)\n\nWhat is version control, git, github, and how to set it up?\nVersion control is managing and tracking changes to your documents (program source code, images, websites, data files, etc.). git is a popular tool used for version control of software code. github.com is popular platform that provides remote server hosting for git repositories. A repository is a collection of various files that you are tracking for changes and versions. Currently GitHub is the most popular platform for file sharing code and code packages.\nThis section is a step-by-step guide to set up git on our JupyterHub. We will also configure git to use your github.com account for managing your repositories hosted on github.com. There are 5 main steps.\n\n\nStep 1: Create a GitHub account\nTo complete the setup, you will need an account on github.com. If you don’t have an account, please visit github.com, create an account (free) and come back to this guide for setting up git.\n\n\nStep 2: Clone a repository\nWe have created a demo repository for you to clone:\nhttps://github.com/nmfs-opensci/Git-Lesson\n\nStart your JupyterHub\nClick on the Git icon\n\n\n\nClick “Clone a Repository”\nWhere it says “Enter the URI of the remote Git repository”, paste in the URL https://github.com/nmfs-opensci/EDMW-EarthData-Workshop-2024\nThe folder appears and you can enter the folder and edit and create files.\n\n\nYour task: Create a file with your name and save to the Git-Lesson folder",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-JupyterLab"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#step-3",
+    "href": "content/02-git-jupyter.html#step-3",
+    "title": "Git - Jupyter Lab",
+    "section": "Step 3:",
+    "text": "Step 3:\nConfigure git with your name and email address.\n``` bash\ngit config --global user.name \"Makhan Virdi\"\ngit config --global user.email \"Makhan.Virdi@gmail.com\"\n```\n\n**Note:** This name and email could be different from your github.com credentials. Remember `git` is a program that keeps track of your changes locally (on the JupyterHub or your own computer) and github.com is a platform to host your repositories. However, since your changes are tracked by `git`, the email/name used in git configuration will show up next to your contributions on github.com when you `push` your repository to github.com (`git push` is discussed in a later step).\n\nConfigure git to store your github credentials to avoid having to enter your github username and token each time you push changes to your repository(in Step 5, we will describe how to use github token instead of a password)\ngit config --global credential.helper store\nCopy link for the demo repository from your github account. Click the green “Code” button and copy the link as shown.\n\nClone the repository using git clone command in the terminal\nTo clone a repository from github, copy the link for the repository (previous step) and use git clone:\ngit clone https://github.com/YOUR-GITHUB-USERNAME/check_github_setup\nNote: Replace YOUR-GITHUB-USERNAME here with your github.com username. For example, it is virdi for my github.com account as seen in this image.\n\nUse ls (list files) to verify the existence of the repository that you just cloned\n\nChange directory to the cloned repository using cd check_github_setup and check the current directory using pwd command (present working directory)\n\nCheck status of your git repository to confirm git set up using git status\n\nYou are all set with using git on your 2i2c JupyterHub! But the collaborative power of git through github needs some additional setup.\nIn the next step, we will create a new file in this repository, track changes to this file, and link it with your github.com account.\n\n\nStep 4. Creating new file and tracking changes\n\nIn the left panel on your 2i2c JupyterHub, click on the “directory” icon and then double click on “check_github_setup” directory.\n\n\nOnce you are in the check_github_setup directory, create a new file using the text editor in your 2i2c JupyterHub (File &gt;&gt; New &gt;&gt; Text File).\n\nName the file lastname.txt. For example, virdi.txt for me (use your last name). Add some content to this file (for example, I added this to my virdi.txt file: my last name is virdi).\n\nNow you should have a new file (lastname.txt) in the git repository directory check_github_setup\nCheck if git can see that you have added a new file using git status. Git reports that you have a new file that is not tracked by git yet, and suggests adding that file to the git tracking system.\n\nAs seen in this image, git suggests adding that file so it can be tracked for changes. You can add file to git for tracking changes using git add. Then, you can commit changes to this file’s content using git commit as shown in the image.\ngit add virdi.txt\ngit status\ngit commit -m \"adding a new file\"\ngit status\n\nAs seen in the image above, git is suggesting to push the change that you just committed to the remote server at github.com (so that your collaborators can also see what changes you made).\nNote: DO NOT execute push yet. Before we push to github.com, let’s configure git further and store our github.com credentials to avoid entering the credentials every time we invoke git push. For doing so, we need to create a token on github.com to be used in place of your github.com password.\n\n\n\nStep 5. Create access token on github.com\n\nGo to your github account and create a new “personal access token”: https://github.com/settings/tokens/new\n\n\n\nGenerate Personal Access Token on github.com\n\n\nEnter a description in “Note” field as seen above, select “repo” checkbox, and scroll to the bottom and click the green button “Generate Token”. Once generated, copy the token (or save it in a text file for reference).\nIMPORTANT: You will see this token only once, so be sure to copy this. If you do not copy your token at this stage, you will need to generate a new token.\n\nTo push (transfer) your changes to github, use git push in terminal. It requires you to enter your github credentials. You will be prompted to enter your github username and “password”. When prompted for your “password”, DO NOT use your github password, use the github token that was copied in the previous step.\ngit push\n\nNote: When you paste your token in the terminal window, windows users will press Ctrl+V and mac os users will press Cmd+V. If it does not work, try generating another token and use the copy icon next to the token to copy the token. Then, paste using your computer’s keyboard shortcut for paste.\nNow your password is stored in ~/.git-credentials and you will not be prompted again unless the Github token expires. You can check the presence of this git-credentials file using Terminal. Here the ~ character represents your home directory (/home/jovyan/).\nls -la ~\nThe output looks like this:\ndrwxr-xr-x 13 jovyan jovyan 6144 Oct 22 17:35 .\ndrwxr-xr-x  1 root   root   4096 Oct  4 16:21 ..\n-rw-------  1 jovyan jovyan 1754 Oct 29 18:30 .bash_history\ndrwxr-xr-x  4 jovyan jovyan 6144 Oct 29 16:38 .config\n-rw-------  1 jovyan jovyan   66 Oct 22 17:35 .git-credentials\n-rw-r--r--  1 jovyan jovyan   84 Oct 22 17:14 .gitconfig\ndrwxr-xr-x 10 jovyan jovyan 6144 Oct 21 16:19 2021-Cloud-Hackathon\nYou can also verify your git configuration\n(notebook) jovyan@jupyter-virdi:~$ git config -l\nThe output should have credential.helper = store:\nuser.email        = Makhan.Virdi@gmail.com\nuser.name         = Makhan Virdi\ncredential.helper = store\n\nNow we are all set to collaborate with github on the JupyterHub during the Cloud Hackathon!\n\n\nSummary: Git Commands\n\nCommonly used git commands (modified from source)\n\n\nGit Command\nDescription\n\n\n\n\ngit status\nShows the current state of the repository: the current working branch, files in the staging area, etc.\n\n\ngit add\nAdds a new, previously untracked file to version control and marks already tracked files to be committed with the next commit\n\n\ngit commit\nSaves the current state of the repository and creates an entry in the log\n\n\ngit log\nShows the history for the repository\n\n\ngit diff\nShows content differences between commits, branches, individual files and more\n\n\ngit clone\nCopies a repository to your local environment, including all the history\n\n\ngit pull\nGets the latest changes of a previously cloned repository\n\n\ngit push\nPushes your local changes to the remote repository, sharing them with others\n\n\n\n\n\nGit: More Details\nLesson: For a more detailed self-paced lesson on git, visit Git Lesson from Software Carpentry\nCheatsheet: Frequently used git commands\nDangit, Git!?!: If you are stuck after a git mishap, there are ready-made solutions to common problems at Dangit, Git!?!\n\n\nCloning our repository using the git Jupyter lab extension.\nIf we’re already familiar with git commands and feel more confortable using a GUI our Jupyterhub deployment comes with a git extension. This plugin allows us to operate with git using a simple user interface.\nFor example we can clone our repository using the extension.\n\n\n\ngit extension",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-JupyterLab"
+    ]
+  },
+  {
+    "objectID": "content/02-git.html#set-up-authentication-to-github",
+    "href": "content/02-git.html#set-up-authentication-to-github",
+    "title": "Git - Set-up for Pushing",
+    "section": "Set up authentication to GitHub",
+    "text": "Set up authentication to GitHub\nYou need to tell GitHub who you are so you can push your local changes up to GitHub. There are a few ways to do this. I am going to show you a way that works on any computer, including a virtual computer like the JupyterHub.\n\nStep 1: Generate a Personal Access Token\nWe are going to generate a classic token.\n\nGo to https://github.com/settings/tokens\nClick Generate new token &gt; Generate new token (classic)\nWhen the pop-up shows up, fill in a description, click the “repo” checkbox, and then scroll to bottom to click “Generate”.\nFor scope, select “repo”.\nSAVE the token. You need it for the next step.\n\n\n\nStep 2: Tell Git who your are\n\nOpen a terminal. In Jupyter Lab, you will see a box labelled “Terminal” on the Launcher window. In RStudio, you will see a tab (usually in lower left) with the label “Terminal”\nPaste these 3 lines of code into the terminal\n\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\ngit config --global credential.helper store\nReplace \"&lt;your email&gt;\" with something like jane.doe@noaa.gov. Replace \"&lt;your name&gt;\" with something like \"Jane Doe\". Notice the quotes.\n\n\nStep 3: Trigger git to ask for your password\nThere are a few ways to do this.\n\nClone a repo, make a change, and then commit and push the change\nClone a private repo\n\nOption b is easiest if you are new to Git and GitHub.\n\nOpen a terminal window\nMake sure you are in the home directory by typing cd ~\nClone a repo and create an RStudio project. File &gt; New Project &gt; Version Control &gt; Git. Paste in this URL https://github.com/nmfs-opensci/github_setup_check and make sure it is creating the repo at ~ (home directory).\nYou will be asked for your GitHub username and password. For the password, enter the PERSONAL ACCESS TOKEN from Step 1.\n\nWatch a video of these 4 steps\nFull instructions with other ways to do this from R",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-Authentication"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "All times Pacific.\n\n\n\n\n\n\n\n\n\nDate\nDescription\nTopic\nLead\n\n\n\n\nTues 10/29\nNMFS R User Group Monthly meeting\nQuarto Reports @ NMFS\n5 presenters from across NMFS\n\n\nWeek of 10/28 to 11/1\nMeeting with teams (45 min). Info and Sign-up\nDiscuss goals and plan.\nEli (lead) & Jon\n\n\nMon & Fri 11/4 & 11/8\nQuarto Workshop 1\nGetting Started with RStudio and Quarto. Quarto files versus Quarto projects.\nJon\n\n\nTues & Fri 11/12 & 11/15\nQuarto Workshop 2\nWorking with Quarto files and the Markdown language.\nJon\n\n\nWeek of 11/11 to 11/15\nSeaside chats with teams (60 min)\nReview report analysis. Brainstorm first steps.\nEli & Jon\n\n\nMon & Fri 11/18 & 11/22\nQuarto Workshop 3\nDynamic output in Quarto files: code, tables, and figures.\nJon\n\n\nMon & Fri 12/2 & 12/6\nQuarto Workshop 4\nCross-references, bibliography and citations in Quarto files.\nJon\n\n\nWeek of 12/2 to 12/6\nSeaside chats with teams (60-90 min)\nReview progress and identify next steps.\nEli & Jon\n\n\nMon & Fri 12/9 & 12/13\nQuarto Workshop 5\nIntro to Quarto projects.\nJon\n\n\nMon 12/16\nHack Day (3 hours)\nPut your skills to work: create a Quarto Book and put online in 3 hours\nEli\n\n\nWeek of 12/16 to 12/19\nSeaside chats with teams (60-90 min)\nReview progress, get help and identify next steps.\nEli & Jon",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "team.html#organizers-and-instructors",
+    "href": "team.html#organizers-and-instructors",
+    "title": "Our Team",
+    "section": "Organizers and Instructors",
+    "text": "Organizers and Instructors\n\n\nEli Holmes\n\n\nNOAA Fisheries\nwebpage • GitHub • ORCID\n\n\nJon Peake\n\nWebsite\nGitHub",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Our Team"
+    ]
+  },
+  {
+    "objectID": "content/01-repro-reports.html",
+    "href": "content/01-repro-reports.html",
+    "title": "Reproducible Reports",
+    "section": "",
+    "text": "Reproducible reports are documents that combine analysis code, outputs (like plots or tables), and narratives to ensure that results can be easily replicated and verified by others. They are commonly used in scientific research, data science, and analytics to maintain transparency and reliability. By incorporating both the code and results into one document (or a collection of documents), anyone can run the same analysis on the same data (or updated data) and obtain the same results.\n\nExamples of NMFS reproducible reports\nJoin the NMFS R User Group on October 29th 12pm PT/3pm ET to hear 5 examples of how NMFS groups have used Quarto (and RMarkdown) to create more efficient and reproducible fisheries reports. Video (NOAA only) and Slides (NOAA only).\n\nSam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating ‘templates’ for stock assessment reports.\n\n\n\n\nThe Alaska Fisheries Science Center MML program gave a talk about how they transformed MML SARs to a reproducible and more efficient workflow.",
+    "crumbs": [
+      "JupyterHub",
+      "Orientation",
+      "Reproducible Reports"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-python.html#start-the-docker-image",
+    "href": "content/02-local-setup-python.html#start-the-docker-image",
+    "title": "Setting up on your computer - Python users",
+    "section": "Start the docker image",
+    "text": "Start the docker image\nMake sure Docker or Podman is running (open the Desktop application), then run the container:\nWindows, Linux or Intel-chip Mac:\ndocker run -p 8888:8888  ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest\nApple-chip Mac:\ndocker run -p 8888:8888 --platform linux/amd64 ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest\n\n\n\n\n\n\nTip\n\n\n\nIf you’re using Podman, simply replace docker with podman in this command and any that follow.\n\n\nAfter docker run there will be a long printout in the terminal window, you will see instructions for how to access the server (To access the server...). Copy and paste either of the URLs into a web browser. You should be greeted with a JupyterLab dashboard as in the live demo."
+  },
+  {
+    "objectID": "content/02-local-setup-python.html#clone-the-tutorials",
+    "href": "content/02-local-setup-python.html#clone-the-tutorials",
+    "title": "Setting up on your computer - Python users",
+    "section": "Clone the tutorials",
+    "text": "Clone the tutorials\nClone and then cd into the repo. Open a terminal and run\ncd ~\ngit clone https://github.com/nmfs-opensci/EDMW-3B-tutorials\nThe Python tutorials are in the tutorials/python directory."
+  },
+  {
+    "objectID": "content/02-local-setup-python.html#running-r",
+    "href": "content/02-local-setup-python.html#running-r",
+    "title": "Setting up on your computer - Python users",
+    "section": "Running R",
+    "text": "Running R\nNote if you also want to run the R tutorials, see the instructions for R set-up. The docker run command is slightly different."
+  },
+  {
+    "objectID": "content/02-local-setup-python.html#connect-your-local-files-to-image",
+    "href": "content/02-local-setup-python.html#connect-your-local-files-to-image",
+    "title": "Setting up on your computer - Python users",
+    "section": "Connect your local files to image",
+    "text": "Connect your local files to image\nClone and then cd into the repo. Open a terminal and run\ngit clone https://github.com/nmfs-opensci/EDMW-3B-tutorials\ncd EDMW-3B-tutorials\nWindows, Linux or Intel-chip Mac:\ndocker run -p 8888:8888 -v /$(pwd):/home/jovyan/ ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial:latest"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Workshop 2024",
+    "section": "",
+    "text": "This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Quarto Workshop 2024",
+    "section": "Goals",
+    "text": "Goals\n\nWorkshops: Provide training in Quarto and using Quarto for report writing for first time users. Open to all.\nGoogle Space to ask questions and discuss Quarto and ask questions. Open to all in NOAA. Team support: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or ‘templated’ approach with Quarto or RMarkdown\n\nThis fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but didn’t get a spot).\nTeam sign-up for 1:1 help\n\n\n\nSchedule\nSee the schedule page.\n\nThe 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. Add to your calendar or view in the NMFS Open Science calendar.\nFor teams (or individuals) who want 1:1 support for a specific project (sign-up on spreadsheet).\n\n\n\nWhat are ‘templated’ or reproducible reports?\nSee examples from NOAA Fisheries.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-1.html#logging-onto-jupyterhub",
+    "href": "tutorials/tutorial-1.html#logging-onto-jupyterhub",
+    "title": "Introduction to RStudio and Quarto",
+    "section": "Logging onto JupyterHub",
+    "text": "Logging onto JupyterHub\nFor this workshop, we’ll be using the NOAA NMFS JupyterHub. You’re welcome to use your own version of RStudio on your desktop, just make sure R and RStudio are updated to the latest versions. Follow the instructions to set up your JupyterHub access here: Intro to JupyterHubs",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Introduction to RStudio and Quarto"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-1.html#using-the-carpentries-tutorials",
+    "href": "tutorials/tutorial-1.html#using-the-carpentries-tutorials",
+    "title": "Introduction to RStudio and Quarto",
+    "section": "Using the Carpentries Tutorials",
+    "text": "Using the Carpentries Tutorials\nInstead of re-inventing the wheel, we will be leveraging open science principles by using the Carpentries Incubator Introduction to Reproducible Publications with RStudiotutorial. The tutorial consists of a series of “episodes” that we will be walking through with you. Several of the episodes go a bit further in-depth than we will cover in the workshop, but feel free to explore further on your own time.\nFor today’s session, we will be going through the following episodes:\n\nScientific reproducibility: What is it for?\nNavigating RStudio and Quarto Documents\nWorking with projects in RStudio\nQuarto Files vs Quarto Projects (Section in Working with projects in RStudio)\n\nFollow along on your own computer as we walk through the tutorials.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Introduction to RStudio and Quarto"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-5.html",
+    "href": "tutorials/tutorial-5.html",
+    "title": "Introduction to Quarto Projects",
+    "section": "",
+    "text": "Learning Objectives\n\n\n\n\nComing Soon!"
+  }
+]
