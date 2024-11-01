@@ -1,22 +1,27 @@
 ---
-title: Intro to Quarto
+title: Introduction to RStudio and Quarto
 ---
 
 ::: {.callout-note title="Learning Objectives"}
-
-1. objective 1
-2. objective 2
-3. objective 3
+1.  Understand what Quarto is and why we use it
+2.  Get familiar with RStudio
+3.  Create a Quarto file and understand its structure
+4.  Understand how Quarto projects differ from Quarto files
 :::
 
-## Summary
+## Logging onto JupyterHub
 
+For this workshop, we'll be using the [NOAA NMFS JupyterHub](https://nmfs-openscapes.2i2c.cloud). You're welcome to use your own version of RStudio on your desktop, just make sure R and RStudio are updated to the latest versions.
 
-## Terminology
+## Using the Carpentries Tutorials
 
+Instead of re-inventing the wheel, we will be leveraging open science principles by using the Carpentries Incubator [**Introduction to Reproducible Publications with RStudio**](https://carpentries-incubator.github.io/reproducible-publications-quarto/index.html)tutorial. The tutorial consists of a series of "episodes" that we will be walking through with you. Several of the episodes go a bit further in-depth than we will cover in the workshop, but feel free to explore further on your own time.
 
-## Prerequisites
+For today's session, we will be going through the following episodes:
 
+1.  [Scientific reproducibility: What is it for?](https://carpentries-incubator.github.io/reproducible-publications-quarto/01-repro-project-org/01-introduction/index.html)
+2.  [Navigating RStudio and Quarto Documents](https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/01-basic-rstudio/index.html)
+3.  [Working with projects in RStudio](https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/02-projects-rstudio/index.html)
+4.  [Quarto Files vs Quarto Projects (Section in Working with projects in RStudio)](https://carpentries-incubator.github.io/reproducible-publications-quarto/01-repro-project-org/02-reproducibility/index.html#quarto-projects)
 
-## Load Required Packages
-
+Follow along on your own computer as we walk through the tutorials.

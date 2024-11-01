@@ -4,9 +4,9 @@ title: R/RStudio on JupyterHub
 
 Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.
 
-* <https://nmfs-openscapes.2i2c.cloud>
-* Click Start Server and accept defaults
-* Click the RStudio button. If you don't see it, click the blue button in the top left to open a new 'Launcher' window.
+-   <https://nmfs-openscapes.2i2c.cloud>
+-   Click Start Server and accept defaults
+-   Click the RStudio button. If you don't see it, click the blue button in the top left to open a new 'Launcher' window.
 
 ![](content/img/jhub-launcher.png)
 
@@ -14,9 +14,9 @@ Everything you need is installed for you. Note, before you can log in, we will n
 
 ### GitHub username
 
-* Create a GitHub account (if you don’t already have one) at <https://github.com>. Advice for choosing a GitHub username: this is a professional username that you will use in work settings. GitHub accounts are not anonymous; this is for sharing work. Using your real name is common.
-* Write down your username and password; you will need to log in during the course!
-* Here is [a video](https://www.youtube.com/watch?v=nHXw4mGoqiE) showing the whole process
+-   Create a GitHub account (if you don’t already have one) at <https://github.com>. Advice for choosing a GitHub username: this is a professional username that you will use in work settings. GitHub accounts are not anonymous; this is for sharing work. Using your real name is common.
+-   Write down your username and password; you will need to log in during the course!
+-   Here is [a video](https://www.youtube.com/watch?v=nHXw4mGoqiE) showing the whole process
 
 ### Get on JupyterHub
 
@@ -24,7 +24,8 @@ Once you have submitted your GitHub username and have been accepted as a member 
 
 <https://nmfs-openscapes.2i2c.cloud>
 
-* **Choose the default Py-R base geospatial image**. [Watch a video](https://youtu.be/o99jZWHqKi8) of the login process and basic JupyterHub orientation.
+-   **Choose the default Py-R base geospatial image**. [Watch a video](https://youtu.be/o99jZWHqKi8) of the login process and basic JupyterHub orientation.
 
-* home directory is yours and no one else can see it.
-* To share files, you can connect to a GitHub repository or use the `shared` directory. Everyone can read and write to this directory. Please don't delete content that is not your own.
+-   home directory is yours and no one else can see it.
+
+-   To share files, you can connect to a GitHub repository or use the `shared` directory. Everyone can read and write to this directory. Please don't delete content that is not your own.

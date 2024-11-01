@@ -1,22 +1,9 @@
 ---
-title: Intro to Quarto
+title: Dynamic output in Quarto files: Code, Tables, and Figures
 ---
 
 ::: {.callout-note title="Learning Objectives"}
+1.  Coming Soon!
 
-1. objective 1
-2. objective 2
-3. objective 3
+## 
 :::
-
-## Summary
-
-
-## Terminology
-
-
-## Prerequisites
-
-
-## Load Required Packages
-

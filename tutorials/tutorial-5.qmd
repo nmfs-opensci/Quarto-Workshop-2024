@@ -1,9 +1,7 @@
 ---
-title: Working with Quarto files and the Markdown language
+title: Introduction to Quarto Projects
 ---
 
 ::: {.callout-note title="Learning Objectives"}
 1.  Coming Soon!
-
-## 
 :::
