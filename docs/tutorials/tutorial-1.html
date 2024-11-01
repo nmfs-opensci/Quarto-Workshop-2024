@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Intro to Quarto – 2024 Quarto Workshop</title>
+<title>Introduction to RStudio and Quarto – 2024 Quarto Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../content/01-intro-to-jupyterhub.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -122,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Intro to Quarto</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Introduction to RStudio and Quarto</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -243,16 +244,19 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Tutorials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
- <span class="menu-text">Coming!</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/tutorial-1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introduction to RStudio and Quarto</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
@@ -274,10 +278,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
-  <li><a href="#terminology" id="toc-terminology" class="nav-link" data-scroll-target="#terminology">Terminology</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#load-required-packages" id="toc-load-required-packages" class="nav-link" data-scroll-target="#load-required-packages">Load Required Packages</a></li>
+  <li><a href="#logging-onto-jupyterhub" id="toc-logging-onto-jupyterhub" class="nav-link active" data-scroll-target="#logging-onto-jupyterhub">Logging onto JupyterHub</a></li>
+  <li><a href="#using-the-carpentries-tutorials" id="toc-using-the-carpentries-tutorials" class="nav-link" data-scroll-target="#using-the-carpentries-tutorials">Using the Carpentries Tutorials</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-1.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-1.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -285,17 +287,26 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 <div id="google_translate_element"></div>
 
+
+
 <script type="text/javascript">
+
 function googleTranslateElementInit() {
+
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+
 }
+
 </script>
+
+
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Introduction to RStudio and Quarto</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Intro to Quarto</h1>
+<h1 class="title">Introduction to RStudio and Quarto</h1>
 </div>
 
 
@@ -323,23 +334,28 @@ Learning Objectives
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>objective 1</li>
-<li>objective 2</li>
-<li>objective 3</li>
+<li>Understand what Quarto is and why we use it</li>
+<li>Get familiar with RStudio</li>
+<li>Create a Quarto file and understand its structure</li>
+<li>Understand how Quarto projects differ from Quarto files</li>
 </ol>
 </div>
 </div>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<section id="logging-onto-jupyterhub" class="level2">
+<h2 class="anchored" data-anchor-id="logging-onto-jupyterhub">Logging onto JupyterHub</h2>
+<p>For this workshop, we’ll be using the <a href="https://dhub.opensci.live/">NOAA NMFS JupyterHub</a>. You’re welcome to use your own version of RStudio on your desktop, just make sure R and RStudio are updated to the latest versions. Follow the instructions to set up your JupyterHub access here: <a href="https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/01-intro-to-jupyterhub.html">Intro to JupyterHubs</a></p>
 </section>
-<section id="terminology" class="level2">
-<h2 class="anchored" data-anchor-id="terminology">Terminology</h2>
-</section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-</section>
-<section id="load-required-packages" class="level2">
-<h2 class="anchored" data-anchor-id="load-required-packages">Load Required Packages</h2>
+<section id="using-the-carpentries-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-carpentries-tutorials">Using the Carpentries Tutorials</h2>
+<p>Instead of re-inventing the wheel, we will be leveraging open science principles by using the Carpentries Incubator <a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/index.html"><strong>Introduction to Reproducible Publications with RStudio</strong></a>tutorial. The tutorial consists of a series of “episodes” that we will be walking through with you. Several of the episodes go a bit further in-depth than we will cover in the workshop, but feel free to explore further on your own time.</p>
+<p>For today’s session, we will be going through the following episodes:</p>
+<ol type="1">
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/01-repro-project-org/01-introduction/index.html">Scientific reproducibility: What is it for?</a></li>
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/01-basic-rstudio/index.html">Navigating RStudio and Quarto Documents</a></li>
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/02-projects-rstudio/index.html">Working with projects in RStudio</a></li>
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/01-repro-project-org/02-reproducibility/index.html#quarto-projects">Quarto Files vs Quarto Projects (Section in Working with projects in RStudio)</a></li>
+</ol>
+<p>Follow along on your own computer as we walk through the tutorials.</p>
 
 
 </section>
@@ -909,6 +925,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/01-intro-to-jupyterhub.html" class="pagination-link" aria-label="JupyterHubs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">JupyterHubs</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

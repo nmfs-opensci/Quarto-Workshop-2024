@@ -3,28 +3,24 @@ title: "Quarto Workshop 2024"
 subtitle: "Creating reproducible and more efficient report workflows"
 ---
 
-This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up. 
+This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up.
 
 ## Goals
 
-* **Workshops**: Provide training in Quarto and using Quarto for report writing for first time users. Open to all.
-* [Google Space](https://chat.google.com/room/AAAAuuftzDk?cls=1) to ask questions and discuss Quarto and ask questions. Open to all in NOAA.
-**Team support**: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or 'templated' approach with Quarto or RMarkdown
-    - This fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but  didn't get a spot).
-    - [Team sign-up for 1:1 help](https://docs.google.com/spreadsheets/d/1Tb0ruwU-CvMcmb7ADdfNTR3SL52QvB01bdMIzVR3eKg/edit?usp=sharing)
+-   **Workshops**: Provide training in Quarto and using Quarto for report writing for first time users. Open to all.
+-   [Google Space](https://chat.google.com/room/AAAAuuftzDk?cls=1) to ask questions and discuss Quarto and ask questions. Open to all in NOAA. **Team support**: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or 'templated' approach with Quarto or RMarkdown
+    -   This fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but didn't get a spot).
+    -   [Team sign-up for 1:1 help](https://docs.google.com/spreadsheets/d/1Tb0ruwU-CvMcmb7ADdfNTR3SL52QvB01bdMIzVR3eKg/edit?usp=sharing)
 
 ### Schedule
 
 See the [schedule page](schedule.html).
 
-* The 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. [Add to your calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N2JqY3RidWY1bjg5MTdwMGw5cmF0bjBhM29fMjAyNDExMDRUMTkwMDAwWiBjXzkxNmI2OTQ4ZWYyZWU4YjdkNDljMjg2NjFlZmMwNzk4MzAzYzI3NDJiZTM5OWM5MjkwZmEwMmQ5MzIwYzc2OWVAZw&tmsrc=c_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e%40group.calendar.google.com&scp=ALL) or view in the [NMFS Open Science calendar](https://calendar.google.com/calendar/u/0?cid=Y185MTZiNjk0OGVmMmVlOGI3ZDQ5YzI4NjYxZWZjMDc5ODMwM2MyNzQyYmUzOTljOTI5MGZhMDJkOTMyMGM3NjllQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20).
-* For teams (or individuals) who want 1:1  support for a specific project ([sign-up on spreadsheet](Sign-up for first 1:1 meeting: Getting to know your project and goals)).
+-   The 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. [Add to your calendar](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=N2JqY3RidWY1bjg5MTdwMGw5cmF0bjBhM29fMjAyNDExMDRUMTkwMDAwWiBjXzkxNmI2OTQ4ZWYyZWU4YjdkNDljMjg2NjFlZmMwNzk4MzAzYzI3NDJiZTM5OWM5MjkwZmEwMmQ5MzIwYzc2OWVAZw&tmsrc=c_916b6948ef2ee8b7d49c28661efc0798303c2742be399c9290fa02d9320c769e%40group.calendar.google.com&scp=ALL) or view in the [NMFS Open Science calendar](https://calendar.google.com/calendar/u/0?cid=Y185MTZiNjk0OGVmMmVlOGI3ZDQ5YzI4NjYxZWZjMDc5ODMwM2MyNzQyYmUzOTljOTI5MGZhMDJkOTMyMGM3NjllQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20).
+-   For teams (or individuals) who want 1:1 support for a specific project ([sign-up on spreadsheet](Sign-up%20for%20first%201:1%20meeting:%20Getting%20to%20know%20your%20project%20and%20goals)).
 
 ### What are 'templated' or reproducible reports?
 
 See [examples from NOAA Fisheries](content/01-repro-reports.html).
 
 <br/><br/>
-
-
-

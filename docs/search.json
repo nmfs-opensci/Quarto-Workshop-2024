@@ -751,5 +751,43 @@
     "title": "Intro to Quarto",
     "section": "Load Required Packages",
     "text": "Load Required Packages"
+  },
+  {
+    "objectID": "tutorials/tutorial-5.html",
+    "href": "tutorials/tutorial-5.html",
+    "title": "Introduction to Quarto Projects",
+    "section": "",
+    "text": "Learning Objectives\n\n\n\n\nComing Soon!"
+  },
+  {
+    "objectID": "tutorials/tutorial-1.html#logging-onto-jupyterhub",
+    "href": "tutorials/tutorial-1.html#logging-onto-jupyterhub",
+    "title": "Introduction to RStudio and Quarto",
+    "section": "Logging onto JupyterHub",
+    "text": "Logging onto JupyterHub\nFor this workshop, we’ll be using the NOAA NMFS JupyterHub. You’re welcome to use your own version of RStudio on your desktop, just make sure R and RStudio are updated to the latest versions. Follow the instructions to set up your JupyterHub access here: Intro to JupyterHubs",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Introduction to RStudio and Quarto"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-1.html#using-the-carpentries-tutorials",
+    "href": "tutorials/tutorial-1.html#using-the-carpentries-tutorials",
+    "title": "Introduction to RStudio and Quarto",
+    "section": "Using the Carpentries Tutorials",
+    "text": "Using the Carpentries Tutorials\nInstead of re-inventing the wheel, we will be leveraging open science principles by using the Carpentries Incubator Introduction to Reproducible Publications with RStudiotutorial. The tutorial consists of a series of “episodes” that we will be walking through with you. Several of the episodes go a bit further in-depth than we will cover in the workshop, but feel free to explore further on your own time.\nFor today’s session, we will be going through the following episodes:\n\nScientific reproducibility: What is it for?\nNavigating RStudio and Quarto Documents\nWorking with projects in RStudio\nQuarto Files vs Quarto Projects (Section in Working with projects in RStudio)\n\nFollow along on your own computer as we walk through the tutorials.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Introduction to RStudio and Quarto"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-4.html",
+    "href": "tutorials/tutorial-4.html",
+    "title": "Cross-references, bibliography and citations in Quarto files",
+    "section": "",
+    "text": "Learning Objectives\n\n\n\n\nComing Soon!"
   }
 ]
