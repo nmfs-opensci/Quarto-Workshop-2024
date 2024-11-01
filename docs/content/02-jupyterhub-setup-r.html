@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item">Set-up</li><li class="breadcrumb-item"><a href="../content/02-jupyterhub-setup-r.html">R and RStudion on the JupyterHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/02-jupyterhub-setup-r.html">R and RStudion on the JupyterHub</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -172,8 +172,11 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
- <span class="menu-text">set-up.qmd</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../setup.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Set up info</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../content/02-local-setup-r.html" class="sidebar-item-text sidebar-link">
@@ -305,7 +308,7 @@ function googleTranslateElementInit() {
 
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item">Set-up</li><li class="breadcrumb-item"><a href="../content/02-jupyterhub-setup-r.html">R and RStudion on the JupyterHub</a></li></ol></nav>
-<div class="quarto-title">
+\<div class="quarto-title">
 <h1 class="title">R/RStudio on JupyterHub</h1>
 </div>
 
@@ -329,26 +332,25 @@ function googleTranslateElementInit() {
 <li>Click Start Server and accept defaults</li>
 <li>Click the RStudio button. If you don’t see it, click the blue button in the top left to open a new ‘Launcher’ window.</li>
 </ul>
-<p><img src="content/img/jhub-launcher.png" class="img-fluid"></p>
+<p><img src="https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/img/jhub-launcher.png" class="img-fluid"></p>
 <section id="access-to-the-jupyterhub" class="level2">
 <h2 class="anchored" data-anchor-id="access-to-the-jupyterhub">Access to the JupyterHub</h2>
 <section id="github-username" class="level3">
 <h3 class="anchored" data-anchor-id="github-username">GitHub username</h3>
 <ul>
-<li>Create a GitHub account (if you don’t already have one) at <a href="https://github.com" class="uri">https://github.com</a>. Advice for choosing a GitHub username: this is a professional username that you will use in work settings. GitHub accounts are not anonymous; this is for sharing work. Using your real name is common.</li>
-<li>Write down your username and password; you will need to log in during the course!</li>
-<li>Here is <a href="https://www.youtube.com/watch?v=nHXw4mGoqiE">a video</a> showing the whole process</li>
+<li>Log into GitHub.com. Authentication to the JupyterHub uses your username and being a member of the NMFS Openscapes GitHub org.</li>
 </ul>
 </section>
 <section id="get-on-jupyterhub" class="level3">
 <h3 class="anchored" data-anchor-id="get-on-jupyterhub">Get on JupyterHub</h3>
-<p>Once you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub.</p>
+<p>Once you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub. For those who did the GitHub clinic, you should be good to go.</p>
 <p><a href="https://nmfs-openscapes.2i2c.cloud" class="uri">https://nmfs-openscapes.2i2c.cloud</a></p>
 <ul>
 <li><p><strong>Choose the default Py-R base geospatial image</strong>. <a href="https://youtu.be/o99jZWHqKi8">Watch a video</a> of the login process and basic JupyterHub orientation.</p></li>
 <li><p>home directory is yours and no one else can see it.</p></li>
 <li><p>To share files, you can connect to a GitHub repository or use the <code>shared</code> directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.</p></li>
 </ul>
+<p>This is a platform for training. Please do not put confidential info on here.</p>
 
 
 </section>

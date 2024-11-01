@@ -206,7 +206,7 @@
     "href": "content/01-repro-reports.html",
     "title": "Reproducible Reports",
     "section": "",
-    "text": "Reproducible reports are documents that combine analysis code, outputs (like plots or tables), and narratives to ensure that results can be easily replicated and verified by others. They are commonly used in scientific research, data science, and analytics to maintain transparency and reliability. By incorporating both the code and results into one document (or a collection of documents), anyone can run the same analysis on the same data (or updated data) and obtain the same results.\n\nExamples of NMFS reproducible reports\nJoin the NMFS R User Group on October 29th 12pm PT/3pm ET to hear 5 examples of how NMFS groups have used Quarto (and RMarkdown) to create more efficient and reproducible fisheries reports. Add to calendar.\n\nSam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating ‘templates’ for stock assessment reports.\n\n\n\n\nThe Alaska Fisheries Science Center MML program gave a talk about how they transformed MML SARs to a reproducible and more efficient workflow.",
+    "text": "Reproducible reports are documents that combine analysis code, outputs (like plots or tables), and narratives to ensure that results can be easily replicated and verified by others. They are commonly used in scientific research, data science, and analytics to maintain transparency and reliability. By incorporating both the code and results into one document (or a collection of documents), anyone can run the same analysis on the same data (or updated data) and obtain the same results.\n\nExamples of NMFS reproducible reports\nJoin the NMFS R User Group on October 29th 12pm PT/3pm ET to hear 5 examples of how NMFS groups have used Quarto (and RMarkdown) to create more efficient and reproducible fisheries reports. Video (NOAA only) and Slides (NOAA only).\n\nSam Schiano gave a great talk October 3rd on the NOAA Fisheries Stock Assessment Workflow project. She reviewed different approaches that the stock assessment teams across the science centers have taken to creating ‘templates’ for stock assessment reports.\n\n\n\n\nThe Alaska Fisheries Science Center MML program gave a talk about how they transformed MML SARs to a reproducible and more efficient workflow.",
     "crumbs": [
       "JupyterHub",
       "Orientation",
@@ -230,7 +230,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "All times Pacific.\n\n\n\n\n\n\n\n\n\nDate\nDescription\nTopic\nLead\n\n\n\n\nTues 10/29\nNMFS R User Group Monthly meeting\nQuarto Reports @ NMFS\n5 presenters from across NMFS\n\n\nWeek of 10/28 to 11/1\nMeeting with teams (45 min). Info and Sign-up\nDiscuss goals and plan.\nEli (lead) & Jon\n\n\nMon & Fri 11/4 & 11/8\nQuarto Workshop 1\nGetting Started with RStudio and Quarto. Quarto files versus Quarto projects.\nJon\n\n\nMon & Fri 11/11 & 11/15\nQuarto Workshop 2\nWorking with Quarto files and the Markdown language.\nJon\n\n\nWeek of 11/11 to 11/15\nSeaside chats with teams (60 min)\nReview report analysis. Brainstorm first steps.\nEli & Jon\n\n\nMon & Fri 11/18 & 11/22\nQuarto Workshop 3\nDynamic output in Quarto files: code, tables, and figures.\nJon\n\n\nMon & Fri 12/2 & 12/6\nQuarto Workshop 4\nCross-references, bibliography and citations in Quarto files.\nJon\n\n\nWeek of 12/2 to 12/6\nSeaside chats with teams (60-90 min)\nReview progress and identify next steps.\nEli & Jon\n\n\nMon & Fri 12/9 & 12/13\nQuarto Workshop 5\nIntro to Quarto projects.\nJon\n\n\nMon 12/16\nHack Day (3 hours)\nPut your skills to work: create a Quarto Book and put online in 3 hours\nEli\n\n\nWeek of 12/16 to 12/19\nSeaside chats with teams (60-90 min)\nReview progress, get help and identify next steps.\nEli & Jon",
+    "text": "All times Pacific.\n\n\n\n\n\n\n\n\n\nDate\nDescription\nTopic\nLead\n\n\n\n\nTues 10/29\nNMFS R User Group Monthly meeting\nQuarto Reports @ NMFS\n5 presenters from across NMFS\n\n\nWeek of 10/28 to 11/1\nMeeting with teams (45 min). Info and Sign-up\nDiscuss goals and plan.\nEli (lead) & Jon\n\n\nMon & Fri 11/4 & 11/8\nQuarto Workshop 1\nGetting Started with RStudio and Quarto. Quarto files versus Quarto projects.\nJon\n\n\nTues & Fri 11/12 & 11/15\nQuarto Workshop 2\nWorking with Quarto files and the Markdown language.\nJon\n\n\nWeek of 11/11 to 11/15\nSeaside chats with teams (60 min)\nReview report analysis. Brainstorm first steps.\nEli & Jon\n\n\nMon & Fri 11/18 & 11/22\nQuarto Workshop 3\nDynamic output in Quarto files: code, tables, and figures.\nJon\n\n\nMon & Fri 12/2 & 12/6\nQuarto Workshop 4\nCross-references, bibliography and citations in Quarto files.\nJon\n\n\nWeek of 12/2 to 12/6\nSeaside chats with teams (60-90 min)\nReview progress and identify next steps.\nEli & Jon\n\n\nMon & Fri 12/9 & 12/13\nQuarto Workshop 5\nIntro to Quarto projects.\nJon\n\n\nMon 12/16\nHack Day (3 hours)\nPut your skills to work: create a Quarto Book and put online in 3 hours\nEli\n\n\nWeek of 12/16 to 12/19\nSeaside chats with teams (60-90 min)\nReview progress, get help and identify next steps.\nEli & Jon",
     "crumbs": [
       "JupyterHub",
       "Welcome",
@@ -622,7 +622,7 @@
     "href": "content/02-jupyterhub-setup-r.html#access-to-the-jupyterhub",
     "title": "R/RStudio on JupyterHub",
     "section": "Access to the JupyterHub",
-    "text": "Access to the JupyterHub\n\nGitHub username\n\nCreate a GitHub account (if you don’t already have one) at https://github.com. Advice for choosing a GitHub username: this is a professional username that you will use in work settings. GitHub accounts are not anonymous; this is for sharing work. Using your real name is common.\nWrite down your username and password; you will need to log in during the course!\nHere is a video showing the whole process\n\n\n\nGet on JupyterHub\nOnce you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub.\nhttps://nmfs-openscapes.2i2c.cloud\n\nChoose the default Py-R base geospatial image. Watch a video of the login process and basic JupyterHub orientation.\nhome directory is yours and no one else can see it.\nTo share files, you can connect to a GitHub repository or use the shared directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.",
+    "text": "Access to the JupyterHub\n\nGitHub username\n\nLog into GitHub.com. Authentication to the JupyterHub uses your username and being a member of the NMFS Openscapes GitHub org.\n\n\n\nGet on JupyterHub\nOnce you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub. For those who did the GitHub clinic, you should be good to go.\nhttps://nmfs-openscapes.2i2c.cloud\n\nChoose the default Py-R base geospatial image. Watch a video of the login process and basic JupyterHub orientation.\nhome directory is yours and no one else can see it.\nTo share files, you can connect to a GitHub repository or use the shared directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.\n\nThis is a platform for training. Please do not put confidential info on here.",
     "crumbs": [
       "JupyterHub",
       "Welcome",
@@ -687,14 +687,26 @@
     "href": "setup.html",
     "title": "Set-up",
     "section": "",
-    "text": "We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project."
+    "text": "We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project. Quarto works equally well for Python and .ipynb files (Jupyter notebook) or .md files instead of .qmd (Quarto).",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Set up info"
+    ]
   },
   {
     "objectID": "setup.html#options",
     "href": "setup.html#options",
     "title": "Set-up",
     "section": "Options",
-    "text": "Options\nR/RStudio on the NMFS JupyterHub Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.\nR/RStudio installed on your computer Install R and RStudio on your computer."
+    "text": "Options\nR/RStudio on the NMFS JupyterHub Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.\nR/RStudio installed on your computer Install R and RStudio on your computer.\nI am a Python user. The JupyterHub has a fully provisioned Python environment with Jupyter Lab and Jupyter Notebook.\nI like VS Code instead. Once we start the workshop, we will have VS Code with Quarto extensions installed on for VS Code.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Set up info"
+    ]
   },
   {
     "objectID": "tutorials/tutorial-2.html#summary",

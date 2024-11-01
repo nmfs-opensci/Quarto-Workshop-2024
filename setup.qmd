@@ -2,10 +2,15 @@
 title: Set-up
 ---
 
-We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project. 
+We will be using R and RStudio for the Quarto workshops. Teams that are working with Eli & Jon on their specific projects are welcome to use whatever platform and language fits for their project. Quarto works equally well for Python and `.ipynb` files (Jupyter notebook) or `.md` files instead of `.qmd` (Quarto).
 
 ## Options
 
-[R/RStudio on the NMFS JupyterHub](content/02-jupyterhub-setp-r.html) Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.
+[R/RStudio on the NMFS JupyterHub](content/02-jupyterhub-setup-r.html) Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.
 
-[R/RStudio installed on your computer](content/02-local-setp-r.html) Install R and RStudio on your computer.
+[R/RStudio installed on your computer](content/02-local-setup-r.html) Install R and RStudio on your computer.
+
+**I am a Python user.** The JupyterHub has a fully provisioned Python environment with Jupyter Lab and Jupyter Notebook.
+
+**I like VS Code instead.** Once we start the workshop, we will have VS Code with Quarto extensions installed on for VS Code.
+
