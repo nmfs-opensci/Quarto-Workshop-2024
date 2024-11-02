@@ -6,7 +6,7 @@ You can use RStudio on your computer or on the NMFS Openscapes JupyterHub. The e
 
 Note, before you can log in to the JupyterHub, we will need to add you to the access group. If you are in the NMFS Openscapes Champions or Mentors cohort, then you already have access if you are in the GitHub teams: [champions](https://github.com/orgs/nmfs-openscapes/teams/2024-nmfs-champions-cohort) or [mentors](https://github.com/orgs/nmfs-openscapes/teams/2024-mentors). If you are in the fall cohorts, but see a 404 when you click on the teams link, then we need to add you to one of those teams. If you are participating in the workshop but not the Openscapes program, you are also welcome to use the JupyterHub for this training opportunity. 
 
-[**Fill out this Google Form if you need JupyterHub access**](https://forms.gle/JydKyooTSSMTLkwe8). It will ask for your GitHub username
+[**Fill out this Google Form if you need JupyterHub access**](https://forms.gle/JydKyooTSSMTLkwe8). It will ask for your GitHub username. Scroll down to see the steps for accepting the invite.
 
 -   <https://nmfs-openscapes.2i2c.cloud>
 -   Click Start Server and accept defaults
@@ -23,9 +23,18 @@ Note, before you can log in to the JupyterHub, we will need to add you to the ac
 
 ### Get on JupyterHub
 
-Once you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub. For those who did the GitHub clinic, you should be good to go.
+Once you have submitted your GitHub username. We will add you to a GitHub team that allows you to log in to the JupyterHub. You will get an invite email.
 
-<https://nmfs-openscapes.2i2c.cloud>
+![](img/github-invite-email.png)
+Accept the invite (Join) and you will see this pop-up.
+
+![](img/github-accept-invite.png)
+
+Click "Join NMFS Openscapes". This will take you to the NMFS Openscapes GitHub org where you will see you are now a member.
+
+![](img/member-of-org.png)
+
+Now you can log-into the JupyterHub by going here <https://nmfs-openscapes.2i2c.cloud>
 
 -   **Choose the default Py-R base geospatial image**. [Watch a video](https://youtu.be/o99jZWHqKi8) of the login process and basic JupyterHub orientation.
 
@@ -33,5 +42,5 @@ Once you have submitted your GitHub username and have been accepted as a member 
 * home directory is yours and no one else can see it.
 * To share files, you can connect to a GitHub repository or use the `shared` directory. Everyone can read and write to this directory. Please don't delete content that is not your own.
 
-This is a platform for training. Please do not put confidential info on here.
+This is a platform for training in data science. Please do not non-public fisheries data that needs to stay on your local system.
 
