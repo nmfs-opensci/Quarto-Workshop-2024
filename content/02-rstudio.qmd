@@ -17,12 +17,17 @@ In this tutorial, we will provide a brief introduction to RStudio using the Jupy
 
 :::
 
-## Open RStudio in the JupyterHub
+## Open RStudio
 
-1. Login the JupyterHub
+You can open RStudio from your computer or in the JupyterHub. We are using RStudio version 2024.04.2 Build 764 on the JupyterHub. Go to Help > About RStudio to check your version. You need to have a relatively updated version (late 2023 at least).
+
+### If using the JupyterHub
+
+1. Login the [NMFS Openscapes JupyterHub](https://nmfs-openscapes.2i2c.cloud)
 2. Click on the RStudio button when the Launcher appears
 ![Jupyterhub Launcher](./img/jhub-launcher.png)
-3. Look for the browser tab with the RStudio icon
+
+3. Look for the browser tab with the RStudio icon.
 
 ## Basic Navigation
 
@@ -77,9 +82,7 @@ Look for the Upload button in the Files tab of the bottom right panel.
 
 ## Creating files
 
-When you start your server, you will have access to your own virtual drive space. No other users will be able to see or access your files. You can upload files to your virtual drive space and save files here. You can create folders to organize your files. You personal directory is `home/rstudio`. Everyone has the same home directory but your files are separate and cannot be seen by others.
-
-*Python users: If you open a Python image instead of the R image, your home is `home/jovyan`.*
+When you start your server, you will have access to your own virtual drive space. No other users will be able to see or access your files. You can upload files to your virtual drive space and save files here. You can create folders to organize your files. Your personal directory is `home/rstudio` or `home/jovyan`. Everyone has the same home directory but your files are separate and cannot be seen by others.
 
 There are a number of different ways to create new files. Let's practice making new files in RStudio.
 
@@ -111,77 +114,20 @@ C, 100, 200
 
 3. Click the save icon (above your new file) to save your csv file
 
-### A Rmarkdown document
+### A Quarto document
 
 Now let's create some more complicated files using the RStudio template feature.
 
-1. From the upper left, click File -> New File -> RMarkdown
+1. From the upper left, click File -> New File -> Quarto
 2. Click "Ok" at the bottom.
-3. When the file opens, click Knit (icon at top of file).
+3. When the file opens, click Render (icon at top of file).
 4. It will ask for a name. Give it one and save.
 5. You file will render into html.
 
-[Reference sheet for writing in RMarkdown](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) or go to Help > Markdown Quick Reference
+[Quarto Cheatsheet](https://rstudio.github.io/cheatsheets/html/quarto.html)
 
-### A Rmarkdown presentation
-
-1. From the upper left, click File -> New File -> RMarkdown
-2. Click "Presentation" on left of the popup and click "Ok" at the bottom.
-3. When the file opens, click Knit (icon at top of file).
-4. It will ask for a name. Give it one and save.
-5. You file will render into html.
-
-### (advanced) An interactive application
-
-1. From the upper left, click File -> New File -> Shiny Web App
-2. In the popup, give the app a name and make sure the app is saved to `my-files`
-3. When the file opens, Run App (icon at top of file).
 
 ### And many more
 
 Play around with creating other types of documents using templates. Especially if you already use RStudio.
-
-## More tips
-
-Learn some tips and tricks from these
-
-* https://colorado.posit.co/rsc/the-unknown/into-the-unknown.html
-* https://www.dataquest.io/blog/rstudio-tips-tricks-shortcuts/
-
-## Plotting a netCDF file
-
-* https://pjbartlein.github.io/REarthSysSci/netCDF.html
-* https://r-spatial.github.io/sf/articles/sf1.html
-
-webpage:
-```
-https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.graph?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.8):(44.8)%5D%5B(39.7):(92.3)%5D&.draw=surface&.vars=longitude%7Clatitude%7Csst&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff
-```
-
-url from the dropdown on that page
-```
-url <- https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.nc?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.875):(44.875)%5D%5B(39.625):(92.375)%5D&.draw=surface&.vars=longitude%7Clatitude%7Csst&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff
-```
-
-1. Open an R script
-
-Add this code.
-
-```{r message=FALSE, warning=FALSE}
-library(ggplot2) # package for plotting
-library(sf)
-library(stars)
-library(dplyr)
-
-url <- "https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.nc?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.875):(44.875)%5D%5B(39.625):(92.375)%5D&.draw=surface&.vars=longitude%7Clatitude%7Csst&.colorBar=%7C%7C%7C%7C%7C&.bgColor=0xffccccff"
-
-fil <- "sst.nc"
-if(!exists(fil)){
-  download.file(url=url, destfile=fil)
-}
-
-stars_object <- raster::raster(fil) %>% st_as_stars()
-ggplot() + geom_stars(data = stars_object)
-```
-
 
