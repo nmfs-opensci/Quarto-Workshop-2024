@@ -6,7 +6,7 @@ We will be using R and RStudio for the Quarto workshops. Teams that are working 
 
 ## Options
 
-[R/RStudio on the NMFS JupyterHub](content/02-jupyterhub-setup-r.html) Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.
+**R/RStudio on the NMFS JupyterHub** Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group. [Accessing the Hub]((content/01-accessing-jupyterhub.html) and once you can log in go to [JupyterHub orientation](content/01-intro-to-jupyterhub).
 
 [R/RStudio installed on your computer](content/02-local-setup-r.html) Install R and RStudio on your computer.
 

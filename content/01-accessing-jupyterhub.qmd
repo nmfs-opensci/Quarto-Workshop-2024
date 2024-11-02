@@ -1,0 +1,25 @@
+---
+title: Accessing the NMFS Openscapes JupyterHub
+---
+
+Before you can log in to the JupyterHub, we will need to add you to the access group. If you are in the NMFS Openscapes Champions or Mentors cohort, then you already have access if you are in the GitHub teams: [champions](https://github.com/orgs/nmfs-openscapes/teams/2024-nmfs-champions-cohort) or [mentors](https://github.com/orgs/nmfs-openscapes/teams/2024-mentors). If you are in the fall cohorts, but see a 404 when you click on the teams link, then we need to add you to one of those teams. If you are participating in the workshop but not the Openscapes program, you are also welcome to use the JupyterHub for this training opportunity. 
+
+[**Fill out this Google Form if you need JupyterHub access**](https://forms.gle/JydKyooTSSMTLkwe8). It will ask for your GitHub username. 
+
+### Accepting the invite
+
+Once you have submitted your GitHub username. We will add you to a GitHub team that allows you to log in to the JupyterHub. You will get an invite email.
+
+![](img/github-invite-email.png)
+Accept the invite (Join) and you will see this pop-up.
+
+![](img/github-accept-invite.png)
+
+Click "Join NMFS Openscapes". This will take you to the NMFS Openscapes GitHub org where you will see you are now a member.
+
+![](img/member-of-org.png)
+
+Now you can log-into the JupyterHub by going here <https://nmfs-openscapes.2i2c.cloud> and you can go to [JupyterHub orientation](content/01-intro-to-jupyterhub).
+
+This is a platform for training in data science. Please do not non-public fisheries data that needs to stay on your local system.
+

@@ -19,6 +19,7 @@ In this lab, you will get an overview of our JupyterHub
 
 :::
 
+[Watch a video](https://youtu.be/o99jZWHqKi8) of the login process and basic JupyterHub orientation discussed below.
 
 ## Log into the JupyterHub
 
@@ -40,6 +41,12 @@ You'll see something similar to this that allows you to choose a large virtual m
 After we select our server type and click on start, JupyterHub will allocate our machine. This may take several minutes. 
 
 ![Jupyterhub Spawning](./img/spawning.png)
+## File System 
+
+In both Jupyter Lab and RStudio you will see your home directory of files.
+
+* home directory is yours and no one else can see it.
+* To share files, you can connect to a GitHub repository or use the `shared` directory. Everyone can read and write to this directory. Please don't delete content that is not your own.
 
 
 ## Open RStudio

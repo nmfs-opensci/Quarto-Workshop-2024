@@ -40,14 +40,14 @@ website:
               href: setup.qmd
             - text: R and RStudio on your computer
               href: content/02-local-setup-r.qmd
-            - text: R and RStudion on the JupyterHub
-              href: content/02-jupyterhub-setup-r.qmd
-            - text: Git-Authentication
-              href: content/02-git.md
-            - text: Git-JupyterLab
-              href: content/02-git-jupyter.md
-            - text: Git-RStudio
-              href: content/02-git-rstudio.md
+            - text: Sign up to use the JupyterHub
+              href: content/01-accessing-jupyterhub.qmd
+#            - text: Git-Authentication
+#              href: content/02-git.md
+#            - text: Git-JupyterLab
+#              href: content/02-git-jupyter.md
+#            - text: Git-RStudio
+#              href: content/02-git-rstudio.md
           - coc.md
       - section: "Orientation"
         contents:
