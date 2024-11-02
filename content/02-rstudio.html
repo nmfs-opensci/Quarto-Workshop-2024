@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -316,14 +282,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#open-rstudio-in-the-jupyterhub" id="toc-open-rstudio-in-the-jupyterhub" class="nav-link active" data-scroll-target="#open-rstudio-in-the-jupyterhub">Open RStudio in the JupyterHub</a></li>
+  <li><a href="#open-rstudio" id="toc-open-rstudio" class="nav-link active" data-scroll-target="#open-rstudio">Open RStudio</a></li>
   <li><a href="#basic-navigation" id="toc-basic-navigation" class="nav-link" data-scroll-target="#basic-navigation">Basic Navigation</a></li>
   <li><a href="#create-an-rstudio-project" id="toc-create-an-rstudio-project" class="nav-link" data-scroll-target="#create-an-rstudio-project">Create an RStudio project</a></li>
   <li><a href="#installing-packages" id="toc-installing-packages" class="nav-link" data-scroll-target="#installing-packages">Installing packages</a></li>
   <li><a href="#uploading-and-downloading-files" id="toc-uploading-and-downloading-files" class="nav-link" data-scroll-target="#uploading-and-downloading-files">Uploading and downloading files</a></li>
   <li><a href="#creating-files" id="toc-creating-files" class="nav-link" data-scroll-target="#creating-files">Creating files</a></li>
-  <li><a href="#more-tips" id="toc-more-tips" class="nav-link" data-scroll-target="#more-tips">More tips</a></li>
-  <li><a href="#plotting-a-netcdf-file" id="toc-plotting-a-netcdf-file" class="nav-link" data-scroll-target="#plotting-a-netcdf-file">Plotting a netCDF file</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/content/02-rstudio.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/content/02-rstudio.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -381,13 +345,17 @@ Note
 </ol>
 </div>
 </div>
-<section id="open-rstudio-in-the-jupyterhub" class="level2">
-<h2 class="anchored" data-anchor-id="open-rstudio-in-the-jupyterhub">Open RStudio in the JupyterHub</h2>
+<section id="open-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="open-rstudio">Open RStudio</h2>
+<p>You can open RStudio from your computer or in the JupyterHub. We are using RStudio version 2024.04.2 Build 764 on the JupyterHub. Go to Help &gt; About RStudio to check your version. You need to have a relatively updated version (late 2023 at least).</p>
+<section id="if-using-the-jupyterhub" class="level3">
+<h3 class="anchored" data-anchor-id="if-using-the-jupyterhub">If using the JupyterHub</h3>
 <ol type="1">
-<li>Login the JupyterHub</li>
-<li>Click on the RStudio button when the Launcher appears <img src="./img/jhub-launcher.png" class="img-fluid" alt="Jupyterhub Launcher"></li>
-<li>Look for the browser tab with the RStudio icon</li>
+<li><p>Login the <a href="https://nmfs-openscapes.2i2c.cloud">NMFS Openscapes JupyterHub</a></p></li>
+<li><p>Click on the RStudio button when the Launcher appears <img src="./img/jhub-launcher.png" class="img-fluid" alt="Jupyterhub Launcher"></p></li>
+<li><p>Look for the browser tab with the RStudio icon.</p></li>
 </ol>
+</section>
 </section>
 <section id="basic-navigation" class="level2">
 <h2 class="anchored" data-anchor-id="basic-navigation">Basic Navigation</h2>
@@ -450,8 +418,7 @@ Note
 </section>
 <section id="creating-files" class="level2">
 <h2 class="anchored" data-anchor-id="creating-files">Creating files</h2>
-<p>When you start your server, you will have access to your own virtual drive space. No other users will be able to see or access your files. You can upload files to your virtual drive space and save files here. You can create folders to organize your files. You personal directory is <code>home/rstudio</code>. Everyone has the same home directory but your files are separate and cannot be seen by others.</p>
-<p><em>Python users: If you open a Python image instead of the R image, your home is <code>home/jovyan</code>.</em></p>
+<p>When you start your server, you will have access to your own virtual drive space. No other users will be able to see or access your files. You can upload files to your virtual drive space and save files here. You can create folders to organize your files. Your personal directory is <code>home/rstudio</code> or <code>home/jovyan</code>. Everyone has the same home directory but your files are separate and cannot be seen by others.</p>
 <p>There are a number of different ways to create new files. Let’s practice making new files in RStudio.</p>
 <section id="r-script" class="level3">
 <h3 class="anchored" data-anchor-id="r-script">R Script</h3>
@@ -479,88 +446,24 @@ C, 100, 200</code></pre>
 <li>Click the save icon (above your new file) to save your csv file</li>
 </ol>
 </section>
-<section id="a-rmarkdown-document" class="level3">
-<h3 class="anchored" data-anchor-id="a-rmarkdown-document">A Rmarkdown document</h3>
+<section id="a-quarto-document" class="level3">
+<h3 class="anchored" data-anchor-id="a-quarto-document">A Quarto document</h3>
 <p>Now let’s create some more complicated files using the RStudio template feature.</p>
 <ol type="1">
-<li>From the upper left, click File -&gt; New File -&gt; RMarkdown</li>
+<li>From the upper left, click File -&gt; New File -&gt; Quarto</li>
 <li>Click “Ok” at the bottom.</li>
-<li>When the file opens, click Knit (icon at top of file).</li>
+<li>When the file opens, click Render (icon at top of file).</li>
 <li>It will ask for a name. Give it one and save.</li>
 <li>You file will render into html.</li>
 </ol>
-<p><a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">Reference sheet for writing in RMarkdown</a> or go to Help &gt; Markdown Quick Reference</p>
-</section>
-<section id="a-rmarkdown-presentation" class="level3">
-<h3 class="anchored" data-anchor-id="a-rmarkdown-presentation">A Rmarkdown presentation</h3>
-<ol type="1">
-<li>From the upper left, click File -&gt; New File -&gt; RMarkdown</li>
-<li>Click “Presentation” on left of the popup and click “Ok” at the bottom.</li>
-<li>When the file opens, click Knit (icon at top of file).</li>
-<li>It will ask for a name. Give it one and save.</li>
-<li>You file will render into html.</li>
-</ol>
-</section>
-<section id="advanced-an-interactive-application" class="level3">
-<h3 class="anchored" data-anchor-id="advanced-an-interactive-application">(advanced) An interactive application</h3>
-<ol type="1">
-<li>From the upper left, click File -&gt; New File -&gt; Shiny Web App</li>
-<li>In the popup, give the app a name and make sure the app is saved to <code>my-files</code></li>
-<li>When the file opens, Run App (icon at top of file).</li>
-</ol>
+<p><a href="https://rstudio.github.io/cheatsheets/html/quarto.html">Quarto Cheatsheet</a></p>
 </section>
 <section id="and-many-more" class="level3">
 <h3 class="anchored" data-anchor-id="and-many-more">And many more</h3>
 <p>Play around with creating other types of documents using templates. Especially if you already use RStudio.</p>
-</section>
-</section>
-<section id="more-tips" class="level2">
-<h2 class="anchored" data-anchor-id="more-tips">More tips</h2>
-<p>Learn some tips and tricks from these</p>
-<ul>
-<li>https://colorado.posit.co/rsc/the-unknown/into-the-unknown.html</li>
-<li>https://www.dataquest.io/blog/rstudio-tips-tricks-shortcuts/</li>
-</ul>
-</section>
-<section id="plotting-a-netcdf-file" class="level2">
-<h2 class="anchored" data-anchor-id="plotting-a-netcdf-file">Plotting a netCDF file</h2>
-<ul>
-<li>https://pjbartlein.github.io/REarthSysSci/netCDF.html</li>
-<li>https://r-spatial.github.io/sf/articles/sf1.html</li>
-</ul>
-<p>webpage:</p>
-<pre><code>https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.graph?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.8):(44.8)%5D%5B(39.7):(92.3)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Csst&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff</code></pre>
-<p>url from the dropdown on that page</p>
-<pre><code>url &lt;- https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.nc?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.875):(44.875)%5D%5B(39.625):(92.375)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Csst&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff</code></pre>
-<ol type="1">
-<li>Open an R script</li>
-</ol>
-<p>Add this code.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2) <span class="co"># package for plotting</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stars)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="st">"https://coastwatch.pfeg.noaa.gov/erddap/griddap/ncdcOisst21Agg.nc?sst%5B(2023-08-27T12:00:00Z)%5D%5B(0.0)%5D%5B(-7.875):(44.875)%5D%5B(39.625):(92.375)%5D&amp;.draw=surface&amp;.vars=longitude%7Clatitude%7Csst&amp;.colorBar=%7C%7C%7C%7C%7C&amp;.bgColor=0xffccccff"</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>fil <span class="ot">&lt;-</span> <span class="st">"sst.nc"</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="sc">!</span><span class="fu">exists</span>(fil)){</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">download.file</span>(<span class="at">url=</span>url, <span class="at">destfile=</span>fil)</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>stars_object <span class="ot">&lt;-</span> raster<span class="sc">::</span><span class="fu">raster</span>(fil) <span class="sc">%&gt;%</span> <span class="fu">st_as_stars</span>()</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> <span class="fu">geom_stars</span>(<span class="at">data =</span> stars_object)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="02-rstudio_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
