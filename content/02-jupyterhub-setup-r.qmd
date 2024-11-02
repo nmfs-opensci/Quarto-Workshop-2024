@@ -2,7 +2,11 @@
 title: R/RStudio on JupyterHub
 ---
 
-Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.
+You can use RStudio on your computer or on the NMFS Openscapes JupyterHub. The environment will be identical. On the JupyterHub, everything you need is already installed for you. 
+
+Note, before you can log in to the JupyterHub, we will need to add you to the access group. If you are in the NMFS Openscapes Champions or Mentors cohort, then you already have access if you are in the GitHub teams: [champions](https://github.com/orgs/nmfs-openscapes/teams/2024-nmfs-champions-cohort) or [mentors](https://github.com/orgs/nmfs-openscapes/teams/2024-mentors). If you are in the fall cohorts, but see a 404 when you click on the teams link, then we need to add you to one of those teams. If you are participating in the workshop but not the Openscapes program, you are also welcome to use the JupyterHub for this training opportunity. 
+
+[**Fill out this Google Form if you need JupyterHub access**](https://forms.gle/JydKyooTSSMTLkwe8). It will ask for your GitHub username
 
 -   <https://nmfs-openscapes.2i2c.cloud>
 -   Click Start Server and accept defaults
