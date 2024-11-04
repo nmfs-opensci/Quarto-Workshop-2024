@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>R/RStudio on JupyterHub – 2024 Quarto Workshop</title>
+<title>Accessing the NMFS Openscapes JupyterHub – 2024 Quarto Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../content/02-git.html" rel="next">
+<link href="../coc.html" rel="next">
 <link href="../content/02-local-setup-r.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
@@ -124,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/02-jupyterhub-setup-r.html">R and RStudion on the JupyterHub</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/01-accessing-jupyterhub.html">Sign up to use the JupyterHub</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -185,26 +185,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/02-jupyterhub-setup-r.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">R and RStudion on the JupyterHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/02-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git-Authentication</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/02-git-jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git-JupyterLab</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/02-git-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git-RStudio</span></a>
+  <a href="../content/01-accessing-jupyterhub.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Sign up to use the JupyterHub</span></a>
   </div>
 </li>
       </ul>
@@ -277,14 +259,8 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#access-to-the-jupyterhub" id="toc-access-to-the-jupyterhub" class="nav-link active" data-scroll-target="#access-to-the-jupyterhub">Access to the JupyterHub</a></li>
-  </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/content/02-jupyterhub-setup-r.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/content/02-jupyterhub-setup-r.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -298,9 +274,9 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/02-jupyterhub-setup-r.html">R and RStudion on the JupyterHub</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/01-accessing-jupyterhub.html">Sign up to use the JupyterHub</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">R/RStudio on JupyterHub</h1>
+<h1 class="title">Accessing the NMFS Openscapes JupyterHub</h1>
 </div>
 
 
@@ -317,34 +293,19 @@ function googleTranslateElementInit() {
 </header>
 
 
-<p>Everything you need is installed for you. Note, before you can log in, we will need to add you to the access group.</p>
-<ul>
-<li><a href="https://nmfs-openscapes.2i2c.cloud" class="uri">https://nmfs-openscapes.2i2c.cloud</a></li>
-<li>Click Start Server and accept defaults</li>
-<li>Click the RStudio button. If you don’t see it, click the blue button in the top left to open a new ‘Launcher’ window.</li>
-</ul>
-<p><img src="https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/img/jhub-launcher.png" class="img-fluid"></p>
-<section id="access-to-the-jupyterhub" class="level2">
-<h2 class="anchored" data-anchor-id="access-to-the-jupyterhub">Access to the JupyterHub</h2>
-<section id="github-username" class="level3">
-<h3 class="anchored" data-anchor-id="github-username">GitHub username</h3>
-<ul>
-<li>Log into GitHub.com. Authentication to the JupyterHub uses your username and being a member of the NMFS Openscapes GitHub org.</li>
-</ul>
-</section>
-<section id="get-on-jupyterhub" class="level3">
-<h3 class="anchored" data-anchor-id="get-on-jupyterhub">Get on JupyterHub</h3>
-<p>Once you have submitted your GitHub username and have been accepted as a member on the nmfs-openscapes organization, you can log-into the JupyterHub. For those who did the GitHub clinic, you should be good to go.</p>
-<p><a href="https://nmfs-openscapes.2i2c.cloud" class="uri">https://nmfs-openscapes.2i2c.cloud</a></p>
-<ul>
-<li><p><strong>Choose the default Py-R base geospatial image</strong>. <a href="https://youtu.be/o99jZWHqKi8">Watch a video</a> of the login process and basic JupyterHub orientation.</p></li>
-<li><p>home directory is yours and no one else can see it.</p></li>
-<li><p>To share files, you can connect to a GitHub repository or use the <code>shared</code> directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.</p></li>
-</ul>
-<p>This is a platform for training. Please do not put confidential info on here.</p>
+<p>Before you can log in to the JupyterHub, we will need to add you to the access group. If you are in the NMFS Openscapes Champions or Mentors cohort, then you already have access if you are in the GitHub teams: <a href="https://github.com/orgs/nmfs-openscapes/teams/2024-nmfs-champions-cohort">champions</a> or <a href="https://github.com/orgs/nmfs-openscapes/teams/2024-mentors">mentors</a>. If you are in the fall cohorts, but see a 404 when you click on the teams link, then we need to add you to one of those teams. If you are participating in the workshop but not the Openscapes program, you are also welcome to use the JupyterHub for this training opportunity.</p>
+<p><a href="https://forms.gle/JydKyooTSSMTLkwe8"><strong>Fill out this Google Form if you need JupyterHub access</strong></a>. It will ask for your GitHub username.</p>
+<section id="accepting-the-invite" class="level3">
+<h3 class="anchored" data-anchor-id="accepting-the-invite">Accepting the invite</h3>
+<p>Once you have submitted your GitHub username. We will add you to a GitHub team that allows you to log in to the JupyterHub. You will get an invite email.</p>
+<p><img src="img/github-invite-email.png" class="img-fluid"> Accept the invite (Join) and you will see this pop-up.</p>
+<p><img src="img/github-accept-invite.png" class="img-fluid"></p>
+<p>Click “Join NMFS Openscapes”. This will take you to the NMFS Openscapes GitHub org where you will see you are now a member.</p>
+<p><img src="img/member-of-org.png" class="img-fluid"></p>
+<p>Now you can log-into the JupyterHub by going here <a href="https://nmfs-openscapes.2i2c.cloud" class="uri">https://nmfs-openscapes.2i2c.cloud</a> and you can go to <a href="content/01-intro-to-jupyterhub">JupyterHub orientation</a>.</p>
+<p>This is a platform for training in data science. Please do not non-public fisheries data that needs to stay on your local system.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -919,8 +880,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../content/02-git.html" class="pagination-link" aria-label="Git-Authentication">
-        <span class="nav-page-text">Git-Authentication</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../coc.html" class="pagination-link" aria-label="Code of Conduct">
+        <span class="nav-page-text">Code of Conduct</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -932,7 +893,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/content/02-jupyterhub-setup-r.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/content/02-jupyterhub-setup-r.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/content/01-accessing-jupyterhub.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/content/01-accessing-jupyterhub.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

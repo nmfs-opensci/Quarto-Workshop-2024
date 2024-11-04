@@ -185,26 +185,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../content/02-jupyterhub-setup-r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R and RStudion on the JupyterHub</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/02-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git-Authentication</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/02-git-jupyter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git-JupyterLab</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../content/02-git-rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Git-RStudio</span></a>
+  <a href="../content/01-accessing-jupyterhub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sign up to use the JupyterHub</span></a>
   </div>
 </li>
       </ul>
@@ -345,6 +327,7 @@ Goals
 </ul>
 </div>
 </div>
+<p><a href="https://youtu.be/o99jZWHqKi8">Watch a video</a> of the login process and basic JupyterHub orientation discussed below.</p>
 <section id="log-into-the-jupyterhub" class="level2">
 <h2 class="anchored" data-anchor-id="log-into-the-jupyterhub">Log into the JupyterHub</h2>
 <p>Go to <a href="https://nmfs-openscapes.2i2c.cloud/" class="uri">https://nmfs-openscapes.2i2c.cloud/</a>. Click “Login to continue”. You will be asked to log in with your GitHub Account, if you are not logged in already.</p>
@@ -365,12 +348,12 @@ Goals
 <section id="start-up" class="level3">
 <h3 class="anchored" data-anchor-id="start-up">Start up</h3>
 <p>After we select our server type and click on start, JupyterHub will allocate our machine. This may take several minutes.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./img/spawning.png" class="img-fluid figure-img"></p>
-<figcaption>Jupyterhub Spawning</figcaption>
-</figure>
-</div>
+<p><img src="./img/spawning.png" class="img-fluid" alt="Jupyterhub Spawning"> ## File System</p>
+<p>In both Jupyter Lab and RStudio you will see your home directory of files.</p>
+<ul>
+<li>home directory is yours and no one else can see it.</li>
+<li>To share files, you can connect to a GitHub repository or use the <code>shared</code> directory. Everyone can read and write to this directory. Please don’t delete content that is not your own.</li>
+</ul>
 </section>
 </section>
 <section id="open-rstudio" class="level2">
