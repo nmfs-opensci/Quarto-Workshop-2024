@@ -15,7 +15,7 @@ For this workshop, we'll be using the [NOAA NMFS JupyterHub](https://nmfs-opensc
 
 ## Using the Carpentries Tutorials
 
-Instead of re-inventing the wheel, we will be leveraging open science principles by using the Carpentries Incubator [**Introduction to Reproducible Publications with RStudio**](https://carpentries-incubator.github.io/reproducible-publications-quarto/index.html)tutorial. The tutorial consists of a series of "episodes" that we will be walking through with you. Several of the episodes go a bit further in-depth than we will cover in the workshop, but feel free to explore further on your own time.
+Instead of re-inventing the wheel, we will be leveraging open science principles by using the Carpentries Incubator [**Introduction to Reproducible Publications with RStudio**](https://carpentries-incubator.github.io/reproducible-publications-quarto/index.html) tutorial. The tutorial consists of a series of "episodes" that we will be walking through with you. Several of the episodes go a bit further in-depth than we will cover in the workshop, but feel free to explore further on your own time.
 
 For today's session, we will be going through the following episodes:
 
