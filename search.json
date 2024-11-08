@@ -634,6 +634,42 @@
     ]
   },
   {
+    "objectID": "tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository",
+    "href": "tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository",
+    "title": "Working with Quarto Files and the Markdown Language",
+    "section": "Instructions for Forking the Carpentries Example Repository",
+    "text": "Instructions for Forking the Carpentries Example Repository\nThe Carpentries tutorials we are using will require you to “fork” the GitHub repository that contains the course material for future sessions. This will put a copy of the repository in your GitHub that will allow you to make commits without changing the original repository. To make things go smoothly in future sessions, make sure you set up your forked repository in RStudio:\n\nTo fork the repository, go to the following link: https://github.com/UCSBCarpentry/Quarto-Project-Example/fork\nThis should take you to a screen that looks something like the attached screenshot. Keep everything the way it is and click the “Create Fork” button in the bottom right-hand corner of the page. Once https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.htmlthe repository finishes setting up, it will open with the forked copy on your GitHub.\n\nAfter forking the repository, click the green Code button in the center-right of the repository window. This will bring down a dropdown menu with the link to the forked repository. Copy the link using the icon with the two squares on the right.\n\nIn RStudio (either in JupyterHub or desktop), go to the File menu and click New Project. In the dialogue box that pops up, click Version Control, then Git. Paste your copied repository URL from GitHub into the URL box (the Project directory name will auto-populate). RStudio will create a folder as a subdirectory that includes all of the files from the forked repository. If you are working on your own desktop version of RStudio, you may want to change the project directory; otherwise, leave this as a default. Click Create Project, and RStudio will download the repository and create the project for you.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Working with Quarto Files and the Markdown Language"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-2.html#todays-carpentries-tutorials",
+    "href": "tutorials/tutorial-2.html#todays-carpentries-tutorials",
+    "title": "Working with Quarto Files and the Markdown Language",
+    "section": "Today’s Carpentries Tutorials",
+    "text": "Today’s Carpentries Tutorials\nDuring these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (https://carpentries-incubator.github.io/reproducible-publications-quarto/) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.\nFor this session, we will be covering the following topics:\n\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.html\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/04-writing-styling/index.html",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Working with Quarto Files and the Markdown Language"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-2.html#more-practice-with-yaml-and-markdown",
+    "href": "tutorials/tutorial-2.html#more-practice-with-yaml-and-markdown",
+    "title": "Working with Quarto Files and the Markdown Language",
+    "section": "More practice with YAML and Markdown",
+    "text": "More practice with YAML and Markdown\nThe Carpentries tutorials provide a good introduction to YAML and editing in the Visual Editor, but you may want some more practice with YAML and editing in markdown. The Quarto workshop from posit::conf(2024) provides a slide deck for playing around with YAML and markdown languages: https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/anatomy-of-a-document\nWe will walk through some of the features discussed in this slide deck, but feel free to click through on your own for some additional practice.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Working with Quarto Files and the Markdown Language"
+    ]
+  },
+  {
     "objectID": "tutorials/tutorial-4.html",
     "href": "tutorials/tutorial-4.html",
     "title": "Cross-references, bibliography and citations in Quarto files",
