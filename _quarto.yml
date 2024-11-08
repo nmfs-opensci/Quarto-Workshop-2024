@@ -61,6 +61,8 @@ website:
         contents:
         - text: Introduction to RStudio and Quarto
           href: tutorials/tutorial-1.qmd
+        - text: Working with Quarto Files and the Markdown Language
+          href: tutorials/tutorial-2.qmd
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
         href: https://fisheries.noaa.gov

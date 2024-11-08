@@ -1,9 +1,43 @@
 ---
-title: Working with Quarto files and the Markdown language
+title: Working with Quarto Files and the Markdown Language
 ---
 
 ::: {.callout-note title="Learning Objectives"}
-1.  Coming Soon!
-
-## 
+1.  Understand what Quarto is and its applications.
+2.  Learn about the structure of a quarto document.
+3.  Learn how a quarto document works.
+4.  Learn how to render a .qmd file into an output format.
+5.  Apply formatting and styling using the visual editor and markdown
+6.  Learn how to add inline code to your .qmd document.
 :::
+
+## Instructions for Forking the Carpentries Example Repository
+
+The Carpentries tutorials we are using will require you to "fork" the GitHub repository that contains the course material for future sessions. This will put a copy of the repository in your GitHub that will allow you to make commits without changing the original repository. To make things go smoothly in future sessions, make sure you set up your forked repository in RStudio:
+
+1.  To fork the repository, go to the following link: <https://github.com/UCSBCarpentry/Quarto-Project-Example/fork>\
+    This should take you to a screen that looks something like the attached screenshot. Keep everything the way it is and click the "Create Fork" button in the bottom right-hand corner of the page. Once <https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.html>the repository finishes setting up, it will open with the forked copy on your GitHub.\
+    ![](images/paste-1.png)
+
+2.  After forking the repository, click the green Code button in the center-right of the repository window. This will bring down a dropdown menu with the link to the forked repository. Copy the link using the icon with the two squares on the right.
+
+    ![](images/paste-2.png)
+
+3.  In RStudio (either in JupyterHub or desktop), go to the File menu and click New Project. In the dialogue box that pops up, click Version Control, then Git. Paste your copied repository URL from GitHub into the URL box (the Project directory name will auto-populate). RStudio will create a folder as a subdirectory that includes all of the files from the forked repository. If you are working on your own desktop version of RStudio, you may want to change the project directory; otherwise, leave this as a default. Click Create Project, and RStudio will download the repository and create the project for you.
+
+    ![](images/paste-3.png){width="300"}![](images/paste-6.png){width="298"}![](images/paste-7.png){width="304"}
+
+## Today's Carpentries Tutorials
+
+During these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (<https://carpentries-incubator.github.io/reproducible-publications-quarto/>) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.
+
+For this session, we will be covering the following topics:
+
+1.  <https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.html>
+2.  <https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/04-writing-styling/index.html>
+
+## More practice with YAML and Markdown
+
+The Carpentries tutorials provide a good introduction to YAML and editing in the Visual Editor, but you may want some more practice with YAML and editing in markdown. The [Quarto workshop](https://posit-conf-2024.github.io/quarto-intro/) from [posit::conf(2024)](https://posit.co/conference/) provides a slide deck for playing around with YAML and markdown languages: <https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/anatomy-of-a-document>
+
+We will walk through some of the features discussed in this slide deck, but feel free to click through on your own for some additional practice.
