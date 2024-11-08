@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Git - Set-up for Pushing – 2024 Quarto Workshop</title>
+<title>Authenticating and Installing – 2024 Quarto Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../coc.html" rel="next">
+<link href="../content/01-accessing-jupyterhub.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -122,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Git - Set-up for Pushing</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/02-git.html">Git-Authentication</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -143,11 +145,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../team.html" class="sidebar-item-text sidebar-link">
@@ -162,13 +164,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Set-up</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../setup.html" class="sidebar-item-text sidebar-link">
@@ -185,6 +187,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../content/01-accessing-jupyterhub.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Sign up to use the JupyterHub</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../content/02-git.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Git-Authentication</span></a>
   </div>
 </li>
       </ul>
@@ -262,10 +270,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#to-push-to-github-optional" id="toc-to-push-to-github-optional" class="nav-link active" data-scroll-target="#to-push-to-github-optional">To push to GitHub (optional)</a>
-  <ul class="collapse">
-  <li><a href="#set-up-authentication-to-github" id="toc-set-up-authentication-to-github" class="nav-link" data-scroll-target="#set-up-authentication-to-github">Set up authentication to GitHub</a></li>
-  </ul></li>
+  <li><a href="#installing-git" id="toc-installing-git" class="nav-link active" data-scroll-target="#installing-git">Installing Git</a></li>
+  <li><a href="#git-and-rstudio" id="toc-git-and-rstudio" class="nav-link" data-scroll-target="#git-and-rstudio">Git and RStudio</a></li>
+  <li><a href="#authenticating" id="toc-authenticating" class="nav-link" data-scroll-target="#authenticating">Authenticating</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/content/02-git.md" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/content/02-git.md" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -281,9 +288,9 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../index.html">Welcome</a></li><li class="breadcrumb-item"><a href="../setup.html">Set-up</a></li><li class="breadcrumb-item"><a href="../content/02-git.html">Git-Authentication</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Git - Set-up for Pushing</h1>
+<h1 class="title">Authenticating and Installing</h1>
 </div>
 
 
@@ -300,54 +307,72 @@ function googleTranslateElementInit() {
 </header>
 
 
-<section id="to-push-to-github-optional" class="level1">
-<h1>To push to GitHub (optional)</h1>
-<p>This is optional if you want to save your work to GitHub.</p>
-<section id="set-up-authentication-to-github" class="level2">
-<h2 class="anchored" data-anchor-id="set-up-authentication-to-github">Set up authentication to GitHub</h2>
-<p>You need to tell GitHub who you are so you can <strong>push</strong> your local changes up to GitHub. There are a few ways to do this. I am going to show you a way that works on any computer, including a virtual computer like the JupyterHub.</p>
-<section id="step-1-generate-a-personal-access-token" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-generate-a-personal-access-token">Step 1: Generate a Personal Access Token</h3>
-<p>We are going to generate a <strong>classic</strong> token.</p>
+<section id="installing-git" class="level2">
+<h2 class="anchored" data-anchor-id="installing-git">Installing Git</h2>
+<p>Ask IT to install Git or GitHub Desktop. The later is more useful since you will get a good Git GUI and Git bundled together.</p>
+</section>
+<section id="git-and-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="git-and-rstudio">Git and RStudio</h2>
+<p>In order for RStudio to use Git, it needs to know where your Git binary is installed. Instructions: <a href="https://happygitwithr.com/rstudio-see-git" class="uri">https://happygitwithr.com/rstudio-see-git</a></p>
+<p><strong>Find Git binary</strong></p>
 <ol type="1">
-<li>Go to https://github.com/settings/tokens</li>
-<li>Click Generate new token &gt; Generate new token (classic)</li>
-<li>When the pop-up shows up, fill in a description, click the “repo” checkbox, and then scroll to bottom to click “Generate”.</li>
-<li>For scope, select “repo”.</li>
-<li>SAVE the token. You need it for the next step.</li>
+<li>In RStudio, Tools &gt; Terminal &gt; New Terminal</li>
+<li>At the command line (in the new terminal), type <code>which git</code> if on a Mac and <code>where git</code> if in Windows.<br>
+</li>
+<li>Copy that path. It probably doesn’t matter which one you use if there are multiple listed.</li>
+</ol>
+<p><strong>Tell RStudio the Git binary location</strong></p>
+<ol type="1">
+<li>In RStudio, Tools &gt; Global Options &gt; Git/SVN</li>
+<li>There is a box at top that asks for the location of the Git binary.<br>
+</li>
+<li>Paste that path in.</li>
 </ol>
 </section>
-<section id="step-2-tell-git-who-your-are" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-tell-git-who-your-are">Step 2: Tell Git who your are</h3>
+<section id="authenticating" class="level2">
+<h2 class="anchored" data-anchor-id="authenticating">Authenticating</h2>
+<section id="github-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="github-desktop">GitHub Desktop</h3>
+<p>No tokens needed.</p>
 <ol type="1">
-<li>Open a terminal. In Jupyter Lab, you will see a box labelled “Terminal” on the Launcher window. In RStudio, you will see a tab (usually in lower left) with the label “Terminal”</li>
-<li>Paste these 3 lines of code into the terminal</li>
+<li>Sign in under GitHub Desktop &gt; Settings (or Options) &gt; Account.</li>
+<li>Fill out your user info on GitHub Desktop &gt; Settings (or Options) &gt; Git.</li>
 </ol>
+<p><strong>Help! I signed up for GitHub Enterprise and GitHub Desktop will not authenticate!!</strong> Log out of GitHub Desktop under GitHub Desktop &gt; Settings (or Options) &gt; Account and log back in.</p>
+</section>
+<section id="r-users-with-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="r-users-with-rstudio">R users with RStudio</h3>
+<p>Install the <code>usethis</code> and <code>credentials</code> packages. Then run this code.</p>
+<pre><code>## set your user name and email:
+usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
+
+## create a personal access token for authentication:
+usethis::create_github_token() </code></pre>
+<p>Copy the token. It is really long. Copy that into <code>YourPAT</code> in code below.</p>
+<pre><code>## set personal access token:
+credentials::set_github_pat("YourPAT")</code></pre>
+<p>Note for Linux users: <code>credentials::set_github_pat()</code> might store your PAT in a memory cache that expires after 15 minutes or when the computer is rebooted. You thus may wish to do extend the cache timeout to match the PAT validity period: <code>usethis::use_git_config(helper="cache --timeout=2600000")</code></p>
+</section>
+<section id="with-a-personal-access-token" class="level3">
+<h3 class="anchored" data-anchor-id="with-a-personal-access-token">With a Personal Access Token</h3>
+<ol type="1">
+<li>Go to <a href="https://github.com/settings/tokens" class="uri">https://github.com/settings/tokens</a></li>
+<li>Click generate new token.</li>
+<li>For most uses, set the scope to “repo”. Definitely do not click all the scopes!</li>
+<li>Copy the token that it generates.</li>
+</ol>
+<p>Open a terminal window and type</p>
 <pre><code>git config --global user.email "&lt;your email&gt;"
 git config --global user.name "&lt;your name&gt;"
-git config --global pull.rebase false
-git config --global credential.helper store</code></pre>
-<p>Replace <code>"&lt;your email&gt;"</code> with something like <code>jane.doe@noaa.gov</code>. Replace <code>"&lt;your name&gt;"</code> with something like <code>"Jane Doe"</code>. Notice the quotes.</p>
-</section>
-<section id="step-3-trigger-git-to-ask-for-your-password" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-trigger-git-to-ask-for-your-password">Step 3: Trigger git to ask for your password</h3>
-<p>There are a few ways to do this.</p>
-<ol type="a">
-<li>Clone a repo, make a change, and then commit and push the change</li>
-<li>Clone a private repo</li>
-</ol>
-<p>Option b is easiest if you are new to Git and GitHub.</p>
-<ol type="1">
-<li>Open a terminal window</li>
-<li>Make sure you are in the home directory by typing <code>cd ~</code></li>
-<li>Clone a repo and create an RStudio project. File &gt; New Project &gt; Version Control &gt; Git. Paste in this URL https://github.com/nmfs-opensci/github_setup_check and make sure it is creating the repo at <code>~</code> (home directory).</li>
-<li>You will be asked for your GitHub username and password. For the password, enter the PERSONAL ACCESS TOKEN from Step 1.</li>
-</ol>
-<p><a href="https://youtu.be/wivH2T9FwlA">Watch a video of these 4 steps</a></p>
-<p><a href="https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/set-up.html#Git_from_RStudio_Desktop">Full instructions with other ways to do this from R</a></p>
+git config --global pull.rebase false</code></pre>
+<p>Next in the terminal window type one of these</p>
+<ul>
+<li>Unix: <code>git config --global credential.helper store</code></li>
+<li>Max: <code>git config --global credential.helper osxkeychain</code></li>
+<li>Windows: <code>git config –global credential.helper manager-core</code></li>
+</ul>
 
 
-</section>
 </section>
 </section>
 
@@ -916,6 +941,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../content/01-accessing-jupyterhub.html" class="pagination-link" aria-label="Sign up to use the JupyterHub">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Sign up to use the JupyterHub</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../coc.html" class="pagination-link" aria-label="Code of Conduct">
+        <span class="nav-page-text">Code of Conduct</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
