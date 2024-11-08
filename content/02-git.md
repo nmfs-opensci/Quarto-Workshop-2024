@@ -1,55 +1,78 @@
 ---
-title: Git - Set-up for Pushing
+title: Authenticating and Installing
 ---
 
-# To push to GitHub (optional)
+## Installing Git
 
-This is optional if you want to save your work to GitHub.
+Ask IT to install Git or GitHub Desktop. The later is more useful since you will get a good Git GUI and Git bundled together.
 
-## Set up authentication to GitHub
+## Git and RStudio
 
-You need to tell GitHub who you are so you can **push** your local changes up to GitHub. There are a few ways to do this. I am going to show you a way that works on any computer, including a virtual computer like the JupyterHub.
+In order for RStudio to use Git, it needs to know where your Git binary is installed. Instructions: <https://happygitwithr.com/rstudio-see-git>
 
-### Step 1: Generate a Personal Access Token
+**Find Git binary**
 
-We are going to generate a **classic** token.
+1. In RStudio, Tools > Terminal > New Terminal
+2. At the command line (in the new terminal), type `which git` if on a Mac and `where git` if in Windows.  
+3. Copy that path. It probably doesn't matter which one you use if there are multiple listed.
 
-1. Go to https://github.com/settings/tokens
-2. Click Generate new token > Generate new token (classic)
-3. When the pop-up shows up, fill in a description, click the "repo" checkbox, and then scroll to bottom to click "Generate".
-4. For scope, select "repo".
-5. SAVE the token. You need it for the next step.
+**Tell RStudio the Git binary location**
 
-### Step 2: Tell Git who your are
+1. In RStudio, Tools > Global Options > Git/SVN
+2. There is a box at top that asks for the location of the Git binary.  
+3. Paste that path in.
 
-1. Open a terminal. In Jupyter Lab, you will see a box labelled "Terminal" on the Launcher window. In RStudio, you will see a tab (usually in lower left) with the label "Terminal"
-2. Paste these 3 lines of code into the terminal
+## Authenticating
 
+### GitHub Desktop
+
+No tokens needed. 
+
+1. Sign in under GitHub Desktop > Settings (or Options) > Account.
+2. Fill out your user info on GitHub Desktop > Settings (or Options) > Git.
+
+**Help! I signed up for GitHub Enterprise and GitHub Desktop will not authenticate!!** 
+Log out of GitHub Desktop under GitHub Desktop > Settings (or Options) > Account and log back in.
+
+### R users with RStudio
+
+Install the `usethis` and `credentials` packages. Then run this code.
+
+```
+## set your user name and email:
+usethis::use_git_config(user.name = "YourName", user.email = "your@mail.com")
+
+## create a personal access token for authentication:
+usethis::create_github_token() 
+```
+Copy the token. It is really long. Copy that into `YourPAT` in code below.
+```
+## set personal access token:
+credentials::set_github_pat("YourPAT")
+```
+
+Note for Linux users:
+`credentials::set_github_pat()` might store your PAT in a memory cache that expires after 15 minutes or 
+when the computer is rebooted. You thus may wish to do extend the cache timeout to match the PAT validity period:
+`usethis::use_git_config(helper="cache --timeout=2600000")`
+
+### With a Personal Access Token
+
+1. Go to <https://github.com/settings/tokens>
+2. Click generate new token. 
+3. For most uses, set the scope to "repo". Definitely do not click all the scopes!
+4. Copy the token that it generates.
+
+Open a terminal window and type
 ```
 git config --global user.email "<your email>"
 git config --global user.name "<your name>"
 git config --global pull.rebase false
-git config --global credential.helper store
 ```
+Next in the terminal window type one of these
 
-Replace `"<your email>"` with something like `jane.doe@noaa.gov`. Replace `"<your name>"` with something like `"Jane Doe"`. Notice the quotes.
-
-### Step 3: Trigger git to ask for your password
-
-There are a few ways to do this.
-
-a) Clone a repo, make a change, and then commit and push the change
-b) Clone a private repo
-
-Option b is easiest if you are new to Git and GitHub. 
-
-1. Open a terminal window
-2. Make sure you are in the home directory by typing `cd ~`
-3. Clone a repo and create an RStudio project. File > New Project > Version Control > Git. Paste in this URL https://github.com/nmfs-opensci/github_setup_check and make sure it is creating the repo at `~` (home directory).
-4. You will be asked for your GitHub username and password. For the password, enter the PERSONAL ACCESS TOKEN from Step 1.
-
-[Watch a video of these 4 steps](https://youtu.be/wivH2T9FwlA)
-
-[Full instructions with other ways to do this from R](https://rverse-tutorials.github.io/RWorkflow-NWFSC-2022/set-up.html#Git_from_RStudio_Desktop)
+* Unix: `git config --global credential.helper store`
+* Max: `git config --global credential.helper osxkeychain`
+* Windows: `git config –global credential.helper manager-core`
 
 
