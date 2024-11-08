@@ -2,90 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-5.html</loc>
-    <lastmod>2024-11-01T23:04:32.173Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.150Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-3.html</loc>
-    <lastmod>2024-11-01T23:04:32.173Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.150Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-1.html</loc>
-    <lastmod>2024-11-06T20:13:09.216Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.150Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/index.html</loc>
-    <lastmod>2024-11-01T23:04:32.168Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.146Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-local-setup-r.html</loc>
-    <lastmod>2024-11-08T19:52:51.867Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/01-repro-reports.html</loc>
-    <lastmod>2024-11-01T23:04:31.972Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/01-accessing-jupyterhub.html</loc>
-    <lastmod>2024-11-02T21:48:12.470Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/support.html</loc>
-    <lastmod>2024-11-01T23:04:32.169Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.146Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/index.html</loc>
-    <lastmod>2024-11-01T23:04:32.076Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.122Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-git-rstudio.html</loc>
-    <lastmod>2024-11-01T23:04:31.973Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-git-2.html</loc>
-    <lastmod>2024-11-01T23:04:31.973Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/coc.html</loc>
-    <lastmod>2024-11-01T23:04:31.972Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-git-jupyter.html</loc>
-    <lastmod>2024-11-01T23:04:31.973Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-git.html</loc>
-    <lastmod>2024-11-08T19:27:02.978Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/schedule.html</loc>
-    <lastmod>2024-11-01T23:04:32.168Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.146Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/team.html</loc>
-    <lastmod>2024-11-01T23:04:32.170Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.146Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/01-intro-to-jupyterhub.html</loc>
-    <lastmod>2024-11-02T21:50:08.001Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-local-setup-python.html</loc>
-    <lastmod>2024-11-01T23:04:31.974Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/content/02-rstudio.html</loc>
-    <lastmod>2024-11-02T21:13:10.478Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.038Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/setup.html</loc>
-    <lastmod>2024-11-02T21:48:21.771Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.146Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html</loc>
-    <lastmod>2024-11-01T23:04:32.173Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.150Z</lastmod>
   </url>
   <url>
     <loc>https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-4.html</loc>
-    <lastmod>2024-11-01T23:04:32.173Z</lastmod>
+    <lastmod>2024-11-08T20:25:02.150Z</lastmod>
   </url>
 </urlset>
