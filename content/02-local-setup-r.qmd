@@ -16,4 +16,15 @@ Please update to the latest version of RStudio Desktop: https://posit.co/downloa
 
 ## Install the needed packages
 
-We will update this section closer to the workshops.
+For now install tidyverse.
+```
+install.packages(tidyverse)
+```
+
+## Install Git or GitHub Desktop
+
+You will need Git for interacting with GitHub and cloning repositories that we will use later.
+
+## GitHub Authentication
+
+Read this section: [Authenticating to GitHub](02-git.html).

@@ -42,8 +42,8 @@ website:
               href: content/02-local-setup-r.qmd
             - text: Sign up to use the JupyterHub
               href: content/01-accessing-jupyterhub.qmd
-#            - text: Git-Authentication
-#              href: content/02-git.md
+            - text: Git-Authentication
+              href: content/02-git.md
 #            - text: Git-JupyterLab
 #              href: content/02-git-jupyter.md
 #            - text: Git-RStudio
