@@ -96,7 +96,33 @@
     "href": "content/02-local-setup-r.html#install-the-needed-packages",
     "title": "Setting up on your computer - R users",
     "section": "Install the needed packages",
-    "text": "Install the needed packages\nWe will update this section closer to the workshops.",
+    "text": "Install the needed packages\nFor now install tidyverse.\ninstall.packages(tidyverse)",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudio on your computer"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-r.html#install-git-or-github-desktop",
+    "href": "content/02-local-setup-r.html#install-git-or-github-desktop",
+    "title": "Setting up on your computer - R users",
+    "section": "Install Git or GitHub Desktop",
+    "text": "Install Git or GitHub Desktop\nYou will need Git for interacting with GitHub and cloning repositories that we will use later.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "R and RStudio on your computer"
+    ]
+  },
+  {
+    "objectID": "content/02-local-setup-r.html#github-authentication",
+    "href": "content/02-local-setup-r.html#github-authentication",
+    "title": "Setting up on your computer - R users",
+    "section": "GitHub Authentication",
+    "text": "GitHub Authentication\nRead this section: Authenticating to GitHub.",
     "crumbs": [
       "JupyterHub",
       "Welcome",
