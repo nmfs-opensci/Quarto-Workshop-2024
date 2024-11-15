@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -269,8 +269,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#todays-carpentries-tutorials" id="toc-todays-carpentries-tutorials" class="nav-link active" data-scroll-target="#todays-carpentries-tutorials">Today’s Carpentries Tutorials</a></li>
+  <li><a href="#more-practice-with-code-chunks" id="toc-more-practice-with-code-chunks" class="nav-link" data-scroll-target="#more-practice-with-code-chunks">More practice with Code Chunks</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-3.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -314,15 +321,31 @@ Learning Objectives
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>Coming Soon!</li>
+<li>Learn about rendering engines and how they work</li>
+<li>Understand the structure and format of a code chunk</li>
+<li>Learn how to insert dynamic variables into a Quarto document</li>
+<li>Create formatted tables and figures using Quarto code chunks</li>
 </ol>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+</div>
+</div>
+<section id="todays-carpentries-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="todays-carpentries-tutorials">Today’s Carpentries Tutorials</h2>
+<p>During these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (<a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/</a>) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.</p>
+<p>For this session, we will be covering the following topics:</p>
+<ol type="1">
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/05-code-qmd/index.html" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/05-code-qmd/index.html</a></li>
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/06-rendering-code-yaml/index.html" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/06-rendering-code-yaml/index.html</a></li>
+</ol>
+<p>For this week’s tutorials, we will be relying on the forked repository from the previous week. If you have not yet set up your forked repository in RStudio, follow the instructions here: <a href="https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository" class="uri">https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository</a></p>
 </section>
-</div>
-</div>
+<section id="more-practice-with-code-chunks" class="level2">
+<h2 class="anchored" data-anchor-id="more-practice-with-code-chunks">More practice with Code Chunks</h2>
+<p>The Carpentries tutorials provide a good introduction to code chunks, but you may want some more practice. The <a href="https://posit-conf-2024.github.io/quarto-intro/">Quarto workshop</a> from <a href="https://posit.co/conference/">posit::conf(2024)</a> slide deck includes some extra examples for integrating dynamic code into Quarto documents: <a href="https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/code-cells" class="uri">https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/code-cells</a></p>
+<p>We will walk through some of the features discussed in this slide deck, but feel free to click through on your own for some additional practice.</p>
+<p>Code chunk options let you control the output of a code chunk in a YAML-like header at the beginning of the chunk. We will go over a few of these options in this week’s sessions, but there are many more options available than what we will cover. Use <a href="https://quarto.org/docs/reference/cells/cells-knitr.html">this reference guide</a> for the options available in an R code chunk.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -897,7 +920,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-3.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-3.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-3.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
