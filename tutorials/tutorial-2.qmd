@@ -16,7 +16,7 @@ title: Working with Quarto Files and the Markdown Language
 The Carpentries tutorials we are using will require you to "fork" the GitHub repository that contains the course material for future sessions. This will put a copy of the repository in your GitHub that will allow you to make commits without changing the original repository. To make things go smoothly in future sessions, make sure you set up your forked repository in RStudio:
 
 1.  To fork the repository, go to the following link: <https://github.com/UCSBCarpentry/Quarto-Project-Example/fork>\
-    This should take you to a screen that looks something like the attached screenshot. Keep everything the way it is and click the "Create Fork" button in the bottom right-hand corner of the page. Once <https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.html>the repository finishes setting up, it will open with the forked copy on your GitHub.\
+    This should take you to a screen that looks something like the attached screenshot. Keep everything the way it is and click the "Create Fork" button in the bottom right-hand corner of the page. Once the repository finishes setting up, it will open with the forked copy on your GitHub.\
     ![](images/paste-1.png)
 
 2.  After forking the repository, click the green Code button in the center-right of the repository window. This will bring down a dropdown menu with the link to the forked repository. Copy the link using the icon with the two squares on the right.
