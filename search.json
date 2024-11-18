@@ -9,16 +9,26 @@
   {
     "objectID": "tutorials/tutorial-3.html#todays-carpentries-tutorials",
     "href": "tutorials/tutorial-3.html#todays-carpentries-tutorials",
-    "title": "Dynamic output in Quarto files Code, Tables, and Figures",
+    "title": "Dynamic output in Quarto files: Code, Tables, and Figures",
     "section": "Today’s Carpentries Tutorials",
-    "text": "Today’s Carpentries Tutorials\nDuring these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (https://carpentries-incubator.github.io/reproducible-publications-quarto/) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.\nFor this session, we will be covering the following topics:\n\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/05-code-qmd/index.html\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/06-rendering-code-yaml/index.html\n\nFor this week’s tutorials, we will be relying on the forked repository from the previous week. If you have not yet set up your forked repository in RStudio, follow the instructions here: https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository"
+    "text": "Today’s Carpentries Tutorials\nDuring these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (https://carpentries-incubator.github.io/reproducible-publications-quarto/) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.\nFor this session, we will be covering the following topics:\n\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/05-code-qmd/index.html\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/06-rendering-code-yaml/index.html\n\nFor this week’s tutorials, we will be relying on the forked repository from the previous week. If you have not yet set up your forked repository in RStudio, follow the instructions here: https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Dynamic output in Quarto files: Code, Tables, and Figures"
+    ]
   },
   {
     "objectID": "tutorials/tutorial-3.html#more-practice-with-code-chunks",
     "href": "tutorials/tutorial-3.html#more-practice-with-code-chunks",
-    "title": "Dynamic output in Quarto files Code, Tables, and Figures",
+    "title": "Dynamic output in Quarto files: Code, Tables, and Figures",
     "section": "More practice with Code Chunks",
-    "text": "More practice with Code Chunks\nThe Carpentries tutorials provide a good introduction to code chunks, but you may want some more practice. The Quarto workshop from posit::conf(2024) slide deck includes some extra examples for integrating dynamic code into Quarto documents: https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/code-cells\nWe will walk through some of the features discussed in this slide deck, but feel free to click through on your own for some additional practice.\nCode chunk options let you control the output of a code chunk in a YAML-like header at the beginning of the chunk. We will go over a few of these options in this week’s sessions, but there are many more options available than what we will cover. Use this reference guide for the options available in an R code chunk."
+    "text": "More practice with Code Chunks\nThe Carpentries tutorials provide a good introduction to code chunks, but you may want some more practice. The Quarto workshop from posit::conf(2024) slide deck includes some extra examples for integrating dynamic code into Quarto documents: https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/code-cells\nWe will walk through some of the features discussed in this slide deck, but feel free to click through on your own for some additional practice.\nCode chunk options let you control the output of a code chunk in a YAML-like header at the beginning of the chunk. We will go over a few of these options in this week’s sessions, but there are many more options available than what we will cover. Use this reference guide for the options available in an R code chunk.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "Dynamic output in Quarto files: Code, Tables, and Figures"
+    ]
   },
   {
     "objectID": "tutorials/tutorial-1.html#logging-onto-jupyterhub",
