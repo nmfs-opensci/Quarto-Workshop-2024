@@ -20,3 +20,4 @@ All times Pacific. Note material marked * is NOAA access restricted.
 | Mon & Wed 12/9 & 12/11 | Quarto Workshop 5  | Intro to Quarto projects. |  |  |
 | Mon 12/16   | Hack Day (3 hours) | Put your skills to work: create a Quarto Book and put online in 3 hours |  |  |
 | Week of 12/16 to 12/19  | Seaside chats with teams (60-90 min)  | Review progress, get help and identify next steps. |  |   |
+| | | | |
