@@ -275,8 +275,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#todays-carpentries-tutorials" id="toc-todays-carpentries-tutorials" class="nav-link active" data-scroll-target="#todays-carpentries-tutorials">Today’s Carpentries Tutorials</a></li>
+  <li><a href="#zotero-and-quarto-a-powerful-pairing" id="toc-zotero-and-quarto-a-powerful-pairing" class="nav-link" data-scroll-target="#zotero-and-quarto-a-powerful-pairing">Zotero and Quarto: a Powerful Pairing</a></li>
+  </ul>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -320,12 +327,48 @@ Learning Objectives
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>Coming Soon!</li>
+<li>Insert citations and a bibliography into a Quarto document</li>
+<li>Customize citation and bibliography styles</li>
+<li>Add cross-referencing for tables, figures, and sections to direct your readers through your document</li>
 </ol>
 </div>
 </div>
+<section id="todays-carpentries-tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="todays-carpentries-tutorials">Today’s Carpentries Tutorials</h2>
+<p>During these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (<a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/</a>) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.</p>
+<p>For this session, we will be covering the following topic:</p>
+<ol type="1">
+<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html</a></li>
+</ol>
+<p>For this week’s tutorials, we will be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: <a href="https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository" class="uri">https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository</a></p>
+</section>
+<section id="zotero-and-quarto-a-powerful-pairing" class="level2">
+<h2 class="anchored" data-anchor-id="zotero-and-quarto-a-powerful-pairing">Zotero and Quarto: a Powerful Pairing</h2>
+<p><a href="https://www.zotero.org/">Zotero</a> is a free, open-source reference manager that integrates directly into RStudio and Quarto. Reference managers make life easier by providing a central location to store, access, and organize your reference collection. Zotero takes this to the next level by allowing you to directly add references from your library into your Quarto document. Zotero stores its references in a flat text-based BibTex file, rather than a proprietary file format only readable by a single application. This makes sharing reference libraries across teams much easier and more open than with other, paid reference management software.</p>
+<section id="import-into-zotero-from-endnote-or-mendeley" class="level3">
+<h3 class="anchored" data-anchor-id="import-into-zotero-from-endnote-or-mendeley">Import into Zotero from EndNote or Mendeley</h3>
+<p>If you currently use a different reference manager, you can import your library into Zotero. The steps are a bit different depending which reference manager you currently use:</p>
+<ul>
+<li><p>To import from EndNote, you will first need to export your EndNote references as an XML file, which you can then import into Zotero. This link provides instructions for doing this: <a href="https://www.zotero.org/support/kb/endnote_import" class="uri">https://www.zotero.org/support/kb/endnote_import</a><br>
+Unfortunately, if you rely on EndNote Groups for organizing your references, this method will not preserve group structure. Zotero does have its own organizing feature, called Collections. If you wish to retain the group structure from EndNote as a set of Zotero Collections, you will either need to export groups into individual XML files and import groups individually, or export your full library as one file and re-organize your references into collections after import.</p></li>
+<li><p>Importing from Mendeley is a bit easier. Zotero can connect directly to a Mendeley online library: <a href="https://www.zotero.org/support/kb/mendeley_import" class="uri">https://www.zotero.org/support/kb/mendeley_import</a></p></li>
+</ul>
+</section>
+<section id="connect-zotero-and-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="connect-zotero-and-rstudio">Connect Zotero and RStudio</h3>
+<p>Once your Zotero library is set up, you will need to connect it to RStudio. If you’re using RStudio and Zotero on your local machine, navigate to RStudio, click on the Tools menu in the top menu bar, and click on Global Options. In the dialogue box that pops up, click on R Markdown on the left side, and then Citations in the top menu:<br>
+<img src="images/paste-8.png" class="img-fluid"></p>
+<p>Select the Local option in the Zotero Library dropdown menu. Click the Browse button and navigate to the folder where your Zotero library data is stored. If you have multiple Zotero libraries, select the one you would like to use. Check the box for Use Better BibTeX for citation keys and BibTeX export; this option gives you many more fields and reference types to choose from when adding references.</p>
+<p>You can also connect Zotero if you are using RStudio on a machine that does not have access to a local Zotero installation or in the cloud (our JupyterHub, for example). Zotero provides a web-based service that will synchronize your library between your local installation and an online account. You will need to <a href="https://www.zotero.org/user/register">create a Zotero account</a>, which you will then need to link with a local Zotero install to synchronize your library (Edit -&gt; Settings -&gt; Sync).</p>
+<p>Once your Zotero library is synced to Zotero Web, <a href="https://www.zotero.org/settings/keys/new">create a Zotero API key</a> to access your library from RStudio. Give your key a name (like RStudio or JupyterHub), and give the key Read Only access to your personal library and groups:<br>
+<img src="images/paste-11.png" class="img-fluid"></p>
+<p>Click Save Key, then copy the resulting string to your clipboard. Back in your RStudio Citations options, select the Web dropdown item next to Zotero Library, and paste your Web API Key copied from Zotero into the appropriate space:<br>
+<img src="images/paste-10.png" class="img-fluid"></p>
+<p>You can verify that the key was created and copied over correctly by clicking the Verify Key button. Once you’ve verified that the key works, click OK, exit out RStudio, and re-open. If using JupyterHub, you may need to restart your JupyterHub instance. Next time you open a Quarto document in RStudio, you will be able to insert a citation directly from your Zotero library using the @ symbol.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -900,7 +943,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"><br>NMFS Open Science (2023)</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
