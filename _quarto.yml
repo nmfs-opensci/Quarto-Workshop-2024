@@ -65,6 +65,8 @@ website:
           href: tutorials/tutorial-2.qmd
         - text: 'Dynamic output in Quarto files: Code, Tables, and Figures'
           href: tutorials/tutorial-3.qmd
+        - text: Cross-references, bibliography and citations in Quarto files
+          href: tutorials/tutorial-4.qmd
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
         href: https://fisheries.noaa.gov
