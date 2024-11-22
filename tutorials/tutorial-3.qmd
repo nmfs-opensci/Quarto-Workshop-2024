@@ -1,5 +1,5 @@
 ---
-title: 'Dynamic output in Quarto files Code, Tables, and Figures'
+title: 'Dynamic output in Quarto files: Code, Tables, and Figures'
 ---
 
 ::: {.callout-note title="Learning Objectives"}
