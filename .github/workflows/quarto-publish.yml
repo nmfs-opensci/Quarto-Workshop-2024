@@ -26,7 +26,7 @@ jobs:
       
       # add software dependencies here
       - name: Install linux libraries for package dependencies
-        run: sudo apt install libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev
+        run: sudo apt install libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev libudunits2-dev
       - name: Install packages (needed for Rmd)
         run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite", "here", "tidyverse","sf"))'
 
