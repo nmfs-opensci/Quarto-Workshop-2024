@@ -25,6 +25,8 @@ jobs:
           # version: 0.9.600
       
       # add software dependencies here
+      - name: Install curl
+        run: sudo apt install libcurl4-openssl-dev
       - name: Install packages (needed for Rmd)
         run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "jsonlite", "here", "tidyverse","sf"))'
 
