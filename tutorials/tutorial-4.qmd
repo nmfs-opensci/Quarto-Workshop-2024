@@ -6,6 +6,7 @@ title: Cross-references, bibliography and citations in Quarto files
 1.  Insert citations and a bibliography into a Quarto document
 2.  Customize citation and bibliography styles
 3.  Add cross-referencing for tables, figures, and sections to direct your readers through your document
+4.  Make dynamic captions for tables and figures
 :::
 
 ## Today's Carpentries Tutorials
