@@ -16,7 +16,127 @@ For this session, we will be covering the following topic:
 
 1.  <https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html>
 
-For this week's tutorials, we will be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: <https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository>
+We will again be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: <https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository>
+
+## Creating Dynamic Captions
+
+We can create captions for tables and figures that are dynamic based on our code. We will be going through a quick example of how this can be done using knitr. Below are a couple examples that were produced for one of the Quarto teams. Feel free to play around with this with your own variables and datasets.\
+
+### Example 1: from a column value
+
+If the information for our dynamic caption is contained within a column in the dataset (say, a single static column for the species or gear), we can extract the information from the columns of interest. Let's create a dataset with a constant species and gear.
+
+```{r}
+#| label: createdata_colval
+# Create a dummy dataset
+dat <- data.frame(species = rep('Mycteroperca microlepis', 10),
+                  gear = rep(c('HL','LL','SP','UA'),5),
+                  age = 1:20,
+                  size = seq(1,100,5))
+
+write.csv(dat, file = 'dat_colval.csv',row.names = F)
+```
+
+We can make a dynamic label in a few ways. If a caption with a similar format is going to be used multiple times throughout the document, it might be easiest to make this a function. Otherwise, we can just use a standard call to `paste` (note that `paste0` is a special case of `paste` in which the separator argument is by default `''` (no separator).
+
+```{r}
+# Make dynamic label
+# read in the data file
+library(tidyverse)
+dat <- read.csv('dat_colval.csv') %>%
+  mutate(gear = factor(gear),
+         gear_name = factor(case_when(gear == 'HL' ~ 'hook and line',
+                               gear == 'LL' ~ 'longline',
+                               gear == 'SP' ~ 'spear',
+                               gear == 'UA' ~ 'unassigned gear code')))
+  
+
+# extract the species name
+spp <- unique(dat$species)
+
+# extract the gear
+gear <- levels(dat$gear)
+
+# extract the gear name
+gear_name <- levels(dat$gear_name)
+
+# paste the gear name and its abbreviation together with the abbreviation inside parentheses
+gear_caption_string <- paste0(gear_name,' (',gear,')')
+
+# paste together the caption
+cap <- paste0('Age and length of ',
+             spp,
+             ' from ',
+             paste(gear_caption_string[-length(gear_caption_string)],collapse = ', '),
+             ', and ',
+             gear_caption_string[length(gear_caption_string)],
+             '.')
+cap
+```
+
+We can assign the caption using the `#| tbl-cap` option in our table code chunk. To input an r variable, we use the following notation:
+
+```         
+#| tbl-cap: !expr cap
+```
+
+By using `!expr` we can insert an R variable or even a full expression into the caption. This example inserts the value of the `R` variable `cap` into the caption.
+
+```{r}
+#| label: tbl-colval
+#| tbl-cap: !expr cap
+
+# Make table using kable
+library(knitr)
+kable(dat)
+```
+
+### Example 2: from a column header
+
+If instead our dynamic information is in a column header, we can use the `colnames` function to extract the appropriate information. This may be useful if the structure of the data is constant but a value column changes names across datasets. The below example is a bit trivial, but may be useful for certain cases.
+
+```{r}
+#| label: createdata_colname
+# Create a dummy dataset
+dat <- data.frame(species = rep('Mycteroperca microlepis', 10),
+                  SL = 1:10,
+                  FL = 1:10)
+
+write.csv(dat, file = 'dat_colname.csv',row.names = F)
+```
+
+```{r}
+# Make dynamic label
+# read in the data file
+dat <- read.csv('dat_colname.csv')
+
+# extract the species name
+spp <- unique(dat$species)
+
+# extract the length types
+param_1 <- colnames(dat)[2]
+
+param_2 <- colnames(dat)[3]
+
+# paste together the caption
+cap <- paste(spp,
+             param_1,
+             'vs.',
+             param_2
+             )
+cap
+```
+
+```{r}
+#| label: fig-colname
+#| fig-cap: !expr cap
+
+# Make plot using ggplot
+library(ggplot2)
+ggplot(dat) + geom_point(aes(x = SL, y = FL))
+```
+
+\
 
 ## Zotero and Quarto: a Powerful Pairing
 
