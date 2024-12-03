@@ -55,44 +55,26 @@
     ]
   },
   {
-    "objectID": "support.html#thank-you-for-inspiration-and-content",
-    "href": "support.html#thank-you-for-inspiration-and-content",
-    "title": "Acknowledgements",
-    "section": "Thank you for inspiration and content!",
-    "text": "Thank you for inspiration and content!\nThank you to the open science community that has created software, teaching resources, and workflows that we have been able to build off of and be inspired by. These include: NASA Openscapes • OceanHackWeek • SnowEx Hackweek • eScience Institute, University of Washington • ICESat-2 Hackweek • Project Jupyter • Pangeo Project • CryoCloud"
-  },
-  {
-    "objectID": "schedule.html",
-    "href": "schedule.html",
-    "title": "Schedule",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quarto Workshop 2024",
     "section": "",
-    "text": "All times Pacific. Note material marked * is NOAA access restricted.\n\n\n\nDate\nDescription\nTopic\nMaterial\nVideo Links\n\n\n\n\nTues 10/29\nNMFS R User Group Monthly meeting\nQuarto Reports: 5 presenters from across NMFS\nSlides*\nVideo*\n\n\nWeek of 10/28 to 11/1\nMeeting with teams (45 min). Info and Sign-up\nDiscuss goals and plan.\n\n\n\n\nMon & Fri 11/4 & 11/8\nQuarto Workshop 1\nGetting Started with RStudio and Quarto. Quarto files versus Quarto projects.\nLink\nNA\n\n\nTues & Fri 11/12 & 11/15\nQuarto Workshop 2\nWorking with Quarto files and the Markdown language.\nLink\nTuesday*  Friday*  Forking\n\n\nWeek of 11/11 to 11/15\nSeaside chats with teams (60 min)\nReview report analysis. Brainstorm first steps.\n\n\n\n\nMon & Fri 11/18 & 11/22\nQuarto Workshop 3\nDynamic output in Quarto files: code, tables, and figures.\nLink\nMonday*\n\n\nMon & Fri 12/2 & 12/6\nQuarto Workshop 4\nCross-references, bibliography and citations in Quarto files.\n\n\n\n\nWeek of 12/2 to 12/6\nSeaside chats with teams (60-90 min)\nReview progress and identify next steps.\n\n\n\n\nMon & Wed 12/9 & 12/11\nQuarto Workshop 5\nIntro to Quarto projects.\n\n\n\n\nMon 12/16\nHack Day (3 hours)\nPut your skills to work: create a Quarto Book and put online in 3 hours\n\n\n\n\nWeek of 12/16 to 12/19\nSeaside chats with teams (60-90 min)\nReview progress, get help and identify next steps.",
+    "text": "This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up.",
     "crumbs": [
       "JupyterHub",
-      "Welcome",
-      "Schedule"
+      "Welcome"
     ]
   },
   {
-    "objectID": "content/index.html",
-    "href": "content/index.html",
-    "title": "Week 1 Tutorials",
-    "section": "",
-    "text": "During week 1, participants will gain experience with the platforms used in collaborative science: GitHub and RMarkdown."
-  },
-  {
-    "objectID": "content/index.html#prerequisites",
-    "href": "content/index.html#prerequisites",
-    "title": "Week 1 Tutorials",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nPlease follow the set up prerequisites"
-  },
-  {
-    "objectID": "content/index.html#content",
-    "href": "content/index.html#content",
-    "title": "Week 1 Tutorials",
-    "section": "Content",
-    "text": "Content\n\nThe R language and RStudio\nIntro to RStudio\nIntroduction to Git and GitHub"
+    "objectID": "index.html#goals",
+    "href": "index.html#goals",
+    "title": "Quarto Workshop 2024",
+    "section": "Goals",
+    "text": "Goals\n\nWorkshops: Provide training in Quarto and using Quarto for report writing for first time users. Open to all.\nGoogle Space to ask questions and discuss Quarto and ask questions. Open to all in NOAA. Team support: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or ‘templated’ approach with Quarto or RMarkdown\n\nThis fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but didn’t get a spot).\nTeam sign-up for 1:1 help\n\n\n\nSchedule\nSee the schedule page.\n\nThe 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. Add to your calendar or view in the NMFS Open Science calendar.\nFor teams (or individuals) who want 1:1 support for a specific project (sign-up on spreadsheet).\n\n\n\nWhat are ‘templated’ or reproducible reports?\nSee examples from NOAA Fisheries.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome"
+    ]
   },
   {
     "objectID": "content/02-local-setup-r.html",
@@ -173,87 +155,6 @@
     ]
   },
   {
-    "objectID": "content/02-git.html#installing-git",
-    "href": "content/02-git.html#installing-git",
-    "title": "Authenticating and Installing",
-    "section": "Installing Git",
-    "text": "Installing Git\nAsk IT to install Git or GitHub Desktop. The later is more useful since you will get a good Git GUI and Git bundled together.",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome",
-      "Set-up",
-      "Git-Authentication"
-    ]
-  },
-  {
-    "objectID": "content/02-git.html#git-and-rstudio",
-    "href": "content/02-git.html#git-and-rstudio",
-    "title": "Authenticating and Installing",
-    "section": "Git and RStudio",
-    "text": "Git and RStudio\nIn order for RStudio to use Git, it needs to know where your Git binary is installed. Instructions: https://happygitwithr.com/rstudio-see-git\nFind Git binary\n\nIn RStudio, Tools &gt; Terminal &gt; New Terminal\nAt the command line (in the new terminal), type which git if on a Mac and where git if in Windows.\n\nCopy that path. It probably doesn’t matter which one you use if there are multiple listed.\n\nTell RStudio the Git binary location\n\nIn RStudio, Tools &gt; Global Options &gt; Git/SVN\nThere is a box at top that asks for the location of the Git binary.\n\nPaste that path in.",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome",
-      "Set-up",
-      "Git-Authentication"
-    ]
-  },
-  {
-    "objectID": "content/02-git.html#authenticating",
-    "href": "content/02-git.html#authenticating",
-    "title": "Authenticating and Installing",
-    "section": "Authenticating",
-    "text": "Authenticating\n\nGitHub Desktop\nNo tokens needed.\n\nSign in under GitHub Desktop &gt; Settings (or Options) &gt; Account.\nFill out your user info on GitHub Desktop &gt; Settings (or Options) &gt; Git.\n\nHelp! I signed up for GitHub Enterprise and GitHub Desktop will not authenticate!! Log out of GitHub Desktop under GitHub Desktop &gt; Settings (or Options) &gt; Account and log back in.\n\n\nR users with RStudio\nInstall the usethis and credentials packages. Then run this code.\n## set your user name and email:\nusethis::use_git_config(user.name = \"YourName\", user.email = \"your@mail.com\")\n\n## create a personal access token for authentication:\nusethis::create_github_token() \nCopy the token. It is really long. Copy that into YourPAT in code below.\n## set personal access token:\ncredentials::set_github_pat(\"YourPAT\")\nNote for Linux users: credentials::set_github_pat() might store your PAT in a memory cache that expires after 15 minutes or when the computer is rebooted. You thus may wish to do extend the cache timeout to match the PAT validity period: usethis::use_git_config(helper=\"cache --timeout=2600000\")\n\n\nWith a Personal Access Token\n\nGo to https://github.com/settings/tokens\nClick generate new token.\nFor most uses, set the scope to “repo”. Definitely do not click all the scopes!\nCopy the token that it generates.\n\nOpen a terminal window and type\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\nNext in the terminal window type one of these\n\nUnix: git config --global credential.helper store\nMax: git config --global credential.helper osxkeychain\nWindows: git config –global credential.helper manager-core",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome",
-      "Set-up",
-      "Git-Authentication"
-    ]
-  },
-  {
-    "objectID": "content/02-git-jupyter.html#summary",
-    "href": "content/02-git-jupyter.html#summary",
-    "title": "Git - Jupyter Lab",
-    "section": "Summary",
-    "text": "Summary\nIn this tutorial, we will provide a brief introduction to:\n\nCommand line (terminal/shell)\nNavigating around folders in Jupyter Lab\nVersion Control (code management using git)\nSetting up Git in Jupyter Lab\nThe Git GUI in Jupyter Lab\nBasic Git commands"
-  },
-  {
-    "objectID": "content/02-git-jupyter.html#introduction-jupyter-lab",
-    "href": "content/02-git-jupyter.html#introduction-jupyter-lab",
-    "title": "Git - Jupyter Lab",
-    "section": "Introduction :: Jupyter Lab",
-    "text": "Introduction :: Jupyter Lab\nWhen you start the JupyterHub, you will be in Jupyter Lab. From there you can click on the RStudio box and open RStudio. However for this tutorial, we will stay in Juptyer Lab."
-  },
-  {
-    "objectID": "content/02-git-jupyter.html#introduction-terminalshell",
-    "href": "content/02-git-jupyter.html#introduction-terminalshell",
-    "title": "Git - Jupyter Lab",
-    "section": "Introduction :: Terminal/Shell",
-    "text": "Introduction :: Terminal/Shell\nLog into the JupyterHub. If you do not see this\n\nThen go to File &gt; New Launcher\nClick on the “Terminal” box to open a new terminal window.\n\nShell or Terminal Basics\n\nWhat is Terminal or Shell?\nNavigating Files and Directories\nWorking with Files and Directories\nOptional: Detailed self-paced lesson on running scripts from the shell: Shell Lesson from Software Carpentry\n\nYou will need only basic navigation skills for this course: cd, ls and cat\n\npwd where am I\ncd nameofdir move into a directory\ncd .. move up a directory\nls list the files in the current directory\nls -a list the files including hidden files\nls -l list the files with more info\ncat filename print out the contents of a file\n\n\n\nLet’s try\nls\nls -a\ncd shared\nls\ncd shell-tutorial\ncat lesson1.sh\ncd ..\ncd ..\n\n\nClose the terminal\nJust click on the X in the terminal tab"
-  },
-  {
-    "objectID": "content/02-git-jupyter.html#introduction-file-navigation",
-    "href": "content/02-git-jupyter.html#introduction-file-navigation",
-    "title": "Git - Jupyter Lab",
-    "section": "Introduction :: File Navigation",
-    "text": "Introduction :: File Navigation\nIn the far left, you will see a line of icons. The top one is a folder and allows us to move around our file system.\n\nClick on shared. Now you can see the files in the shared directory.\nClick on shell-tutorial. Then click on lesson1.sh. The file opens. You won’t be able to save changes here because you don’t have write permission on this drive.\nClick on the folder icon that looks like this. Click on the actual folder image. \nNow it should look like this folder /\nThis shows me doing this\n\nCreate a new folder.\n\nNext to the blue rectange with a +, is a grey folder with a +. Click that to create a new folder, called lesson-scripts.\nThen click on lesson-scripts to enter the folder\n\n\nCreate a new file\n\nCreate with File &gt; New &gt; Text file\nThe file will open and you can edit it.\nSave with File &gt; Save Text\nDelete the file by right-clicking on it and clicking “Delete”"
-  },
-  {
-    "objectID": "content/02-git-jupyter.html#introduction-version-control-git",
-    "href": "content/02-git-jupyter.html#introduction-version-control-git",
-    "title": "Git - Jupyter Lab",
-    "section": "Introduction :: Version Control (Git)",
-    "text": "Introduction :: Version Control (Git)\n\nWhat is version control, git, github, and how to set it up?\nVersion control is managing and tracking changes to your documents (program source code, images, websites, data files, etc.). git is a popular tool used for version control of software code. github.com is popular platform that provides remote server hosting for git repositories. A repository is a collection of various files that you are tracking for changes and versions. Currently GitHub is the most popular platform for file sharing code and code packages.\nThis section is a step-by-step guide to set up git on our JupyterHub. We will also configure git to use your github.com account for managing your repositories hosted on github.com. There are 5 main steps.\n\n\nStep 1: Create a GitHub account\nTo complete the setup, you will need an account on github.com. If you don’t have an account, please visit github.com, create an account (free) and come back to this guide for setting up git.\n\n\nStep 2: Clone a repository\nWe have created a demo repository for you to clone:\nhttps://github.com/nmfs-opensci/Git-Lesson\n\nStart your JupyterHub\nClick on the Git icon\n\n\n\nClick “Clone a Repository”\nWhere it says “Enter the URI of the remote Git repository”, paste in the URL https://github.com/nmfs-opensci/EDMW-EarthData-Workshop-2024\nThe folder appears and you can enter the folder and edit and create files.\n\n\nYour task: Create a file with your name and save to the Git-Lesson folder"
-  },
-  {
-    "objectID": "content/02-git-jupyter.html#step-3",
-    "href": "content/02-git-jupyter.html#step-3",
-    "title": "Git - Jupyter Lab",
-    "section": "Step 3:",
-    "text": "Step 3:\nConfigure git with your name and email address.\n``` bash\ngit config --global user.name \"Makhan Virdi\"\ngit config --global user.email \"Makhan.Virdi@gmail.com\"\n```\n\n**Note:** This name and email could be different from your github.com credentials. Remember `git` is a program that keeps track of your changes locally (on the JupyterHub or your own computer) and github.com is a platform to host your repositories. However, since your changes are tracked by `git`, the email/name used in git configuration will show up next to your contributions on github.com when you `push` your repository to github.com (`git push` is discussed in a later step).\n\nConfigure git to store your github credentials to avoid having to enter your github username and token each time you push changes to your repository(in Step 5, we will describe how to use github token instead of a password)\ngit config --global credential.helper store\nCopy link for the demo repository from your github account. Click the green “Code” button and copy the link as shown.\n\nClone the repository using git clone command in the terminal\nTo clone a repository from github, copy the link for the repository (previous step) and use git clone:\ngit clone https://github.com/YOUR-GITHUB-USERNAME/check_github_setup\nNote: Replace YOUR-GITHUB-USERNAME here with your github.com username. For example, it is virdi for my github.com account as seen in this image.\n\nUse ls (list files) to verify the existence of the repository that you just cloned\n\nChange directory to the cloned repository using cd check_github_setup and check the current directory using pwd command (present working directory)\n\nCheck status of your git repository to confirm git set up using git status\n\nYou are all set with using git on your 2i2c JupyterHub! But the collaborative power of git through github needs some additional setup.\nIn the next step, we will create a new file in this repository, track changes to this file, and link it with your github.com account.\n\n\nStep 4. Creating new file and tracking changes\n\nIn the left panel on your 2i2c JupyterHub, click on the “directory” icon and then double click on “check_github_setup” directory.\n\n\nOnce you are in the check_github_setup directory, create a new file using the text editor in your 2i2c JupyterHub (File &gt;&gt; New &gt;&gt; Text File).\n\nName the file lastname.txt. For example, virdi.txt for me (use your last name). Add some content to this file (for example, I added this to my virdi.txt file: my last name is virdi).\n\nNow you should have a new file (lastname.txt) in the git repository directory check_github_setup\nCheck if git can see that you have added a new file using git status. Git reports that you have a new file that is not tracked by git yet, and suggests adding that file to the git tracking system.\n\nAs seen in this image, git suggests adding that file so it can be tracked for changes. You can add file to git for tracking changes using git add. Then, you can commit changes to this file’s content using git commit as shown in the image.\ngit add virdi.txt\ngit status\ngit commit -m \"adding a new file\"\ngit status\n\nAs seen in the image above, git is suggesting to push the change that you just committed to the remote server at github.com (so that your collaborators can also see what changes you made).\nNote: DO NOT execute push yet. Before we push to github.com, let’s configure git further and store our github.com credentials to avoid entering the credentials every time we invoke git push. For doing so, we need to create a token on github.com to be used in place of your github.com password.\n\n\n\nStep 5. Create access token on github.com\n\nGo to your github account and create a new “personal access token”: https://github.com/settings/tokens/new\n\n\n\nGenerate Personal Access Token on github.com\n\n\nEnter a description in “Note” field as seen above, select “repo” checkbox, and scroll to the bottom and click the green button “Generate Token”. Once generated, copy the token (or save it in a text file for reference).\nIMPORTANT: You will see this token only once, so be sure to copy this. If you do not copy your token at this stage, you will need to generate a new token.\n\nTo push (transfer) your changes to github, use git push in terminal. It requires you to enter your github credentials. You will be prompted to enter your github username and “password”. When prompted for your “password”, DO NOT use your github password, use the github token that was copied in the previous step.\ngit push\n\nNote: When you paste your token in the terminal window, windows users will press Ctrl+V and mac os users will press Cmd+V. If it does not work, try generating another token and use the copy icon next to the token to copy the token. Then, paste using your computer’s keyboard shortcut for paste.\nNow your password is stored in ~/.git-credentials and you will not be prompted again unless the Github token expires. You can check the presence of this git-credentials file using Terminal. Here the ~ character represents your home directory (/home/jovyan/).\nls -la ~\nThe output looks like this:\ndrwxr-xr-x 13 jovyan jovyan 6144 Oct 22 17:35 .\ndrwxr-xr-x  1 root   root   4096 Oct  4 16:21 ..\n-rw-------  1 jovyan jovyan 1754 Oct 29 18:30 .bash_history\ndrwxr-xr-x  4 jovyan jovyan 6144 Oct 29 16:38 .config\n-rw-------  1 jovyan jovyan   66 Oct 22 17:35 .git-credentials\n-rw-r--r--  1 jovyan jovyan   84 Oct 22 17:14 .gitconfig\ndrwxr-xr-x 10 jovyan jovyan 6144 Oct 21 16:19 2021-Cloud-Hackathon\nYou can also verify your git configuration\n(notebook) jovyan@jupyter-virdi:~$ git config -l\nThe output should have credential.helper = store:\nuser.email        = Makhan.Virdi@gmail.com\nuser.name         = Makhan Virdi\ncredential.helper = store\n\nNow we are all set to collaborate with github on the JupyterHub during the Cloud Hackathon!\n\n\nSummary: Git Commands\n\nCommonly used git commands (modified from source)\n\n\nGit Command\nDescription\n\n\n\n\ngit status\nShows the current state of the repository: the current working branch, files in the staging area, etc.\n\n\ngit add\nAdds a new, previously untracked file to version control and marks already tracked files to be committed with the next commit\n\n\ngit commit\nSaves the current state of the repository and creates an entry in the log\n\n\ngit log\nShows the history for the repository\n\n\ngit diff\nShows content differences between commits, branches, individual files and more\n\n\ngit clone\nCopies a repository to your local environment, including all the history\n\n\ngit pull\nGets the latest changes of a previously cloned repository\n\n\ngit push\nPushes your local changes to the remote repository, sharing them with others\n\n\n\n\n\nGit: More Details\nLesson: For a more detailed self-paced lesson on git, visit Git Lesson from Software Carpentry\nCheatsheet: Frequently used git commands\nDangit, Git!?!: If you are stuck after a git mishap, there are ready-made solutions to common problems at Dangit, Git!?!\n\n\nCloning our repository using the git Jupyter lab extension.\nIf we’re already familiar with git commands and feel more confortable using a GUI our Jupyterhub deployment comes with a git extension. This plugin allows us to operate with git using a simple user interface.\nFor example we can clone our repository using the extension.\n\n\n\ngit extension"
-  },
-  {
     "objectID": "content/01-repro-reports.html",
     "href": "content/01-repro-reports.html",
     "title": "Reproducible Reports",
@@ -277,6 +178,97 @@
       "Set-up",
       "Sign up to use the JupyterHub"
     ]
+  },
+  {
+    "objectID": "support.html#thank-you-for-inspiration-and-content",
+    "href": "support.html#thank-you-for-inspiration-and-content",
+    "title": "Acknowledgements",
+    "section": "Thank you for inspiration and content!",
+    "text": "Thank you for inspiration and content!\nThank you to the open science community that has created software, teaching resources, and workflows that we have been able to build off of and be inspired by. These include: NASA Openscapes • OceanHackWeek • SnowEx Hackweek • eScience Institute, University of Washington • ICESat-2 Hackweek • Project Jupyter • Pangeo Project • CryoCloud"
+  },
+  {
+    "objectID": "content/index.html",
+    "href": "content/index.html",
+    "title": "Week 1 Tutorials",
+    "section": "",
+    "text": "During week 1, participants will gain experience with the platforms used in collaborative science: GitHub and RMarkdown."
+  },
+  {
+    "objectID": "content/index.html#prerequisites",
+    "href": "content/index.html#prerequisites",
+    "title": "Week 1 Tutorials",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nPlease follow the set up prerequisites"
+  },
+  {
+    "objectID": "content/index.html#content",
+    "href": "content/index.html#content",
+    "title": "Week 1 Tutorials",
+    "section": "Content",
+    "text": "Content\n\nThe R language and RStudio\nIntro to RStudio\nIntroduction to Git and GitHub"
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#what-is-git-and-github",
+    "href": "content/02-git-rstudio.html#what-is-git-and-github",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "What is Git and GitHub?",
+    "text": "What is Git and GitHub?\nGit A program to track your file changes and create a history of those changes. Creates a ‘container’ for a set of files called a repository.\nGitHub A website to host these repositories and allow you to sync local copies (on your computer) to the website. Lots of functionality built on top of this."
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#some-basic-git-jargon",
+    "href": "content/02-git-rstudio.html#some-basic-git-jargon",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Some basic Git jargon",
+    "text": "Some basic Git jargon\n\nRepo Repository. It is your code and the record of your changes. This record and also the status of your repo is a hidden folder called .git . You have a local repo and a remote repo. The remote repo is on GitHub (for in our case) is called origin. The local repo is on the JupyterHub.\nStage Tell Git which changes you want to commit (write to the repo history).\nCommit Write a note about what change the staged files and “commit” that note to the repository record. You are also tagging this state of the repo and you could go back to this state if you wanted.\nPush Push local changes (commits) up to the remote repository on GitHub (origin).\nPull Pull changes on GitHub into the local repository on the JupyterHub.\nGit GUIs A graphical interface for Git (which is command line). Today I will use jupyterlab-git which we have installed on JupyterHub.\nShell A terminal window where we can issue git commands."
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#overview",
+    "href": "content/02-git-rstudio.html#overview",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Overview",
+    "text": "Overview\nToday I will cover the four basic Git/GitHub skills. The goal for today is to first get you comfortable with the basic skills and terminology. We will use what is called a “trunk-based workflow”.\n\nSimple Trunk-based Workflow:\n\nMake local (on your computer) changes to code.\nRecord what those changes were about and commit to the code change record (history).\nPush those changes to your remote repository (aka origin)\n\nWe’ll do this"
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#setting-up-git",
+    "href": "content/02-git-rstudio.html#setting-up-git",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Setting up Git",
+    "text": "Setting up Git\nYou should have gotten this done on Tuesday but if not here are the instructions\nBefore we can work with Git in the JupyterHub, we need to do some set up.\n\nTell Git who you are and to store your credentials (GitHub login info)\n\nShow me\nPaste this into a terminal window:\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\ngit config --global credential.helper store\n\nGet a Personal Access Token from GitHub\n\nCopy the token! You will need it in the next step.\nShow me Note, one change to this video is that you need to specify that you want a classic token.\n\nTrigger Git to ask for your password (that personal access token)\n\nYou can do this by cloning a private repo. In the Terminal, issue this command\ngit clone https://github.com/nmfs-opensci/github_setup_check\nIt will ask for your GitHub username and password. At the password part, paste in the Personal Access Token."
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#git-tab",
+    "href": "content/02-git-rstudio.html#git-tab",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Git tab",
+    "text": "Git tab\nWhen the instructions say to use or open or click the Git tab,"
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#the-key-skills",
+    "href": "content/02-git-rstudio.html#the-key-skills",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "The Key Skills",
+    "text": "The Key Skills\n\nSkill 1: Create a blank repo on GitHub\nSkill 2: Clone your GitHub repo to RStudio\nSkill 3: Make some changes and commit those local changes\nSkill 4: Push the changes to GitHub\nSkill 1b: Copy someone else’s GitHub repository"
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#lets-see-it-done",
+    "href": "content/02-git-rstudio.html#lets-see-it-done",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Let’s see it done!",
+    "text": "Let’s see it done!\n\nSkill 1: Create a blank repo on GitHub\n\nClick the + in the upper left from YOUR GitHub page.\nGive your repo the name Test and make sure it is public.\nClick new and check checkbox to add the Readme file and .gitignore\nCopy the URL of your new repo. It’s in the browser where you normally see a URL.\n\nShow me\n\n\nSkill 2: Clone your repo to the RStudio\nIn RStudio we do this by making a new project.\n\nCopy the URL of your repo. https://www.github.com/yourname/Test\nFile &gt; New Project &gt; Version Control &gt; Git\nPast in the URL of your repo from Step 1\nCheck that it is being created in your Home directory which will be denoted ~ in the JupyterHub.\nClick Create.\n\nShow me\n\n\nSkill 3: Make some changes and commit your changes\nThis writes a note about what changes you have made. It also marks a ‘point’ in time that you can go back to if you need to.\n\nMake some changes to the README.md file in the Test repo.\nClick the Git tab, and stage the change(s) by checking the checkboxes next to the files listed.\nClick the Commit button.\nAdd a commit comment, click commit.\n\nShow me\n\n\nSkill 4: Push changes to GitHub / Pull changes from GitHub\nTo push changes you committed in Skill #3\n\nFrom Git tab, click on the Green up arrow that says Push.\nTo pull changes on GitHub that are not on your local computer:\nMake some changes directly on GitHub (not in RStudio)\nFrom Git tab, click on the down arrow that says Pull.\n\nShow me\n\n\nPair-activity 1\nIn RStudio,\n\nMake a copy of README.md\nRename it to .md\nAdd some text.\nStage and commit the added file.\nPush to GitHub.\n\nTry before watching.\nShow me in RStudio – Show me in the shell – Show me in jupyter-git\n\n\nPair-activity 2\nAll of this activity is in RStudio.\n\nClone this repo https://github.com/nmfs-opensci/git-basics to RStudio and create a new project\nNavigate to the files in your new project, create a filed called to &lt;yourname&gt;.md. Use your actual name so the filename is different from everyone elses.\nStage and then commit that new file.\nPush to GitHub.\nMake some more changes and push to GitHub.\nPull in your partner’s (and everyone elses) changes\n\nShow me in RStudio – Show me in JupyterLab\n\n\nPair-activity 3\nYou can copy your own or other people’s repos1.\n\nIn a browser, go to the GitHub repository https://github.com/RWorkflow-Workshops/Week5\nCopy its URL.\nNavigate to your GitHub page: click your icon in the upper right and then ‘your repositories’\nClick the + in top right and click import repository. Paste in the URL and give your repo a name.\nUse Skill #1 to clone your new repo to RStudio and create a new project"
+  },
+  {
+    "objectID": "content/02-git-rstudio.html#footnotes",
+    "href": "content/02-git-rstudio.html#footnotes",
+    "title": "Basic Git/GitHub Skills Using RStudio",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nThis is different from forking. There is no connection to the original repository.↩︎"
+  },
+  {
+    "objectID": "content/02-git-2.html#set-up-authentication-to-github",
+    "href": "content/02-git-2.html#set-up-authentication-to-github",
+    "title": "Git - Set-up for Pushing",
+    "section": "Set up authentication to GitHub",
+    "text": "Set up authentication to GitHub\nYou need to tell GitHub who you are so you can push your local changes up to GitHub. There are a few ways to do this. I am going to show you a way that works on any computer, including a virtual computer like the JupyterHub.\n\nStep 1: Generate a Personal Access Token\nWe are going to generate a classic token.\n\nGo to https://github.com/settings/tokens\nClick Generate new token &gt; Generate new token (classic)\nWhen the pop-up shows up, fill in a description, click the “repo” checkbox, and then scroll to bottom to click “Generate”.\nFor scope, select “repo”.\nSAVE the token. You need it for the next step.\n\n\n\nStep 2: Tell Git who your are\n\nOpen a terminal. In Jupyter Lab, you will see a box labelled “Terminal” on the Launcher window. In RStudio, you will see a tab (usually in lower left) with the label “Terminal”\nPaste these 3 lines of code into the terminal\n\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\ngit config --global credential.helper store\nReplace \"&lt;your email&gt;\" with something like jane.doe@noaa.gov. Replace \"&lt;your name&gt;\" with something like \"Jane Doe\". Notice the quotes.\n\n\nStep 3: Trigger git to ask for your password\nThere are a few ways to do this.\n\nClone a repo, make a change, and then commit and push the change\nClone a private repo\n\nOption b is easiest if you are new to Git and GitHub.\n\nOpen a terminal window\nMake sure you are in the home directory by typing cd ~\nClone a repo and create an RStudio project. File &gt; New Project &gt; Version Control &gt; Git. Paste in this URL https://github.com/nmfs-opensci/github_setup_check and make sure it is creating the repo at ~ (home directory).\nYou will be asked for your GitHub username and password. For the password, enter the PERSONAL ACCESS TOKEN from Step 1.\n\nWatch a video of these 4 steps\nFull instructions with other ways to do this from R"
   },
   {
     "objectID": "coc.html",
@@ -324,6 +316,111 @@
       "JupyterHub",
       "Welcome",
       "Code of Conduct"
+    ]
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#summary",
+    "href": "content/02-git-jupyter.html#summary",
+    "title": "Git - Jupyter Lab",
+    "section": "Summary",
+    "text": "Summary\nIn this tutorial, we will provide a brief introduction to:\n\nCommand line (terminal/shell)\nNavigating around folders in Jupyter Lab\nVersion Control (code management using git)\nSetting up Git in Jupyter Lab\nThe Git GUI in Jupyter Lab\nBasic Git commands"
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-jupyter-lab",
+    "href": "content/02-git-jupyter.html#introduction-jupyter-lab",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: Jupyter Lab",
+    "text": "Introduction :: Jupyter Lab\nWhen you start the JupyterHub, you will be in Jupyter Lab. From there you can click on the RStudio box and open RStudio. However for this tutorial, we will stay in Juptyer Lab."
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-terminalshell",
+    "href": "content/02-git-jupyter.html#introduction-terminalshell",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: Terminal/Shell",
+    "text": "Introduction :: Terminal/Shell\nLog into the JupyterHub. If you do not see this\n\nThen go to File &gt; New Launcher\nClick on the “Terminal” box to open a new terminal window.\n\nShell or Terminal Basics\n\nWhat is Terminal or Shell?\nNavigating Files and Directories\nWorking with Files and Directories\nOptional: Detailed self-paced lesson on running scripts from the shell: Shell Lesson from Software Carpentry\n\nYou will need only basic navigation skills for this course: cd, ls and cat\n\npwd where am I\ncd nameofdir move into a directory\ncd .. move up a directory\nls list the files in the current directory\nls -a list the files including hidden files\nls -l list the files with more info\ncat filename print out the contents of a file\n\n\n\nLet’s try\nls\nls -a\ncd shared\nls\ncd shell-tutorial\ncat lesson1.sh\ncd ..\ncd ..\n\n\nClose the terminal\nJust click on the X in the terminal tab"
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-file-navigation",
+    "href": "content/02-git-jupyter.html#introduction-file-navigation",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: File Navigation",
+    "text": "Introduction :: File Navigation\nIn the far left, you will see a line of icons. The top one is a folder and allows us to move around our file system.\n\nClick on shared. Now you can see the files in the shared directory.\nClick on shell-tutorial. Then click on lesson1.sh. The file opens. You won’t be able to save changes here because you don’t have write permission on this drive.\nClick on the folder icon that looks like this. Click on the actual folder image. \nNow it should look like this folder /\nThis shows me doing this\n\nCreate a new folder.\n\nNext to the blue rectange with a +, is a grey folder with a +. Click that to create a new folder, called lesson-scripts.\nThen click on lesson-scripts to enter the folder\n\n\nCreate a new file\n\nCreate with File &gt; New &gt; Text file\nThe file will open and you can edit it.\nSave with File &gt; Save Text\nDelete the file by right-clicking on it and clicking “Delete”"
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#introduction-version-control-git",
+    "href": "content/02-git-jupyter.html#introduction-version-control-git",
+    "title": "Git - Jupyter Lab",
+    "section": "Introduction :: Version Control (Git)",
+    "text": "Introduction :: Version Control (Git)\n\nWhat is version control, git, github, and how to set it up?\nVersion control is managing and tracking changes to your documents (program source code, images, websites, data files, etc.). git is a popular tool used for version control of software code. github.com is popular platform that provides remote server hosting for git repositories. A repository is a collection of various files that you are tracking for changes and versions. Currently GitHub is the most popular platform for file sharing code and code packages.\nThis section is a step-by-step guide to set up git on our JupyterHub. We will also configure git to use your github.com account for managing your repositories hosted on github.com. There are 5 main steps.\n\n\nStep 1: Create a GitHub account\nTo complete the setup, you will need an account on github.com. If you don’t have an account, please visit github.com, create an account (free) and come back to this guide for setting up git.\n\n\nStep 2: Clone a repository\nWe have created a demo repository for you to clone:\nhttps://github.com/nmfs-opensci/Git-Lesson\n\nStart your JupyterHub\nClick on the Git icon\n\n\n\nClick “Clone a Repository”\nWhere it says “Enter the URI of the remote Git repository”, paste in the URL https://github.com/nmfs-opensci/EDMW-EarthData-Workshop-2024\nThe folder appears and you can enter the folder and edit and create files.\n\n\nYour task: Create a file with your name and save to the Git-Lesson folder"
+  },
+  {
+    "objectID": "content/02-git-jupyter.html#step-3",
+    "href": "content/02-git-jupyter.html#step-3",
+    "title": "Git - Jupyter Lab",
+    "section": "Step 3:",
+    "text": "Step 3:\nConfigure git with your name and email address.\n``` bash\ngit config --global user.name \"Makhan Virdi\"\ngit config --global user.email \"Makhan.Virdi@gmail.com\"\n```\n\n**Note:** This name and email could be different from your github.com credentials. Remember `git` is a program that keeps track of your changes locally (on the JupyterHub or your own computer) and github.com is a platform to host your repositories. However, since your changes are tracked by `git`, the email/name used in git configuration will show up next to your contributions on github.com when you `push` your repository to github.com (`git push` is discussed in a later step).\n\nConfigure git to store your github credentials to avoid having to enter your github username and token each time you push changes to your repository(in Step 5, we will describe how to use github token instead of a password)\ngit config --global credential.helper store\nCopy link for the demo repository from your github account. Click the green “Code” button and copy the link as shown.\n\nClone the repository using git clone command in the terminal\nTo clone a repository from github, copy the link for the repository (previous step) and use git clone:\ngit clone https://github.com/YOUR-GITHUB-USERNAME/check_github_setup\nNote: Replace YOUR-GITHUB-USERNAME here with your github.com username. For example, it is virdi for my github.com account as seen in this image.\n\nUse ls (list files) to verify the existence of the repository that you just cloned\n\nChange directory to the cloned repository using cd check_github_setup and check the current directory using pwd command (present working directory)\n\nCheck status of your git repository to confirm git set up using git status\n\nYou are all set with using git on your 2i2c JupyterHub! But the collaborative power of git through github needs some additional setup.\nIn the next step, we will create a new file in this repository, track changes to this file, and link it with your github.com account.\n\n\nStep 4. Creating new file and tracking changes\n\nIn the left panel on your 2i2c JupyterHub, click on the “directory” icon and then double click on “check_github_setup” directory.\n\n\nOnce you are in the check_github_setup directory, create a new file using the text editor in your 2i2c JupyterHub (File &gt;&gt; New &gt;&gt; Text File).\n\nName the file lastname.txt. For example, virdi.txt for me (use your last name). Add some content to this file (for example, I added this to my virdi.txt file: my last name is virdi).\n\nNow you should have a new file (lastname.txt) in the git repository directory check_github_setup\nCheck if git can see that you have added a new file using git status. Git reports that you have a new file that is not tracked by git yet, and suggests adding that file to the git tracking system.\n\nAs seen in this image, git suggests adding that file so it can be tracked for changes. You can add file to git for tracking changes using git add. Then, you can commit changes to this file’s content using git commit as shown in the image.\ngit add virdi.txt\ngit status\ngit commit -m \"adding a new file\"\ngit status\n\nAs seen in the image above, git is suggesting to push the change that you just committed to the remote server at github.com (so that your collaborators can also see what changes you made).\nNote: DO NOT execute push yet. Before we push to github.com, let’s configure git further and store our github.com credentials to avoid entering the credentials every time we invoke git push. For doing so, we need to create a token on github.com to be used in place of your github.com password.\n\n\n\nStep 5. Create access token on github.com\n\nGo to your github account and create a new “personal access token”: https://github.com/settings/tokens/new\n\n\n\nGenerate Personal Access Token on github.com\n\n\nEnter a description in “Note” field as seen above, select “repo” checkbox, and scroll to the bottom and click the green button “Generate Token”. Once generated, copy the token (or save it in a text file for reference).\nIMPORTANT: You will see this token only once, so be sure to copy this. If you do not copy your token at this stage, you will need to generate a new token.\n\nTo push (transfer) your changes to github, use git push in terminal. It requires you to enter your github credentials. You will be prompted to enter your github username and “password”. When prompted for your “password”, DO NOT use your github password, use the github token that was copied in the previous step.\ngit push\n\nNote: When you paste your token in the terminal window, windows users will press Ctrl+V and mac os users will press Cmd+V. If it does not work, try generating another token and use the copy icon next to the token to copy the token. Then, paste using your computer’s keyboard shortcut for paste.\nNow your password is stored in ~/.git-credentials and you will not be prompted again unless the Github token expires. You can check the presence of this git-credentials file using Terminal. Here the ~ character represents your home directory (/home/jovyan/).\nls -la ~\nThe output looks like this:\ndrwxr-xr-x 13 jovyan jovyan 6144 Oct 22 17:35 .\ndrwxr-xr-x  1 root   root   4096 Oct  4 16:21 ..\n-rw-------  1 jovyan jovyan 1754 Oct 29 18:30 .bash_history\ndrwxr-xr-x  4 jovyan jovyan 6144 Oct 29 16:38 .config\n-rw-------  1 jovyan jovyan   66 Oct 22 17:35 .git-credentials\n-rw-r--r--  1 jovyan jovyan   84 Oct 22 17:14 .gitconfig\ndrwxr-xr-x 10 jovyan jovyan 6144 Oct 21 16:19 2021-Cloud-Hackathon\nYou can also verify your git configuration\n(notebook) jovyan@jupyter-virdi:~$ git config -l\nThe output should have credential.helper = store:\nuser.email        = Makhan.Virdi@gmail.com\nuser.name         = Makhan Virdi\ncredential.helper = store\n\nNow we are all set to collaborate with github on the JupyterHub during the Cloud Hackathon!\n\n\nSummary: Git Commands\n\nCommonly used git commands (modified from source)\n\n\nGit Command\nDescription\n\n\n\n\ngit status\nShows the current state of the repository: the current working branch, files in the staging area, etc.\n\n\ngit add\nAdds a new, previously untracked file to version control and marks already tracked files to be committed with the next commit\n\n\ngit commit\nSaves the current state of the repository and creates an entry in the log\n\n\ngit log\nShows the history for the repository\n\n\ngit diff\nShows content differences between commits, branches, individual files and more\n\n\ngit clone\nCopies a repository to your local environment, including all the history\n\n\ngit pull\nGets the latest changes of a previously cloned repository\n\n\ngit push\nPushes your local changes to the remote repository, sharing them with others\n\n\n\n\n\nGit: More Details\nLesson: For a more detailed self-paced lesson on git, visit Git Lesson from Software Carpentry\nCheatsheet: Frequently used git commands\nDangit, Git!?!: If you are stuck after a git mishap, there are ready-made solutions to common problems at Dangit, Git!?!\n\n\nCloning our repository using the git Jupyter lab extension.\nIf we’re already familiar with git commands and feel more confortable using a GUI our Jupyterhub deployment comes with a git extension. This plugin allows us to operate with git using a simple user interface.\nFor example we can clone our repository using the extension.\n\n\n\ngit extension"
+  },
+  {
+    "objectID": "content/02-git.html#installing-git",
+    "href": "content/02-git.html#installing-git",
+    "title": "Authenticating and Installing",
+    "section": "Installing Git",
+    "text": "Installing Git\nAsk IT to install Git or GitHub Desktop. The later is more useful since you will get a good Git GUI and Git bundled together.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-Authentication"
+    ]
+  },
+  {
+    "objectID": "content/02-git.html#git-and-rstudio",
+    "href": "content/02-git.html#git-and-rstudio",
+    "title": "Authenticating and Installing",
+    "section": "Git and RStudio",
+    "text": "Git and RStudio\nIn order for RStudio to use Git, it needs to know where your Git binary is installed. Instructions: https://happygitwithr.com/rstudio-see-git\nFind Git binary\n\nIn RStudio, Tools &gt; Terminal &gt; New Terminal\nAt the command line (in the new terminal), type which git if on a Mac and where git if in Windows.\n\nCopy that path. It probably doesn’t matter which one you use if there are multiple listed.\n\nTell RStudio the Git binary location\n\nIn RStudio, Tools &gt; Global Options &gt; Git/SVN\nThere is a box at top that asks for the location of the Git binary.\n\nPaste that path in.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-Authentication"
+    ]
+  },
+  {
+    "objectID": "content/02-git.html#authenticating",
+    "href": "content/02-git.html#authenticating",
+    "title": "Authenticating and Installing",
+    "section": "Authenticating",
+    "text": "Authenticating\n\nGitHub Desktop\nNo tokens needed.\n\nSign in under GitHub Desktop &gt; Settings (or Options) &gt; Account.\nFill out your user info on GitHub Desktop &gt; Settings (or Options) &gt; Git.\n\nHelp! I signed up for GitHub Enterprise and GitHub Desktop will not authenticate!! Log out of GitHub Desktop under GitHub Desktop &gt; Settings (or Options) &gt; Account and log back in.\n\n\nR users with RStudio\nInstall the usethis and credentials packages. Then run this code.\n## set your user name and email:\nusethis::use_git_config(user.name = \"YourName\", user.email = \"your@mail.com\")\n\n## create a personal access token for authentication:\nusethis::create_github_token() \nCopy the token. It is really long. Copy that into YourPAT in code below.\n## set personal access token:\ncredentials::set_github_pat(\"YourPAT\")\nNote for Linux users: credentials::set_github_pat() might store your PAT in a memory cache that expires after 15 minutes or when the computer is rebooted. You thus may wish to do extend the cache timeout to match the PAT validity period: usethis::use_git_config(helper=\"cache --timeout=2600000\")\n\n\nWith a Personal Access Token\n\nGo to https://github.com/settings/tokens\nClick generate new token.\nFor most uses, set the scope to “repo”. Definitely do not click all the scopes!\nCopy the token that it generates.\n\nOpen a terminal window and type\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\nNext in the terminal window type one of these\n\nUnix: git config --global credential.helper store\nMax: git config --global credential.helper osxkeychain\nWindows: git config –global credential.helper manager-core",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Set-up",
+      "Git-Authentication"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "All times Pacific. Note material marked * is NOAA access restricted.\n\n\n\nDate\nDescription\nTopic\nMaterial\nVideo Links\n\n\n\n\nTues 10/29\nNMFS R User Group Monthly meeting\nQuarto Reports: 5 presenters from across NMFS\nSlides*\nVideo*\n\n\nWeek of 10/28 to 11/1\nMeeting with teams (45 min). Info and Sign-up\nDiscuss goals and plan.\n\n\n\n\nMon & Fri 11/4 & 11/8\nQuarto Workshop 1\nGetting Started with RStudio and Quarto. Quarto files versus Quarto projects.\nLink\nNA\n\n\nTues & Fri 11/12 & 11/15\nQuarto Workshop 2\nWorking with Quarto files and the Markdown language.\nLink\nTuesday*  Friday*  Forking\n\n\nWeek of 11/11 to 11/15\nSeaside chats with teams (60 min)\nReview report analysis. Brainstorm first steps.\n\n\n\n\nMon & Fri 11/18 & 11/22\nQuarto Workshop 3\nDynamic output in Quarto files: code, tables, and figures.\nLink\nMonday*  Friday*\n\n\nMon & Fri 12/2 & 12/6\nQuarto Workshop 4\nCross-references, bibliography and citations in Quarto files.\n\n\n\n\nWeek of 12/2 to 12/6\nSeaside chats with teams (60-90 min)\nReview progress and identify next steps.\n\n\n\n\nMon & Wed 12/9 & 12/11\nQuarto Workshop 5\nIntro to Quarto projects.\n\n\n\n\nMon 12/16\nHack Day (3 hours)\nPut your skills to work: create a Quarto Book and put online in 3 hours\n\n\n\n\nWeek of 12/16 to 12/19\nSeaside chats with teams (60-90 min)\nReview progress, get help and identify next steps.",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "team.html#organizers-and-instructors",
+    "href": "team.html#organizers-and-instructors",
+    "title": "Our Team",
+    "section": "Organizers and Instructors",
+    "text": "Organizers and Instructors\n\n\nEli Holmes\n\n\nNOAA Fisheries\nwebpage • GitHub • ORCID\n\n\nJon Peake\n\nWebsite\nGitHub",
+    "crumbs": [
+      "JupyterHub",
+      "Welcome",
+      "Our Team"
     ]
   },
   {
@@ -435,69 +532,6 @@
     ]
   },
   {
-    "objectID": "content/02-git-2.html#set-up-authentication-to-github",
-    "href": "content/02-git-2.html#set-up-authentication-to-github",
-    "title": "Git - Set-up for Pushing",
-    "section": "Set up authentication to GitHub",
-    "text": "Set up authentication to GitHub\nYou need to tell GitHub who you are so you can push your local changes up to GitHub. There are a few ways to do this. I am going to show you a way that works on any computer, including a virtual computer like the JupyterHub.\n\nStep 1: Generate a Personal Access Token\nWe are going to generate a classic token.\n\nGo to https://github.com/settings/tokens\nClick Generate new token &gt; Generate new token (classic)\nWhen the pop-up shows up, fill in a description, click the “repo” checkbox, and then scroll to bottom to click “Generate”.\nFor scope, select “repo”.\nSAVE the token. You need it for the next step.\n\n\n\nStep 2: Tell Git who your are\n\nOpen a terminal. In Jupyter Lab, you will see a box labelled “Terminal” on the Launcher window. In RStudio, you will see a tab (usually in lower left) with the label “Terminal”\nPaste these 3 lines of code into the terminal\n\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\ngit config --global credential.helper store\nReplace \"&lt;your email&gt;\" with something like jane.doe@noaa.gov. Replace \"&lt;your name&gt;\" with something like \"Jane Doe\". Notice the quotes.\n\n\nStep 3: Trigger git to ask for your password\nThere are a few ways to do this.\n\nClone a repo, make a change, and then commit and push the change\nClone a private repo\n\nOption b is easiest if you are new to Git and GitHub.\n\nOpen a terminal window\nMake sure you are in the home directory by typing cd ~\nClone a repo and create an RStudio project. File &gt; New Project &gt; Version Control &gt; Git. Paste in this URL https://github.com/nmfs-opensci/github_setup_check and make sure it is creating the repo at ~ (home directory).\nYou will be asked for your GitHub username and password. For the password, enter the PERSONAL ACCESS TOKEN from Step 1.\n\nWatch a video of these 4 steps\nFull instructions with other ways to do this from R"
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#what-is-git-and-github",
-    "href": "content/02-git-rstudio.html#what-is-git-and-github",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "What is Git and GitHub?",
-    "text": "What is Git and GitHub?\nGit A program to track your file changes and create a history of those changes. Creates a ‘container’ for a set of files called a repository.\nGitHub A website to host these repositories and allow you to sync local copies (on your computer) to the website. Lots of functionality built on top of this."
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#some-basic-git-jargon",
-    "href": "content/02-git-rstudio.html#some-basic-git-jargon",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "Some basic Git jargon",
-    "text": "Some basic Git jargon\n\nRepo Repository. It is your code and the record of your changes. This record and also the status of your repo is a hidden folder called .git . You have a local repo and a remote repo. The remote repo is on GitHub (for in our case) is called origin. The local repo is on the JupyterHub.\nStage Tell Git which changes you want to commit (write to the repo history).\nCommit Write a note about what change the staged files and “commit” that note to the repository record. You are also tagging this state of the repo and you could go back to this state if you wanted.\nPush Push local changes (commits) up to the remote repository on GitHub (origin).\nPull Pull changes on GitHub into the local repository on the JupyterHub.\nGit GUIs A graphical interface for Git (which is command line). Today I will use jupyterlab-git which we have installed on JupyterHub.\nShell A terminal window where we can issue git commands."
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#overview",
-    "href": "content/02-git-rstudio.html#overview",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "Overview",
-    "text": "Overview\nToday I will cover the four basic Git/GitHub skills. The goal for today is to first get you comfortable with the basic skills and terminology. We will use what is called a “trunk-based workflow”.\n\nSimple Trunk-based Workflow:\n\nMake local (on your computer) changes to code.\nRecord what those changes were about and commit to the code change record (history).\nPush those changes to your remote repository (aka origin)\n\nWe’ll do this"
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#setting-up-git",
-    "href": "content/02-git-rstudio.html#setting-up-git",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "Setting up Git",
-    "text": "Setting up Git\nYou should have gotten this done on Tuesday but if not here are the instructions\nBefore we can work with Git in the JupyterHub, we need to do some set up.\n\nTell Git who you are and to store your credentials (GitHub login info)\n\nShow me\nPaste this into a terminal window:\ngit config --global user.email \"&lt;your email&gt;\"\ngit config --global user.name \"&lt;your name&gt;\"\ngit config --global pull.rebase false\ngit config --global credential.helper store\n\nGet a Personal Access Token from GitHub\n\nCopy the token! You will need it in the next step.\nShow me Note, one change to this video is that you need to specify that you want a classic token.\n\nTrigger Git to ask for your password (that personal access token)\n\nYou can do this by cloning a private repo. In the Terminal, issue this command\ngit clone https://github.com/nmfs-opensci/github_setup_check\nIt will ask for your GitHub username and password. At the password part, paste in the Personal Access Token."
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#git-tab",
-    "href": "content/02-git-rstudio.html#git-tab",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "Git tab",
-    "text": "Git tab\nWhen the instructions say to use or open or click the Git tab,"
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#the-key-skills",
-    "href": "content/02-git-rstudio.html#the-key-skills",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "The Key Skills",
-    "text": "The Key Skills\n\nSkill 1: Create a blank repo on GitHub\nSkill 2: Clone your GitHub repo to RStudio\nSkill 3: Make some changes and commit those local changes\nSkill 4: Push the changes to GitHub\nSkill 1b: Copy someone else’s GitHub repository"
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#lets-see-it-done",
-    "href": "content/02-git-rstudio.html#lets-see-it-done",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "Let’s see it done!",
-    "text": "Let’s see it done!\n\nSkill 1: Create a blank repo on GitHub\n\nClick the + in the upper left from YOUR GitHub page.\nGive your repo the name Test and make sure it is public.\nClick new and check checkbox to add the Readme file and .gitignore\nCopy the URL of your new repo. It’s in the browser where you normally see a URL.\n\nShow me\n\n\nSkill 2: Clone your repo to the RStudio\nIn RStudio we do this by making a new project.\n\nCopy the URL of your repo. https://www.github.com/yourname/Test\nFile &gt; New Project &gt; Version Control &gt; Git\nPast in the URL of your repo from Step 1\nCheck that it is being created in your Home directory which will be denoted ~ in the JupyterHub.\nClick Create.\n\nShow me\n\n\nSkill 3: Make some changes and commit your changes\nThis writes a note about what changes you have made. It also marks a ‘point’ in time that you can go back to if you need to.\n\nMake some changes to the README.md file in the Test repo.\nClick the Git tab, and stage the change(s) by checking the checkboxes next to the files listed.\nClick the Commit button.\nAdd a commit comment, click commit.\n\nShow me\n\n\nSkill 4: Push changes to GitHub / Pull changes from GitHub\nTo push changes you committed in Skill #3\n\nFrom Git tab, click on the Green up arrow that says Push.\nTo pull changes on GitHub that are not on your local computer:\nMake some changes directly on GitHub (not in RStudio)\nFrom Git tab, click on the down arrow that says Pull.\n\nShow me\n\n\nPair-activity 1\nIn RStudio,\n\nMake a copy of README.md\nRename it to .md\nAdd some text.\nStage and commit the added file.\nPush to GitHub.\n\nTry before watching.\nShow me in RStudio – Show me in the shell – Show me in jupyter-git\n\n\nPair-activity 2\nAll of this activity is in RStudio.\n\nClone this repo https://github.com/nmfs-opensci/git-basics to RStudio and create a new project\nNavigate to the files in your new project, create a filed called to &lt;yourname&gt;.md. Use your actual name so the filename is different from everyone elses.\nStage and then commit that new file.\nPush to GitHub.\nMake some more changes and push to GitHub.\nPull in your partner’s (and everyone elses) changes\n\nShow me in RStudio – Show me in JupyterLab\n\n\nPair-activity 3\nYou can copy your own or other people’s repos1.\n\nIn a browser, go to the GitHub repository https://github.com/RWorkflow-Workshops/Week5\nCopy its URL.\nNavigate to your GitHub page: click your icon in the upper right and then ‘your repositories’\nClick the + in top right and click import repository. Paste in the URL and give your repo a name.\nUse Skill #1 to clone your new repo to RStudio and create a new project"
-  },
-  {
-    "objectID": "content/02-git-rstudio.html#footnotes",
-    "href": "content/02-git-rstudio.html#footnotes",
-    "title": "Basic Git/GitHub Skills Using RStudio",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nThis is different from forking. There is no connection to the original repository.↩︎"
-  },
-  {
     "objectID": "content/02-local-setup-python.html#start-the-docker-image",
     "href": "content/02-local-setup-python.html#start-the-docker-image",
     "title": "Setting up on your computer - Python users",
@@ -598,28 +632,6 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Quarto Workshop 2024",
-    "section": "",
-    "text": "This is a series of workshops on Quarto lead by NMFS Open Science plus 1:1 support for teams working on converting reports to a Quarto workflow. The workshops are open to anyone with no sign-up needed. The team support requires signing up.",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#goals",
-    "href": "index.html#goals",
-    "title": "Quarto Workshop 2024",
-    "section": "Goals",
-    "text": "Goals\n\nWorkshops: Provide training in Quarto and using Quarto for report writing for first time users. Open to all.\nGoogle Space to ask questions and discuss Quarto and ask questions. Open to all in NOAA. Team support: Provide targeted advice and technical support for teams (or individuals) looking to transform a specific report to a more reproducible or ‘templated’ approach with Quarto or RMarkdown\n\nThis fall we are targeting teams and individuals participating in the fall Champions cohorts (or who signed up but didn’t get a spot).\nTeam sign-up for 1:1 help\n\n\n\nSchedule\nSee the schedule page.\n\nThe 5 intro workshops are Monday and Friday at 11am PT/2pm ET during November and December. Add to your calendar or view in the NMFS Open Science calendar.\nFor teams (or individuals) who want 1:1 support for a specific project (sign-up on spreadsheet).\n\n\n\nWhat are ‘templated’ or reproducible reports?\nSee examples from NOAA Fisheries.",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome"
-    ]
-  },
-  {
     "objectID": "setup.html",
     "href": "setup.html",
     "title": "Set-up",
@@ -643,18 +655,6 @@
       "Welcome",
       "Set-up",
       "Set up info"
-    ]
-  },
-  {
-    "objectID": "team.html#organizers-and-instructors",
-    "href": "team.html#organizers-and-instructors",
-    "title": "Our Team",
-    "section": "Organizers and Instructors",
-    "text": "Organizers and Instructors\n\n\nEli Holmes\n\n\nNOAA Fisheries\nwebpage • GitHub • ORCID\n\n\nJon Peake\n\nWebsite\nGitHub",
-    "crumbs": [
-      "JupyterHub",
-      "Welcome",
-      "Our Team"
     ]
   },
   {
@@ -698,35 +698,13 @@
     "href": "tutorials/tutorial-4.html#todays-carpentries-tutorials",
     "title": "Cross-references, bibliography and citations in Quarto files",
     "section": "Today’s Carpentries Tutorials",
-    "text": "Today’s Carpentries Tutorials\nDuring these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (https://carpentries-incubator.github.io/reproducible-publications-quarto/) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.\nFor this session, we will be covering the following topic:\n\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html\n\nWe will again be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository",
-    "crumbs": [
-      "JupyterHub",
-      "Tutorials",
-      "Cross-references, bibliography and citations in Quarto files"
-    ]
-  },
-  {
-    "objectID": "tutorials/tutorial-4.html#creating-dynamic-captions",
-    "href": "tutorials/tutorial-4.html#creating-dynamic-captions",
-    "title": "Cross-references, bibliography and citations in Quarto files",
-    "section": "Creating Dynamic Captions",
-    "text": "Creating Dynamic Captions\nWe can create captions for tables and figures that are dynamic based on our code. We will be going through a quick example of how this can be done using knitr. Below are a couple examples that were produced for one of the Quarto teams. Feel free to play around with this with your own variables and datasets.\n\n\nExample 1: from a column value\nIf the information for our dynamic caption is contained within a column in the dataset (say, a single static column for the species or gear), we can extract the information from the columns of interest. Let’s create a dataset with a constant species and gear.\n\n# Create a dummy dataset\ndat &lt;- data.frame(species = rep('Mycteroperca microlepis', 10),\n                  gear = rep(c('HL','LL','SP','UA'),5),\n                  age = 1:20,\n                  size = seq(1,100,5))\n\nwrite.csv(dat, file = 'dat_colval.csv',row.names = F)\n\nWe can make a dynamic label in a few ways. If a caption with a similar format is going to be used multiple times throughout the document, it might be easiest to make this a function. Otherwise, we can just use a standard call to paste (note that paste0 is a special case of paste in which the separator argument is by default '' (no separator).\n\n# Make dynamic label\n# read in the data file\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\ndat &lt;- read.csv('dat_colval.csv') %&gt;%\n  mutate(gear = factor(gear),\n         gear_name = factor(case_when(gear == 'HL' ~ 'hook and line',\n                               gear == 'LL' ~ 'longline',\n                               gear == 'SP' ~ 'spear',\n                               gear == 'UA' ~ 'unassigned gear code')))\n  \n\n# extract the species name\nspp &lt;- unique(dat$species)\n\n# extract the gear\ngear &lt;- levels(dat$gear)\n\n# extract the gear name\ngear_name &lt;- levels(dat$gear_name)\n\n# paste the gear name and its abbreviation together with the abbreviation inside parentheses\ngear_caption_string &lt;- paste0(gear_name,' (',gear,')')\n\n# paste together the caption\ncap &lt;- paste0('Age and length of ',\n             spp,\n             ' from ',\n             paste(gear_caption_string[-length(gear_caption_string)],collapse = ', '),\n             ', and ',\n             gear_caption_string[length(gear_caption_string)],\n             '.')\ncap\n\n[1] \"Age and length of Mycteroperca microlepis from hook and line (HL), longline (LL), spear (SP), and unassigned gear code (UA).\"\n\n\nWe can assign the caption using the #| tbl-cap option in our table code chunk. To input an r variable, we use the following notation:\n#| tbl-cap: !expr cap\nBy using !expr we can insert an R variable or even a full expression into the caption. This example inserts the value of the R variable cap into the caption.\n\n# Make table using kable\nlibrary(knitr)\nkable(dat)\n\n\n\nTable 1: Age and length of Mycteroperca microlepis from hook and line (HL), longline (LL), spear (SP), and unassigned gear code (UA).\n\n\n\n\n\n\nspecies\ngear\nage\nsize\ngear_name\n\n\n\n\nMycteroperca microlepis\nHL\n1\n1\nhook and line\n\n\nMycteroperca microlepis\nLL\n2\n6\nlongline\n\n\nMycteroperca microlepis\nSP\n3\n11\nspear\n\n\nMycteroperca microlepis\nUA\n4\n16\nunassigned gear code\n\n\nMycteroperca microlepis\nHL\n5\n21\nhook and line\n\n\nMycteroperca microlepis\nLL\n6\n26\nlongline\n\n\nMycteroperca microlepis\nSP\n7\n31\nspear\n\n\nMycteroperca microlepis\nUA\n8\n36\nunassigned gear code\n\n\nMycteroperca microlepis\nHL\n9\n41\nhook and line\n\n\nMycteroperca microlepis\nLL\n10\n46\nlongline\n\n\nMycteroperca microlepis\nSP\n11\n51\nspear\n\n\nMycteroperca microlepis\nUA\n12\n56\nunassigned gear code\n\n\nMycteroperca microlepis\nHL\n13\n61\nhook and line\n\n\nMycteroperca microlepis\nLL\n14\n66\nlongline\n\n\nMycteroperca microlepis\nSP\n15\n71\nspear\n\n\nMycteroperca microlepis\nUA\n16\n76\nunassigned gear code\n\n\nMycteroperca microlepis\nHL\n17\n81\nhook and line\n\n\nMycteroperca microlepis\nLL\n18\n86\nlongline\n\n\nMycteroperca microlepis\nSP\n19\n91\nspear\n\n\nMycteroperca microlepis\nUA\n20\n96\nunassigned gear code\n\n\n\n\n\n\n\n\n\n\nExample 2: from a column header\nIf instead our dynamic information is in a column header, we can use the colnames function to extract the appropriate information. This may be useful if the structure of the data is constant but a value column changes names across datasets. The below example is a bit trivial, but may be useful for certain cases.\n\n# Create a dummy dataset\ndat &lt;- data.frame(species = rep('Mycteroperca microlepis', 10),\n                  SL = 1:10,\n                  FL = 1:10)\n\nwrite.csv(dat, file = 'dat_colname.csv',row.names = F)\n\n\n# Make dynamic label\n# read in the data file\ndat &lt;- read.csv('dat_colname.csv')\n\n# extract the species name\nspp &lt;- unique(dat$species)\n\n# extract the length types\nparam_1 &lt;- colnames(dat)[2]\n\nparam_2 &lt;- colnames(dat)[3]\n\n# paste together the caption\ncap &lt;- paste(spp,\n             param_1,\n             'vs.',\n             param_2\n             )\ncap\n\n[1] \"Mycteroperca microlepis SL vs. FL\"\n\n\n\n# Make plot using ggplot\nlibrary(ggplot2)\nggplot(dat) + geom_point(aes(x = SL, y = FL))\n\n\n\n\n\n\n\nFigure 1: Mycteroperca microlepis SL vs. FL",
-    "crumbs": [
-      "JupyterHub",
-      "Tutorials",
-      "Cross-references, bibliography and citations in Quarto files"
-    ]
+    "text": "Today’s Carpentries Tutorials\nDuring these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (https://carpentries-incubator.github.io/reproducible-publications-quarto/) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.\nFor this session, we will be covering the following topic:\n\nhttps://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html\n\nFor this week’s tutorials, we will be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository"
   },
   {
     "objectID": "tutorials/tutorial-4.html#zotero-and-quarto-a-powerful-pairing",
     "href": "tutorials/tutorial-4.html#zotero-and-quarto-a-powerful-pairing",
     "title": "Cross-references, bibliography and citations in Quarto files",
     "section": "Zotero and Quarto: a Powerful Pairing",
-    "text": "Zotero and Quarto: a Powerful Pairing\nZotero is a free, open-source reference manager that integrates directly into RStudio and Quarto. Reference managers make life easier by providing a central location to store, access, and organize your reference collection. Zotero takes this to the next level by allowing you to directly add references from your library into your Quarto document. Zotero stores its references in a flat text-based BibTex file, rather than a proprietary file format only readable by a single application. This makes sharing reference libraries across teams much easier and more open than with other, paid reference management software.\n\nImport into Zotero from EndNote or Mendeley\nIf you currently use a different reference manager, you can import your library into Zotero. The steps are a bit different depending which reference manager you currently use:\n\nTo import from EndNote, you will first need to export your EndNote references as an XML file, which you can then import into Zotero. This link provides instructions for doing this: https://www.zotero.org/support/kb/endnote_import\nUnfortunately, if you rely on EndNote Groups for organizing your references, this method will not preserve group structure. Zotero does have its own organizing feature, called Collections. If you wish to retain the group structure from EndNote as a set of Zotero Collections, you will either need to export groups into individual XML files and import groups individually, or export your full library as one file and re-organize your references into collections after import.\nImporting from Mendeley is a bit easier. Zotero can connect directly to a Mendeley online library: https://www.zotero.org/support/kb/mendeley_import\n\n\n\nConnect Zotero and RStudio\nOnce your Zotero library is set up, you will need to connect it to RStudio. If you’re using RStudio and Zotero on your local machine, navigate to RStudio, click on the Tools menu in the top menu bar, and click on Global Options. In the dialogue box that pops up, click on R Markdown on the left side, and then Citations in the top menu:\n\nSelect the Local option in the Zotero Library dropdown menu. Click the Browse button and navigate to the folder where your Zotero library data is stored. If you have multiple Zotero libraries, select the one you would like to use. Check the box for Use Better BibTeX for citation keys and BibTeX export; this option gives you many more fields and reference types to choose from when adding references.\nYou can also connect Zotero if you are using RStudio on a machine that does not have access to a local Zotero installation or in the cloud (our JupyterHub, for example). Zotero provides a web-based service that will synchronize your library between your local installation and an online account. You will need to create a Zotero account, which you will then need to link with a local Zotero install to synchronize your library (Edit -&gt; Settings -&gt; Sync).\nOnce your Zotero library is synced to Zotero Web, create a Zotero API key to access your library from RStudio. Give your key a name (like RStudio or JupyterHub), and give the key Read Only access to your personal library and groups:\n\nClick Save Key, then copy the resulting string to your clipboard. Back in your RStudio Citations options, select the Web dropdown item next to Zotero Library, and paste your Web API Key copied from Zotero into the appropriate space:\n\nYou can verify that the key was created and copied over correctly by clicking the Verify Key button. Once you’ve verified that the key works, click OK, exit out RStudio, and re-open. If using JupyterHub, you may need to restart your JupyterHub instance. Next time you open a Quarto document in RStudio, you will be able to insert a citation directly from your Zotero library using the @ symbol.",
-    "crumbs": [
-      "JupyterHub",
-      "Tutorials",
-      "Cross-references, bibliography and citations in Quarto files"
-    ]
+    "text": "Zotero and Quarto: a Powerful Pairing\nZotero is a free, open-source reference manager that integrates directly into RStudio and Quarto. Reference managers make life easier by providing a central location to store, access, and organize your reference collection. Zotero takes this to the next level by allowing you to directly add references from your library into your Quarto document. Zotero stores its references in a flat text-based BibTex file, rather than a proprietary file format only readable by a single application. This makes sharing reference libraries across teams much easier and more open than with other, paid reference management software.\n\nImport into Zotero from EndNote or Mendeley\nIf you currently use a different reference manager, you can import your library into Zotero. The steps are a bit different depending which reference manager you currently use:\n\nTo import from EndNote, you will first need to export your EndNote references as an XML file, which you can then import into Zotero. This link provides instructions for doing this: https://www.zotero.org/support/kb/endnote_import\nUnfortunately, if you rely on EndNote Groups for organizing your references, this method will not preserve group structure. Zotero does have its own organizing feature, called Collections. If you wish to retain the group structure from EndNote as a set of Zotero Collections, you will either need to export groups into individual XML files and import groups individually, or export your full library as one file and re-organize your references into collections after import.\nImporting from Mendeley is a bit easier. Zotero can connect directly to a Mendeley online library: https://www.zotero.org/support/kb/mendeley_import\n\n\n\nConnect Zotero and RStudio\nOnce your Zotero library is set up, you will need to connect it to RStudio. If you’re using RStudio and Zotero on your local machine, navigate to RStudio, click on the Tools menu in the top menu bar, and click on Global Options. In the dialogue box that pops up, click on R Markdown on the left side, and then Citations in the top menu:\n\nSelect the Local option in the Zotero Library dropdown menu. Click the Browse button and navigate to the folder where your Zotero library data is stored. If you have multiple Zotero libraries, select the one you would like to use. Check the box for Use Better BibTeX for citation keys and BibTeX export; this option gives you many more fields and reference types to choose from when adding references.\nYou can also connect Zotero if you are using RStudio on a machine that does not have access to a local Zotero installation or in the cloud (our JupyterHub, for example). Zotero provides a web-based service that will synchronize your library between your local installation and an online account. You will need to create a Zotero account, which you will then need to link with a local Zotero install to synchronize your library (Edit -&gt; Settings -&gt; Sync).\nOnce your Zotero library is synced to Zotero Web, create a Zotero API key to access your library from RStudio. Give your key a name (like RStudio or JupyterHub), and give the key Read Only access to your personal library and groups:\n\nClick Save Key, then copy the resulting string to your clipboard. Back in your RStudio Citations options, select the Web dropdown item next to Zotero Library, and paste your Web API Key copied from Zotero into the appropriate space:\n\nYou can verify that the key was created and copied over correctly by clicking the Verify Key button. Once you’ve verified that the key works, click OK, exit out RStudio, and re-open. If using JupyterHub, you may need to restart your JupyterHub instance. Next time you open a Quarto document in RStudio, you will be able to insert a citation directly from your Zotero library using the @ symbol."
   }
 ]
