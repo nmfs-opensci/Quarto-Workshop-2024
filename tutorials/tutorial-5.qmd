@@ -3,5 +3,17 @@ title: Introduction to Quarto Projects
 ---
 
 ::: {.callout-note title="Learning Objectives"}
-1.  Coming Soon!
+1.  Create a Quarto project
+2.  Learn about the different formats available for a Quarto project
+3.  Learn about using global options for project-level settings
 :::
+
+## Today's Carpentries Tutorials
+
+During these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (<https://carpentries-incubator.github.io/reproducible-publications-quarto/>) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.
+
+For this session, we will be covering the following topic:
+
+1.  <https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/07-advanced-chunk/index.html>
+
+We were introduced to Quarto projects earlier in the Carpentries tutorials ([Quarto Files vs Quarto Projects](https://carpentries-incubator.github.io/reproducible-publications-quarto/01-repro-project-org/02-reproducibility/index.html#quarto-projects)). You may notice that the title of today's Carpentries tutorial is "Advanced Code Chunk Options"; this tutorial covers some of the options that we can use for controlling output of a Quarto project. Some of the material we will cover in this session is explained a bit more here (<https://r4ds.hadley.nz/quarto-formats#websites-and-books>) and here (<https://quarto-tdg.org/projects>).
