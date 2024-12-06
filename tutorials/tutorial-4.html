@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.55">
+<meta name="generator" content="quarto-1.6.39">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -29,18 +63,20 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../tutorials/tutorial-5.html" rel="next">
+<link href="../tutorials/tutorial-3.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-34f0718a046e1c696f050a04181c961f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-23c114e9f269a5bcf5260e6b10ff2021.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -122,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Cross-references, bibliography and citations in Quarto files</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-4.html">Cross-references, bibliography and citations in Quarto files</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -234,13 +270,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Tutorials</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../tutorials/tutorial-1.html" class="sidebar-item-text sidebar-link">
@@ -257,6 +293,18 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../tutorials/tutorial-3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Dynamic output in Quarto files: Code, Tables, and Figures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/tutorial-4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Cross-references, bibliography and citations in Quarto files</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tutorials/tutorial-5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Quarto projects</span></a>
   </div>
 </li>
       </ul>
@@ -281,6 +329,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul class="collapse">
   <li><a href="#todays-carpentries-tutorials" id="toc-todays-carpentries-tutorials" class="nav-link active" data-scroll-target="#todays-carpentries-tutorials">Today’s Carpentries Tutorials</a></li>
+  <li><a href="#creating-dynamic-captions" id="toc-creating-dynamic-captions" class="nav-link" data-scroll-target="#creating-dynamic-captions">Creating Dynamic Captions</a></li>
   <li><a href="#zotero-and-quarto-a-powerful-pairing" id="toc-zotero-and-quarto-a-powerful-pairing" class="nav-link" data-scroll-target="#zotero-and-quarto-a-powerful-pairing">Zotero and Quarto: a Powerful Pairing</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-4.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
@@ -297,7 +346,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-4.html">Cross-references, bibliography and citations in Quarto files</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Cross-references, bibliography and citations in Quarto files</h1>
 </div>
@@ -330,6 +379,7 @@ Learning Objectives
 <li>Insert citations and a bibliography into a Quarto document</li>
 <li>Customize citation and bibliography styles</li>
 <li>Add cross-referencing for tables, figures, and sections to direct your readers through your document</li>
+<li>Make dynamic captions for tables and figures</li>
 </ol>
 </div>
 </div>
@@ -340,7 +390,302 @@ Learning Objectives
 <ol type="1">
 <li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/08-biblio-crossref/index.html</a></li>
 </ol>
-<p>For this week’s tutorials, we will be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: <a href="https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository" class="uri">https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository</a></p>
+<p>We will again be relying on the forked repository from previous sessions. If you have not yet set up your forked repository in RStudio, follow the instructions here: <a href="https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository" class="uri">https://nmfs-opensci.github.io/Quarto-Workshop-2024/tutorials/tutorial-2.html#instructions-for-forking-the-carpentries-example-repository</a></p>
+</section>
+<section id="creating-dynamic-captions" class="level2">
+<h2 class="anchored" data-anchor-id="creating-dynamic-captions">Creating Dynamic Captions</h2>
+<p>We can create captions for tables and figures that are dynamic based on our code. We will be going through a quick example of how this can be done using knitr. Below are a couple examples that were produced for one of the Quarto teams. Feel free to play around with this with your own variables and datasets.<br>
+</p>
+<section id="example-1-from-a-column-value" class="level3">
+<h3 class="anchored" data-anchor-id="example-1-from-a-column-value">Example 1: from a column value</h3>
+<p>If the information for our dynamic caption is contained within a column in the dataset (say, a single static column for the species or gear), we can extract the information from the columns of interest. Let’s create a dataset with a constant species and gear.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dummy dataset</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">species =</span> <span class="fu">rep</span>(<span class="st">'Mycteroperca microlepis'</span>, <span class="dv">10</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">gear =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">'HL'</span>,<span class="st">'LL'</span>,<span class="st">'SP'</span>,<span class="st">'UA'</span>),<span class="dv">5</span>),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">age =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                  <span class="at">size =</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">100</span>,<span class="dv">5</span>))</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(dat, <span class="at">file =</span> <span class="st">'dat_colval.csv'</span>,<span class="at">row.names =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can make a dynamic label in a few ways. If a caption with a similar format is going to be used multiple times throughout the document, it might be easiest to make this a function. Otherwise, we can just use a standard call to <code>paste</code> (note that <code>paste0</code> is a special case of <code>paste</code> in which the separator argument is by default <code>''</code> (no separator).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make dynamic label</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># read in the data file</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'dat_colval.csv'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">gear =</span> <span class="fu">factor</span>(gear),</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">gear_name =</span> <span class="fu">factor</span>(<span class="fu">case_when</span>(gear <span class="sc">==</span> <span class="st">'HL'</span> <span class="sc">~</span> <span class="st">'hook and line'</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>                               gear <span class="sc">==</span> <span class="st">'LL'</span> <span class="sc">~</span> <span class="st">'longline'</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                               gear <span class="sc">==</span> <span class="st">'SP'</span> <span class="sc">~</span> <span class="st">'spear'</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                               gear <span class="sc">==</span> <span class="st">'UA'</span> <span class="sc">~</span> <span class="st">'unassigned gear code'</span>)))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># extract the species name</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>spp <span class="ot">&lt;-</span> <span class="fu">unique</span>(dat<span class="sc">$</span>species)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># extract the gear</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>gear <span class="ot">&lt;-</span> <span class="fu">levels</span>(dat<span class="sc">$</span>gear)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># extract the gear name</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>gear_name <span class="ot">&lt;-</span> <span class="fu">levels</span>(dat<span class="sc">$</span>gear_name)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co"># paste the gear name and its abbreviation together with the abbreviation inside parentheses</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>gear_caption_string <span class="ot">&lt;-</span> <span class="fu">paste0</span>(gear_name,<span class="st">' ('</span>,gear,<span class="st">')'</span>)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co"># paste together the caption</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>cap <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">'Age and length of '</span>,</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>             spp,</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>             <span class="st">' from '</span>,</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>             <span class="fu">paste</span>(gear_caption_string[<span class="sc">-</span><span class="fu">length</span>(gear_caption_string)],<span class="at">collapse =</span> <span class="st">', '</span>),</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>             <span class="st">', and '</span>,</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>             gear_caption_string[<span class="fu">length</span>(gear_caption_string)],</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>             <span class="st">'.'</span>)</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>cap</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Age and length of Mycteroperca microlepis from hook and line (HL), longline (LL), spear (SP), and unassigned gear code (UA)."</code></pre>
+</div>
+</div>
+<p>We can assign the caption using the <code>#| tbl-cap</code> option in our table code chunk. To input an r variable, we use the following notation:</p>
+<pre><code>#| tbl-cap: !expr cap</code></pre>
+<p>By using <code>!expr</code> we can insert an R variable or even a full expression into the caption. This example inserts the value of the <code>R</code> variable <code>cap</code> into the caption.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make table using kable</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tbl-colval" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-colval-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Age and length of Mycteroperca microlepis from hook and line (HL), longline (LL), spear (SP), and unassigned gear code (UA).
+</figcaption>
+<div aria-describedby="tbl-colval-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">species</th>
+<th style="text-align: left;">gear</th>
+<th style="text-align: right;">age</th>
+<th style="text-align: right;">size</th>
+<th style="text-align: left;">gear_name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">HL</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">hook and line</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">LL</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">longline</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">SP</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">spear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">UA</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: left;">unassigned gear code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">HL</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: left;">hook and line</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">LL</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: left;">longline</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">SP</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: left;">spear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">UA</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: left;">unassigned gear code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">HL</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: left;">hook and line</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">LL</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: left;">longline</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">SP</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: left;">spear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">UA</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">56</td>
+<td style="text-align: left;">unassigned gear code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">HL</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: left;">hook and line</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">LL</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">66</td>
+<td style="text-align: left;">longline</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">SP</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: left;">spear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">UA</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: left;">unassigned gear code</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">HL</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">81</td>
+<td style="text-align: left;">hook and line</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">LL</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: left;">longline</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">SP</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: left;">spear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mycteroperca microlepis</td>
+<td style="text-align: left;">UA</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: left;">unassigned gear code</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+</section>
+<section id="example-2-from-a-column-header" class="level3">
+<h3 class="anchored" data-anchor-id="example-2-from-a-column-header">Example 2: from a column header</h3>
+<p>If instead our dynamic information is in a column header, we can use the <code>colnames</code> function to extract the appropriate information. This may be useful if the structure of the data is constant but a value column changes names across datasets. The below example is a bit trivial, but may be useful for certain cases.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dummy dataset</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">species =</span> <span class="fu">rep</span>(<span class="st">'Mycteroperca microlepis'</span>, <span class="dv">10</span>),</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                  <span class="at">SL =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                  <span class="at">FL =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(dat, <span class="at">file =</span> <span class="st">'dat_colname.csv'</span>,<span class="at">row.names =</span> F)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make dynamic label</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># read in the data file</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'dat_colname.csv'</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># extract the species name</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>spp <span class="ot">&lt;-</span> <span class="fu">unique</span>(dat<span class="sc">$</span>species)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># extract the length types</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>param_1 <span class="ot">&lt;-</span> <span class="fu">colnames</span>(dat)[<span class="dv">2</span>]</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>param_2 <span class="ot">&lt;-</span> <span class="fu">colnames</span>(dat)[<span class="dv">3</span>]</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co"># paste together the caption</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>cap <span class="ot">&lt;-</span> <span class="fu">paste</span>(spp,</span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>             param_1,</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>             <span class="st">'vs.'</span>,</span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>             param_2</span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>             )</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>cap</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Mycteroperca microlepis SL vs. FL"</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Make plot using ggplot</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(dat) <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> SL, <span class="at">y =</span> FL))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-colname" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-colname-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="tutorial-4_files/figure-html/fig-colname-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-colname-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Mycteroperca microlepis SL vs.&nbsp;FL
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</section>
 </section>
 <section id="zotero-and-quarto-a-powerful-pairing" class="level2">
 <h2 class="anchored" data-anchor-id="zotero-and-quarto-a-powerful-pairing">Zotero and Quarto: a Powerful Pairing</h2>
@@ -597,8 +942,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -709,7 +1052,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -935,6 +1277,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../tutorials/tutorial-3.html" class="pagination-link" aria-label="Dynamic output in Quarto files: Code, Tables, and Figures">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Dynamic output in Quarto files: Code, Tables, and Figures</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../tutorials/tutorial-5.html" class="pagination-link" aria-label="Introduction to Quarto projects">
+        <span class="nav-page-text">Introduction to Quarto projects</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
