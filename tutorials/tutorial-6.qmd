@@ -1,0 +1,40 @@
+---
+title: Advanced Reference Management with Zotero and Quarto
+---
+
+::: {.callout-note title="Learning Objectives"}
+1.  Learn about Zotero and its integration with Quarto
+2.  Create a Zotero account
+3.  Connect Zotero to Quarto
+4.  Search and insert Zotero references from Quarto
+:::
+
+## Zotero and Quarto: a Powerful Pairing
+
+[Zotero](https://www.zotero.org/) is a free, open-source reference manager that integrates directly into RStudio and Quarto. Reference managers make life easier by providing a central location to store, access, and organize your reference collection. Zotero takes this to the next level by allowing you to directly add references from your library into your Quarto document. Zotero stores its references in a flat text-based BibTex file, rather than a proprietary file format only readable by a single application. This makes sharing reference libraries across teams much easier and more open than with other, paid reference management software.
+
+### Import into Zotero from EndNote or Mendeley
+
+If you currently use a different reference manager, you can import your library into Zotero. The steps are a bit different depending which reference manager you currently use:
+
+-   To import from EndNote, you will first need to export your EndNote references as an XML file, which you can then import into Zotero. This link provides instructions for doing this: <https://www.zotero.org/support/kb/endnote_import>\
+    Unfortunately, if you rely on EndNote Groups for organizing your references, this method will not preserve group structure. Zotero does have its own organizing feature, called Collections. If you wish to retain the group structure from EndNote as a set of Zotero Collections, you will either need to export groups into individual XML files and import groups individually, or export your full library as one file and re-organize your references into collections after import.
+
+-   Importing from Mendeley is a bit easier. Zotero can connect directly to a Mendeley online library: <https://www.zotero.org/support/kb/mendeley_import>
+
+### Connect Zotero and RStudio
+
+Once your Zotero library is set up, you will need to connect it to RStudio. If you're using RStudio and Zotero on your local machine, navigate to RStudio, click on the Tools menu in the top menu bar, and click on Global Options. In the dialogue box that pops up, click on R Markdown on the left side, and then Citations in the top menu:\
+![](images/paste-8.png)
+
+Select the Local option in the Zotero Library dropdown menu. Click the Browse button and navigate to the folder where your Zotero library data is stored. If you have multiple Zotero libraries, select the one you would like to use. Check the box for Use Better BibTeX for citation keys and BibTeX export; this option gives you many more fields and reference types to choose from when adding references.
+
+You can also connect Zotero if you are using RStudio on a machine that does not have access to a local Zotero installation or in the cloud (our JupyterHub, for example). Zotero provides a web-based service that will synchronize your library between your local installation and an online account. You will need to [create a Zotero account](https://www.zotero.org/user/register), which you will then need to link with a local Zotero install to synchronize your library (Edit -\> Settings -\> Sync).
+
+Once your Zotero library is synced to Zotero Web, [create a Zotero API key](https://www.zotero.org/settings/keys/new) to access your library from RStudio. Give your key a name (like RStudio or JupyterHub), and give the key Read Only access to your personal library and groups:\
+![](images/paste-11.png)
+
+Click Save Key, then copy the resulting string to your clipboard. Back in your RStudio Citations options, select the Web dropdown item next to Zotero Library, and paste your Web API Key copied from Zotero into the appropriate space:\
+![](images/paste-10.png)
+
+You can verify that the key was created and copied over correctly by clicking the Verify Key button. Once you've verified that the key works, click OK, exit out RStudio, and re-open. If using JupyterHub, you may need to restart your JupyterHub instance. Next time you open a Quarto document in RStudio, you will be able to insert a citation directly from your Zotero library using the \@ symbol.
