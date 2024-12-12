@@ -70,7 +70,7 @@ website:
         - text: 'Introduction to Quarto projects'
           href: tutorials/tutorial-5.qmd
         - text: 'Advanced Reference Management with Zotero and Quarto'
-          href: tutorials/tutorial-5.qmd
+          href: tutorials/tutorial-6.qmd
       - text: <img width=100px>
       - text: <img width=100px>
       - text: <img src="/images/noaa_emblem_logo-2022.png" width=100px>
