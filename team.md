@@ -26,35 +26,28 @@ title: Our Team
 }
 </style>
 
-## Organizers and Instructors
+## NMFS Open Science Instructors
 
 <div class="columns-4">
-
-<div>
-### Eli Holmes
-
-<img src="images/Eli.png" alt="Eli Holmes" style="width:75%; ; border-radius: 50%;">
-
-<!--
- ![](images/Eli.png){width=75% fig-alt="picture of Eli Holmes"}
--->
-
-[NOAA Fisheries](https://www.fisheries.noaa.gov/)
-
-[webpage](https://eeholmes.github.io/) &#x2022;  [GitHub](https://github.com/eeholmes)  &#x2022; [ORCID](https://orcid.org/0000-0001-9128-8393)
-</div>
-
 
 <div>
 ### Jon Peake
     
 <img src="images/jon.jpg" alt="Jon Peake" style="width:75%; ; border-radius: 50%;">
 
+Lead Instructor <br/>
+[Website](https://peakeecology.science/) &#x2022; 
+[GitHub](https://github.com/jonpeake)  &#x2022; 
+[ORCID](https://orcid.org/0000-0001-5288-4184)
+</div>
 
-[Website](https://peakeecology.science/)
+<div>
+### Eli Holmes
 
-[GitHub]() 
+<img src="images/Eli.png" alt="Eli Holmes" style="width:75%; ; border-radius: 50%;">
 
+[webpage](https://eeholmes.github.io/) &#x2022;  [GitHub](https://github.com/eeholmes)  &#x2022; [ORCID](https://orcid.org/0000-0001-9128-8393)
 </div>
 
 </div>
+
