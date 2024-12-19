@@ -1,8 +1,7 @@
 
 ## Quarto Workshop 2024 - Introduction to Quarto for NMFS Reports
 
-**Instructors**: Jon Peake & Eli Holmes (NMFS Open Science), with quest speakers
-
+**Instructors**: Jon Peake & Eli Holmes (NMFS Open Science)
 **Dates**: Nov-Dec 2024
 
 ### Overview
