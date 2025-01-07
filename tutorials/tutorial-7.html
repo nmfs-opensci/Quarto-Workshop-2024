@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Working with Quarto Files and the Markdown Language – 2024 Quarto Workshop</title>
+<title>HackDay – Create a Quarto Book – 2024 Quarto Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../tutorials/tutorial-3.html" rel="next">
-<link href="../tutorials/tutorial-1.html" rel="prev">
+<link href="../tutorials/tutorial-6.html" rel="prev">
 <link href="../images/favicon-16x16.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -124,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-2.html">Working with Quarto Files and the Markdown Language</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-7.html">HackDay – Make a book</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -251,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-2.html" class="sidebar-item-text sidebar-link active">
+  <a href="../tutorials/tutorial-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Working with Quarto Files and the Markdown Language</span></a>
   </div>
 </li>
@@ -281,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../tutorials/tutorial-7.html" class="sidebar-item-text sidebar-link">
+  <a href="../tutorials/tutorial-7.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">HackDay – Make a book</span></a>
   </div>
 </li>
@@ -309,11 +308,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#instructions-for-forking-the-carpentries-example-repository" id="toc-instructions-for-forking-the-carpentries-example-repository" class="nav-link active" data-scroll-target="#instructions-for-forking-the-carpentries-example-repository">Instructions for Forking the Carpentries Example Repository</a></li>
-  <li><a href="#todays-carpentries-tutorials" id="toc-todays-carpentries-tutorials" class="nav-link" data-scroll-target="#todays-carpentries-tutorials">Today’s Carpentries Tutorials</a></li>
-  <li><a href="#more-practice-with-yaml-and-markdown" id="toc-more-practice-with-yaml-and-markdown" class="nav-link" data-scroll-target="#more-practice-with-yaml-and-markdown">More practice with YAML and Markdown</a></li>
+  <li><a href="#copy-the-template" id="toc-copy-the-template" class="nav-link active" data-scroll-target="#copy-the-template">Copy the template</a></li>
+  <li><a href="#clone-your-new-github-repo." id="toc-clone-your-new-github-repo." class="nav-link" data-scroll-target="#clone-your-new-github-repo.">Clone your new GitHub repo.</a></li>
+  <li><a href="#edit-the-yaml" id="toc-edit-the-yaml" class="nav-link" data-scroll-target="#edit-the-yaml">Edit the yaml</a></li>
+  <li><a href="#swap-in-a-new-logo-and-favicon" id="toc-swap-in-a-new-logo-and-favicon" class="nav-link" data-scroll-target="#swap-in-a-new-logo-and-favicon">Swap in a new logo and favicon</a></li>
+  <li><a href="#render-your-book" id="toc-render-your-book" class="nav-link" data-scroll-target="#render-your-book">Render your book</a></li>
   </ul>
-<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+<div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-7.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -327,9 +328,9 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-2.html">Working with Quarto Files and the Markdown Language</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../tutorials/tutorial-1.html">Tutorials</a></li><li class="breadcrumb-item"><a href="../tutorials/tutorial-7.html">HackDay – Make a book</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Working with Quarto Files and the Markdown Language</h1>
+<h1 class="title">HackDay – Create a Quarto Book</h1>
 </div>
 
 
@@ -357,41 +358,106 @@ Learning Objectives
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>Understand what Quarto is and its applications.</li>
-<li>Learn about the structure of a quarto document.</li>
-<li>Learn how a quarto document works.</li>
-<li>Learn how to render a .qmd file into an output format.</li>
-<li>Apply formatting and styling using the visual editor and markdown</li>
-<li>Learn how to add inline code to your .qmd document.</li>
+<li>Clone a Quarto book template</li>
+<li>Edit the yaml to customize the book</li>
+<li>Add content to your book</li>
+<li>Put online via GitHub Pages</li>
 </ol>
 </div>
 </div>
-<section id="instructions-for-forking-the-carpentries-example-repository" class="level2">
-<h2 class="anchored" data-anchor-id="instructions-for-forking-the-carpentries-example-repository">Instructions for Forking the Carpentries Example Repository</h2>
-<p>The Carpentries tutorials we are using will require you to “fork” the GitHub repository that contains the course material for future sessions. This will put a copy of the repository in your GitHub that will allow you to make commits without changing the original repository. To make things go smoothly in future sessions, make sure you set up your forked repository in RStudio. Instructions below and here a <a href="https://youtu.be/XOGbyOH0xOs">video</a> showing Eli forking the repository.</p>
+<section id="copy-the-template" class="level2">
+<h2 class="anchored" data-anchor-id="copy-the-template">Copy the template</h2>
+<p>This part is done on GitHub.</p>
 <ol type="1">
-<li><p>To fork the repository, go to the following link: <a href="https://github.com/UCSBCarpentry/Quarto-Project-Example/fork" class="uri">https://github.com/UCSBCarpentry/Quarto-Project-Example/fork</a><br>
-This should take you to a screen that looks something like the attached screenshot. Keep everything the way it is and click the “Create Fork” button in the bottom right-hand corner of the page. Once the repository finishes setting up, it will open with the forked copy on your GitHub.<br>
-<img src="images/paste-1.png" class="img-fluid"></p></li>
-<li><p>After forking the repository, click the green Code button in the center-right of the repository window. This will bring down a dropdown menu with the link to the forked repository. Copy the link using the icon with the two squares on the right.</p>
-<p><img src="images/paste-2.png" class="img-fluid"></p></li>
-<li><p>In RStudio (either in JupyterHub or desktop), go to the File menu and click New Project. In the dialogue box that pops up, click Version Control, then Git. Paste your copied repository URL from GitHub into the URL box (the Project directory name will auto-populate). RStudio will create a folder as a subdirectory that includes all of the files from the forked repository. If you are working on your own desktop version of RStudio, you may want to change the project directory; otherwise, leave this as a default. Click Create Project, and RStudio will download the repository and create the project for you.</p>
-<p><img src="images/paste-3.png" class="img-fluid" width="300"><img src="images/paste-6.png" class="img-fluid" width="298"><img src="images/paste-7.png" class="img-fluid" width="304"></p></li>
+<li>Go to https://github.com/nmfs-opensci/NOAA-quarto-book</li>
+<li>Follow the instructions (carefully) in the ReadMe: https://github.com/nmfs-opensci/NOAA-quarto-book/blob/main/README.md</li>
 </ol>
 </section>
-<section id="todays-carpentries-tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="todays-carpentries-tutorials">Today’s Carpentries Tutorials</h2>
-<p>During these workshops, we will be using the Carpentries Incubator Reproducible Publications with RStudio set of tutorials from UCSB (<a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/</a>) for most of our content. While we will be walking everyone through the tutorials, it may be helpful for you to look through the tutorials prior to attending. This will give you a feel for what we will be covering during each session, and will highlight some areas where you may need some additional work or assistance.</p>
-<p>For this session, we will be covering the following topics:</p>
+<section id="clone-your-new-github-repo." class="level2">
+<h2 class="anchored" data-anchor-id="clone-your-new-github-repo.">Clone your new GitHub repo.</h2>
+<p>This part is done on the JupyterHub or your local computer.</p>
+<section id="jupyterhub" class="level3">
+<h3 class="anchored" data-anchor-id="jupyterhub">JupyterHub</h3>
+<ul>
+<li>https://nmfs-openscapes.2i2c.cloud/</li>
+<li>Use defaults (image and size of machine)</li>
+</ul>
 <ol type="1">
-<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.html" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/03-quarto-documents/index.html</a></li>
-<li><a href="https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/04-writing-styling/index.html" class="uri">https://carpentries-incubator.github.io/reproducible-publications-quarto/02-quarto/04-writing-styling/index.html</a></li>
+<li>Authenticate to GitHub</li>
+</ol>
+<ul>
+<li>Open a terminal.</li>
+<li>Type <code>gh-scoped-creds</code>.</li>
+<li>Copy the code, click link and paste in.</li>
+<li>Click the link that appears and give the hub permission to push to your new repo (or all repos).</li>
+</ul>
+<ol start="2" type="1">
+<li>Open RStudio</li>
+</ol>
+<ul>
+<li>File &gt; New Project &gt; Version Control &gt; Git</li>
+<li>Paste in <code>https://github.com/&lt;your username&gt;/&lt;repo name&gt;</code></li>
+</ul>
+</section>
+<section id="on-your-local-computer-in-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="on-your-local-computer-in-rstudio">On your local computer in RStudio</h3>
+<p>You must have already set up Git and GitHub Authentication to work with RStudio.</p>
+<ol type="1">
+<li>Open RStudio</li>
+</ol>
+<ul>
+<li>File &gt; New Project &gt; Version Control &gt; Git</li>
+<li>Paste in <code>https://github.com/&lt;your username&gt;/&lt;repo name&gt;</code></li>
+</ul>
+</section>
+<section id="on-your-local-computer-in-github-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="on-your-local-computer-in-github-desktop">On your local computer in GitHub Desktop</h3>
+<ol type="1">
+<li>Open GitHub Desktop</li>
+</ol>
+<ul>
+<li>File &gt; Clone repository</li>
+<li>Click the Git tab in the pop-up.</li>
+<li>Paste in <code>https://github.com/&lt;your username&gt;/&lt;repo name&gt;</code></li>
+<li>Change where the directory will be made or note where it is being made.</li>
+</ul>
+<ol start="2" type="1">
+<li>Open RStudio</li>
+</ol>
+<ul>
+<li>File &gt; New Project &gt; Existing Directory</li>
+<li>Navigate to the directory created in step 1.</li>
+</ul>
+<p>Note to push changes to GitHub you will need to either use GitHub Desktop or have set up RStudio to work with Git and GitHub.</p>
+</section>
+</section>
+<section id="edit-the-yaml" class="level2">
+<h2 class="anchored" data-anchor-id="edit-the-yaml">Edit the yaml</h2>
+<ol type="1">
+<li>Open the new project for your book in RStudio.</li>
+<li>Open <code>_quarto.yml</code></li>
+<li>Edit the meta data (title, authors, urls, etc)</li>
 </ol>
 </section>
-<section id="more-practice-with-yaml-and-markdown" class="level2">
-<h2 class="anchored" data-anchor-id="more-practice-with-yaml-and-markdown">More practice with YAML and Markdown</h2>
-<p>The Carpentries tutorials provide a good introduction to YAML and editing in the Visual Editor, but you may want some more practice with YAML and editing in markdown. The <a href="https://posit-conf-2024.github.io/quarto-intro/">Quarto workshop</a> from <a href="https://posit.co/conference/">posit::conf(2024)</a> provides a slide deck for playing around with YAML and markdown languages: <a href="https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/anatomy-of-a-document" class="uri">https://posit-conf-2024.github.io/quarto-intro/materials/1-single-docs/1-welcome-to-quarto/slides.html#/anatomy-of-a-document</a></p>
-<p>We will walk through some of the features discussed in this slide deck, but feel free to click through on your own for some additional practice.</p>
+<section id="swap-in-a-new-logo-and-favicon" class="level2">
+<h2 class="anchored" data-anchor-id="swap-in-a-new-logo-and-favicon">Swap in a new logo and favicon</h2>
+<ol type="1">
+<li>Upload your image file</li>
+<li>Edit the <code>_quarto.yml</code> to point to that image</li>
+<li>Same for favicon</li>
+</ol>
+</section>
+<section id="render-your-book" class="level2">
+<h2 class="anchored" data-anchor-id="render-your-book">Render your book</h2>
+<p>In RStudio.</p>
+<ol type="1">
+<li>Click the Build tab in the upper right panel of RStudio.</li>
+<li>Click “Render Book”. All formats or Html is fine.</li>
+<li>Book should pop up in a new window.</li>
+</ol>
+<ul>
+<li>It didn’t? Click on <code>_book</code>. Right click on <code>index.html</code> and select “Open in browser”</li>
+</ul>
 
 
 </section>
@@ -960,14 +1026,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../tutorials/tutorial-1.html" class="pagination-link" aria-label="Introduction to RStudio and Quarto">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction to RStudio and Quarto</span>
+      <a href="../tutorials/tutorial-6.html" class="pagination-link" aria-label="Advanced Reference Management with Zotero and Quarto">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Advanced Reference Management with Zotero and Quarto</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../tutorials/tutorial-3.html" class="pagination-link" aria-label="Dynamic output in Quarto files: Code, Tables, and Figures">
-        <span class="nav-page-text">Dynamic output in Quarto files: Code, Tables, and Figures</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -978,7 +1041,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><img src="https://github.com/nmfs-opensci/assets/blob/main/logo/nmfs-opensci-logo2.png?raw=true" alt="NMFS Open Science logo" style="width:150px"></p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-2.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-7.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
