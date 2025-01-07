@@ -16,7 +16,7 @@
     "href": "tutorials/tutorial-7.html#clone-your-new-github-repo.",
     "title": "HackDay – Create a Quarto Book",
     "section": "Clone your new GitHub repo.",
-    "text": "Clone your new GitHub repo.\nThis part is done on the JupyterHub or your local computer.\n\nJupyterHub\n\nhttps://nmfs-openscapes.2i2c.cloud/\nUse defaults (image and size of machine)\n\n\nAuthenticate to GitHub\n\n\nOpen a terminal.\nType gh-scoped-creds.\nCopy the code, click link and paste in.\nClick the link that appears and give the hub permission to push to your new repo (or all repos).\n\n\nOpen RStudio\n\n\nFile &gt; New Project &gt; Version Control &gt; Git\nPaste in https://github.com/&lt;your username&gt;/&lt;repo name&gt;\n\n\n\nOn your local computer in RStudio\nYou must have already set up Git and GitHub Authentication to work with RStudio.\n\nOpen RStudio\n\n\nFile &gt; New Project &gt; Version Control &gt; Git\nPaste in https://github.com/&lt;your username&gt;/&lt;repo name&gt;\n\n\n\nOn your local computer in GitHub Desktop\n\nOpen GitHub Desktop\n\n\nFile &gt; Clone repository\nClick the Git tab in the pop-up.\nPaste in https://github.com/&lt;your username&gt;/&lt;repo name&gt;\nChange where the directory will be made or note where it is being made.\n\n\nOpen RStudio\n\n\nFile &gt; New Project &gt; Existing Directory\nNavigate to the directory created in step 1.\n\nNote to push changes to GitHub you will need to either use GitHub Desktop or have set up RStudio to work with Git and GitHub.",
+    "text": "Clone your new GitHub repo.\nThis part is done on the JupyterHub or your local computer.\n\nJupyterHub\n\nhttps://nmfs-openscapes.2i2c.cloud/\nUse defaults (image and size of machine)\n\n\nAuthenticate to GitHub\n\n\nOpen a terminal.\nType gh-scoped-creds.\nCopy the code, click link and paste in.\nClick the link that appears and give the hub permission to push to your new repo (or all repos).\n\n\nOpen RStudio\n\nFile &gt; New Project &gt; Version Control &gt; Git\nPaste in https://github.com/&lt;your username&gt;/&lt;repo name&gt;\n\n\n\n\nOn your local computer in RStudio\nYou must have already set up Git and GitHub Authentication to work with RStudio.\n\nOpen RStudio\n\nFile &gt; New Project &gt; Version Control &gt; Git\nPaste in https://github.com/&lt;your username&gt;/&lt;repo name&gt;\n\n\n\n\nOn your local computer in GitHub Desktop\n\nOpen GitHub Desktop\n\nFile &gt; Clone repository\nClick the Git tab in the pop-up.\nPaste in https://github.com/&lt;your username&gt;/&lt;repo name&gt;\nChange where the directory will be made or note where it is being made.\n\nOpen RStudio\n\nFile &gt; New Project &gt; Existing Directory\nNavigate to the directory created in step 1.\n\n\nNote to push changes to GitHub you will need to either use GitHub Desktop or have set up RStudio to work with Git and GitHub.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",
@@ -52,7 +52,67 @@
     "href": "tutorials/tutorial-7.html#render-your-book",
     "title": "HackDay – Create a Quarto Book",
     "section": "Render your book",
-    "text": "Render your book\nIn RStudio.\n\nClick the Build tab in the upper right panel of RStudio.\nClick “Render Book”. All formats or Html is fine.\nBook should pop up in a new window.\n\n\nIt didn’t? Click on _book. Right click on index.html and select “Open in browser”",
+    "text": "Render your book\nIn RStudio.\n\nClick the Build tab in the upper right panel of RStudio.\nClick “Render Book”. All formats or Html is fine.\nBook should pop up in a new window.\n\nIt didn’t? Click on _book. Right click on index.html and select “Open in browser”",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "HackDay -- Make a book"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-7.html#what-are-all-the-pieces-in-the-template",
+    "href": "tutorials/tutorial-7.html#what-are-all-the-pieces-in-the-template",
+    "title": "HackDay – Create a Quarto Book",
+    "section": "What are all the pieces in the template?",
+    "text": "What are all the pieces in the template?\n\nClick on Files in the lower right panel.\n\nThe chapters are in the “content” directory\nImages are in “images” or “content/images” directory.\n\nOther files set up the “look”",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "HackDay -- Make a book"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-7.html#edit-index.qmd",
+    "href": "tutorials/tutorial-7.html#edit-index.qmd",
+    "title": "HackDay – Create a Quarto Book",
+    "section": "Edit index.qmd",
+    "text": "Edit index.qmd\n\nOpen index.qmd\nEdit\nRender Book",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "HackDay -- Make a book"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-7.html#edit-a-chapter",
+    "href": "tutorials/tutorial-7.html#edit-a-chapter",
+    "title": "HackDay – Create a Quarto Book",
+    "section": "Edit a chapter",
+    "text": "Edit a chapter\n\nOpen the content directory in right lower panel\nRename setup.qmd to chapter-1.qmd or whatever you want.\nOpen _quarto.yml and edit this part:\n\n  chapters:\n    - index.qmd\n    - content/setup.qmd\nChange it to\n  chapters:\n    - index.qmd\n    - content/chapter-1.qmd\n\nEdit the content. Make sure to keep the title like it is at the top.\nRender Book.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "HackDay -- Make a book"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-7.html#push-your-changes-up-to-github",
+    "href": "tutorials/tutorial-7.html#push-your-changes-up-to-github",
+    "title": "HackDay – Create a Quarto Book",
+    "section": "Push your changes up to GitHub",
+    "text": "Push your changes up to GitHub\nGitHub will run an Action to make your book.",
+    "crumbs": [
+      "JupyterHub",
+      "Tutorials",
+      "HackDay -- Make a book"
+    ]
+  },
+  {
+    "objectID": "tutorials/tutorial-7.html#repeat",
+    "href": "tutorials/tutorial-7.html#repeat",
+    "title": "HackDay – Create a Quarto Book",
+    "section": "REPEAT!",
+    "text": "REPEAT!\nKeep working on your book and Jon and I will help where you get stuck.",
     "crumbs": [
       "JupyterHub",
       "Tutorials",

@@ -313,6 +313,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#edit-the-yaml" id="toc-edit-the-yaml" class="nav-link" data-scroll-target="#edit-the-yaml">Edit the yaml</a></li>
   <li><a href="#swap-in-a-new-logo-and-favicon" id="toc-swap-in-a-new-logo-and-favicon" class="nav-link" data-scroll-target="#swap-in-a-new-logo-and-favicon">Swap in a new logo and favicon</a></li>
   <li><a href="#render-your-book" id="toc-render-your-book" class="nav-link" data-scroll-target="#render-your-book">Render your book</a></li>
+  <li><a href="#what-are-all-the-pieces-in-the-template" id="toc-what-are-all-the-pieces-in-the-template" class="nav-link" data-scroll-target="#what-are-all-the-pieces-in-the-template">What are all the pieces in the template?</a></li>
+  <li><a href="#edit-index.qmd" id="toc-edit-index.qmd" class="nav-link" data-scroll-target="#edit-index.qmd">Edit <code>index.qmd</code></a></li>
+  <li><a href="#edit-a-chapter" id="toc-edit-a-chapter" class="nav-link" data-scroll-target="#edit-a-chapter">Edit a chapter</a></li>
+  <li><a href="#push-your-changes-up-to-github" id="toc-push-your-changes-up-to-github" class="nav-link" data-scroll-target="#push-your-changes-up-to-github">Push your changes up to GitHub</a></li>
+  <li><a href="#repeat" id="toc-repeat" class="nav-link" data-scroll-target="#repeat">REPEAT!</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/edit/main/tutorials/tutorial-7.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://github.com/nmfs-opensci/Quarto-Workshop-2024/blob/main/tutorials/tutorial-7.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -392,42 +397,40 @@ Learning Objectives
 <li>Click the link that appears and give the hub permission to push to your new repo (or all repos).</li>
 </ul>
 <ol start="2" type="1">
-<li>Open RStudio</li>
-</ol>
+<li>Open RStudio
 <ul>
 <li>File &gt; New Project &gt; Version Control &gt; Git</li>
 <li>Paste in <code>https://github.com/&lt;your username&gt;/&lt;repo name&gt;</code></li>
-</ul>
+</ul></li>
+</ol>
 </section>
 <section id="on-your-local-computer-in-rstudio" class="level3">
 <h3 class="anchored" data-anchor-id="on-your-local-computer-in-rstudio">On your local computer in RStudio</h3>
 <p>You must have already set up Git and GitHub Authentication to work with RStudio.</p>
 <ol type="1">
-<li>Open RStudio</li>
-</ol>
+<li>Open RStudio
 <ul>
 <li>File &gt; New Project &gt; Version Control &gt; Git</li>
 <li>Paste in <code>https://github.com/&lt;your username&gt;/&lt;repo name&gt;</code></li>
-</ul>
+</ul></li>
+</ol>
 </section>
 <section id="on-your-local-computer-in-github-desktop" class="level3">
 <h3 class="anchored" data-anchor-id="on-your-local-computer-in-github-desktop">On your local computer in GitHub Desktop</h3>
 <ol type="1">
-<li>Open GitHub Desktop</li>
-</ol>
+<li>Open GitHub Desktop
 <ul>
 <li>File &gt; Clone repository</li>
 <li>Click the Git tab in the pop-up.</li>
 <li>Paste in <code>https://github.com/&lt;your username&gt;/&lt;repo name&gt;</code></li>
 <li>Change where the directory will be made or note where it is being made.</li>
-</ul>
-<ol start="2" type="1">
-<li>Open RStudio</li>
-</ol>
+</ul></li>
+<li>Open RStudio
 <ul>
 <li>File &gt; New Project &gt; Existing Directory</li>
 <li>Navigate to the directory created in step 1.</li>
-</ul>
+</ul></li>
+</ol>
 <p>Note to push changes to GitHub you will need to either use GitHub Desktop or have set up RStudio to work with Git and GitHub.</p>
 </section>
 </section>
@@ -453,11 +456,57 @@ Learning Objectives
 <ol type="1">
 <li>Click the Build tab in the upper right panel of RStudio.</li>
 <li>Click “Render Book”. All formats or Html is fine.</li>
-<li>Book should pop up in a new window.</li>
-</ol>
+<li>Book should pop up in a new window.
 <ul>
 <li>It didn’t? Click on <code>_book</code>. Right click on <code>index.html</code> and select “Open in browser”</li>
-</ul>
+</ul></li>
+</ol>
+</section>
+<section id="what-are-all-the-pieces-in-the-template" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-all-the-pieces-in-the-template">What are all the pieces in the template?</h2>
+<ol type="1">
+<li>Click on Files in the lower right panel.
+<ul>
+<li>The chapters are in the “content” directory</li>
+<li>Images are in “images” or “content/images” directory.</li>
+</ul></li>
+<li>Other files set up the “look”</li>
+</ol>
+</section>
+<section id="edit-index.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="edit-index.qmd">Edit <code>index.qmd</code></h2>
+<ol type="1">
+<li>Open <code>index.qmd</code></li>
+<li>Edit</li>
+<li>Render Book</li>
+</ol>
+</section>
+<section id="edit-a-chapter" class="level2">
+<h2 class="anchored" data-anchor-id="edit-a-chapter">Edit a chapter</h2>
+<ol type="1">
+<li>Open the content directory in right lower panel</li>
+<li>Rename <code>setup.qmd</code> to <code>chapter-1.qmd</code> or whatever you want.</li>
+<li>Open <code>_quarto.yml</code> and edit this part:</li>
+</ol>
+<pre><code>  chapters:
+    - index.qmd
+    - content/setup.qmd</code></pre>
+<p>Change it to</p>
+<pre><code>  chapters:
+    - index.qmd
+    - content/chapter-1.qmd</code></pre>
+<ol start="4" type="1">
+<li>Edit the content. Make sure to keep the title like it is at the top.</li>
+<li>Render Book.</li>
+</ol>
+</section>
+<section id="push-your-changes-up-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="push-your-changes-up-to-github">Push your changes up to GitHub</h2>
+<p>GitHub will run an Action to make your book.</p>
+</section>
+<section id="repeat" class="level2">
+<h2 class="anchored" data-anchor-id="repeat">REPEAT!</h2>
+<p>Keep working on your book and Jon and I will help where you get stuck.</p>
 
 
 </section>
