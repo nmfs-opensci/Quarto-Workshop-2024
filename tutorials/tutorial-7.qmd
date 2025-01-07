@@ -31,27 +31,27 @@ This part is done on the JupyterHub or your local computer.
   * Copy the code, click link and paste in.
   * Click the link that appears and give the hub permission to push to your new repo (or all repos).
 2. Open RStudio
-  * File > New Project > Version Control > Git
-  * Paste in `https://github.com/<your username>/<repo name>`
+    * File > New Project > Version Control > Git
+    * Paste in `https://github.com/<your username>/<repo name>`
   
 ### On your local computer in RStudio
 
 You must have already set up Git and GitHub Authentication to work with RStudio.
 
 1. Open RStudio
-  * File > New Project > Version Control > Git
-  * Paste in `https://github.com/<your username>/<repo name>`
+    * File > New Project > Version Control > Git
+    * Paste in `https://github.com/<your username>/<repo name>`
   
 ### On your local computer in GitHub Desktop
 
 1. Open GitHub Desktop
-  * File > Clone repository
-  * Click the Git tab in the pop-up. 
-  * Paste in `https://github.com/<your username>/<repo name>`
-  * Change where the directory will be made or note where it is being made.
+    * File > Clone repository
+    * Click the Git tab in the pop-up. 
+    * Paste in `https://github.com/<your username>/<repo name>`
+    * Change where the directory will be made or note where it is being made.
 2. Open RStudio
-  * File > New Project > Existing Directory
-  * Navigate to the directory created in step 1.
+    * File > New Project > Existing Directory
+    * Navigate to the directory created in step 1.
   
 Note to push changes to GitHub you will need to either use GitHub Desktop or have set up RStudio to work with Git and GitHub.
 
@@ -74,7 +74,52 @@ In RStudio.
 1. Click the Build tab in the upper right panel of RStudio.
 2. Click "Render Book". All formats or Html is fine.
 3. Book should pop up in a new window.
-  * It didn't? Click on `_book`. Right click on `index.html` and select "Open in browser"
+    * It didn't? Click on `_book`. Right click on `index.html` and select "Open in browser"
+    
+## What are all the pieces in the template?
+
+1. Click on Files in the lower right panel.
+    * The chapters are in the "content" directory
+    * Images are in "images" or "content/images" directory.
+2. Other files set up the "look"
+
+## Edit `index.qmd`
+
+1. Open `index.qmd`
+2. Edit
+3. Render Book
+
+## Edit a chapter
+
+1. Open the content directory in right lower panel
+2. Rename `setup.qmd` to `chapter-1.qmd` or whatever you want.
+3. Open `_quarto.yml` and edit this part:
+```
+  chapters:
+    - index.qmd
+    - content/setup.qmd
+```
+Change it to
+```
+  chapters:
+    - index.qmd
+    - content/chapter-1.qmd
+```
+4. Edit the content. Make sure to keep the title like it is at the top.
+5. Render Book.
+
+## Push your changes up to GitHub
+
+GitHub will run an Action to make your book.
+
+## REPEAT!
+
+Keep working on your book and Jon and I will help where you get stuck.
+
+
+
+
+
 
 
 
