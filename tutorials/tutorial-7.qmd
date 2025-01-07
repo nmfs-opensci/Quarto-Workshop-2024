@@ -1,0 +1,83 @@
+---
+title: HackDay -- Create a Quarto Book
+---
+
+::: {.callout-note title="Learning Objectives"}
+1.  Clone a Quarto book template
+2.  Edit the yaml to customize the book
+3.  Add content to your book
+4.  Put online via GitHub Pages
+:::
+
+## Copy the template
+
+This part is done on GitHub.
+
+1. Go to https://github.com/nmfs-opensci/NOAA-quarto-book
+2. Follow the instructions (carefully) in the ReadMe: https://github.com/nmfs-opensci/NOAA-quarto-book/blob/main/README.md
+
+## Clone your new GitHub repo.
+
+This part is done on the JupyterHub or your local computer.
+
+### JupyterHub
+
+* https://nmfs-openscapes.2i2c.cloud/
+* Use defaults (image and size of machine)
+
+1. Authenticate to GitHub 
+  * Open a terminal. 
+  * Type `gh-scoped-creds`. 
+  * Copy the code, click link and paste in.
+  * Click the link that appears and give the hub permission to push to your new repo (or all repos).
+2. Open RStudio
+  * File > New Project > Version Control > Git
+  * Paste in `https://github.com/<your username>/<repo name>`
+  
+### On your local computer in RStudio
+
+You must have already set up Git and GitHub Authentication to work with RStudio.
+
+1. Open RStudio
+  * File > New Project > Version Control > Git
+  * Paste in `https://github.com/<your username>/<repo name>`
+  
+### On your local computer in GitHub Desktop
+
+1. Open GitHub Desktop
+  * File > Clone repository
+  * Click the Git tab in the pop-up. 
+  * Paste in `https://github.com/<your username>/<repo name>`
+  * Change where the directory will be made or note where it is being made.
+2. Open RStudio
+  * File > New Project > Existing Directory
+  * Navigate to the directory created in step 1.
+  
+Note to push changes to GitHub you will need to either use GitHub Desktop or have set up RStudio to work with Git and GitHub.
+
+## Edit the yaml
+
+1. Open the new project for your book in RStudio.
+2. Open `_quarto.yml`
+3. Edit the meta data (title, authors, urls, etc)
+
+## Swap in a new logo and favicon
+
+1. Upload your image file
+2. Edit the `_quarto.yml` to point to that image
+3. Same for favicon
+
+## Render your book
+
+In RStudio.
+
+1. Click the Build tab in the upper right panel of RStudio.
+2. Click "Render Book". All formats or Html is fine.
+3. Book should pop up in a new window.
+  * It didn't? Click on `_book`. Right click on `index.html` and select "Open in browser"
+
+
+
+
+
+
